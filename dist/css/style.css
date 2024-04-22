@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap");
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?mffs30");
@@ -230,7 +231,7 @@ body {
 
 body {
   line-height: 1;
-  font-family: "Stolzl", sans-serif;
+  font-family: var(--font-family), sans-serif;
   text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -240,7 +241,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Stolzl", sans-serif;
+  font-family: var(--font-family), sans-serif;
 }
 
 input::-ms-clear {
@@ -281,4 +282,26 @@ h5,
 h6 {
   font-weight: inherit;
   font-size: inherit;
+}
+
+:root {
+  --black: #000;
+  --red: #e20303;
+  --simple-text: #222;
+  --grey-text: #484848;
+  --light-text: #747478;
+  --grey-icon: #96969a;
+  --line: #e5e5eb;
+  --grey-bg: #f5f5f7;
+  --white: #fff;
+  --blue: #0f3f93;
+  --yelow: #feb62b;
+  --light-blue: #ebf3ff;
+  --blue-hover: #064bc6;
+  --logo-light-blue-logo: #009fdb;
+  --logo-blue-logo: #0f3f93;
+  --logo-red-logo: #e20303;
+  --font-family: "Literata", sans-serif;
+  --second-family: "Literata 18pt", sans-serif;
+  --third-family: "Inter", sans-serif;
 }
