@@ -29,9 +29,32 @@
   padding: 0 18px;
   margin: 0 auto;
 }
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 131%;
+  color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  & > button {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 137%;
+    color: var(--black);
+    align-items: center;
+    &:before {
+      font-size: 12px;
+      transform: translateY(1px);
+    }
+  }
+}
 
 @import "./sections/header";
 @import "./sections/footer";
 @import "./sections/logo";
 @import "./sections/contacts";
 @import "./sections/socials";
+@import "./sections/services";

@@ -312,6 +312,42 @@ h6 {
   margin: 0 auto;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 131%;
+  color: var(--black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.title > button {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--black);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.title > button:before {
+  font-size: 12px;
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
 .header__block-1 {
   background: var(--blue);
   padding: 11px 0;
@@ -652,4 +688,105 @@ h6 {
 }
 .socials > li:nth-child(2) > a::before {
   font-size: 24px;
+}
+
+.services {
+  padding: 80px 0;
+}
+.services > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+.services > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+.services > div > div:nth-child(1) ul > li:nth-child(1) > a > b:before {
+  font-size: 56px;
+}
+.services > div > div:nth-child(1) ul > li:nth-child(2) > a > b:before {
+  font-size: 52px;
+}
+.services > div > div:nth-child(1) ul > li:nth-child(3) > a > b:before {
+  font-size: 57px;
+}
+.services > div > div:nth-child(1) ul > li:nth-child(4) > a > b:before {
+  font-size: 38px;
+}
+.services > div > div:nth-child(1) ul > li:nth-child(5) > a > b:before {
+  font-size: 58px;
+}
+.services > div > div:nth-child(1) ul > li:nth-child(6) > a > b:before {
+  font-size: 56px;
+}
+.services > div > div:nth-child(2) ul > li:nth-child(1) > a > b:before {
+  font-size: 58px;
+}
+.services > div > div:nth-child(2) ul > li:nth-child(2) > a > b:before {
+  font-size: 60px;
+}
+.services > div > div:nth-child(2) ul > li:nth-child(3) > a > b:before {
+  font-size: 45px;
+}
+.services > div > div:nth-child(2) ul > li:nth-child(4) > a > b:before {
+  font-size: 56px;
+}
+.services > div > div:nth-child(2) ul > li:nth-child(5) > a > b:before {
+  font-size: 40px;
+}
+.services > div > div:nth-child(2) ul > li:nth-child(6) > a > b:before {
+  font-size: 54px;
+}
+.services__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 0.5px solid var(--line);
+}
+.services__list > li > a {
+  height: 176px;
+  padding: 20px;
+  border: 0.5px solid var(--line);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.services__list > li > a > b {
+  min-height: 60px;
+}
+.services__list > li > a > b:before {
+  color: var(--red);
+}
+.services__list > li > a > p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--black);
+  text-align: center;
+}
+.services__list > li > a > span {
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--light-text);
 }
