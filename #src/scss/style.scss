@@ -1,9 +1,6 @@
 @import "fonts";
 @import "null";
 
-@import "./sections/header";
-@import "./sections/footer";
-
 :root {
   --black: #000;
   --red: #e20303;
@@ -32,3 +29,9 @@
   padding: 0 18px;
   margin: 0 auto;
 }
+
+@import "./sections/header";
+@import "./sections/footer";
+@import "./sections/logo";
+@import "./sections/contacts";
+@import "./sections/socials";

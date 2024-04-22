@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+  gap: 12px;
+  & > li {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:nth-child(1) {
+      background: #50a4d1;
+      &::before {
+        font-size: 20px;
+      }
+    }
+    &:nth-child(2) {
+      background: #1ea918;
+      &::before {
+        font-size: 24px;
+      }
+    }
+    &::before {
+      color: var(--white);
+    }
+  }
+}

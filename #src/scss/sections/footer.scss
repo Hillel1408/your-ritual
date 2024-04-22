@@ -1,5 +1,11 @@
 .footer {
   padding: 64px 0 48px 0;
+  border-top: 1px solid var(--line);
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
   &__block-1 {
     display: flex;
     justify-content: space-between;
@@ -33,6 +39,26 @@
           }
         }
       }
+    }
+  }
+  &__block-2 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  &__socials-wrapper {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    & > a {
+      font-size: 16px;
+      line-height: 137%;
+      color: var(--simple-text);
     }
   }
 }
