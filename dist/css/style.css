@@ -529,6 +529,32 @@ h6 {
   line-height: 137%;
   color: var(--simple-text);
 }
+.footer__block-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 558px 1fr;
+  grid-template-columns: 558px 1fr;
+  gap: 32px;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--light-text);
+}
+.footer__block-3 > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.footer__block-3 > div > a {
+  color: var(--light-text);
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
 
 .logo {
   display: -webkit-box;
@@ -598,7 +624,7 @@ h6 {
   display: flex;
   gap: 12px;
 }
-.socials > li {
+.socials > li > a {
   width: 48px;
   height: 48px;
   border-radius: 100%;
@@ -612,18 +638,18 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.socials > li:nth-child(1) {
+.socials > li > a::before {
+  color: var(--white);
+}
+.socials > li:nth-child(1) > a {
   background: #50a4d1;
 }
-.socials > li:nth-child(1)::before {
+.socials > li:nth-child(1) > a::before {
   font-size: 20px;
 }
-.socials > li:nth-child(2) {
+.socials > li:nth-child(2) > a {
   background: #1ea918;
 }
-.socials > li:nth-child(2)::before {
+.socials > li:nth-child(2) > a::before {
   font-size: 24px;
-}
-.socials > li::before {
-  color: var(--white);
 }

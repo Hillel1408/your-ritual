@@ -61,4 +61,24 @@
       color: var(--simple-text);
     }
   }
+  &__block-3 {
+    display: grid;
+    grid-template-columns: 558px 1fr;
+    gap: 32px;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--light-text);
+    & > div {
+      &:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      & > a {
+        color: var(--light-text);
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+      }
+    }
+  }
 }
