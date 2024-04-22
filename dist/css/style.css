@@ -284,6 +284,47 @@ h6 {
   font-size: inherit;
 }
 
+.header__block-1 {
+  background: var(--blue);
+  padding: 11px 0;
+}
+.header__block-1 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__block-1 > div > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--white);
+}
+.header__block-1 > div > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+}
+.header__block-1 > div > ul > li::before {
+  color: var(--white);
+}
+.header__block-1 > div > a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--white);
+}
+
 :root {
   --black: #000;
   --red: #e20303;
@@ -304,4 +345,10 @@ h6 {
   --font-family: "Literata", sans-serif;
   --second-family: "Literata 18pt", sans-serif;
   --third-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1420px;
+  padding: 0 18px;
+  margin: 0 auto;
 }
