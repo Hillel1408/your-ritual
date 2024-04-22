@@ -907,3 +907,58 @@ h6 {
   margin-top: 24px;
   margin-bottom: 32px;
 }
+
+.news {
+  padding: 80px 0;
+}
+.news__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  margin-top: 40px;
+}
+.news__grid > div {
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+.news__grid > div > a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.news__grid > div > img {
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news__grid > div > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+  margin-top: 16px;
+}
+.news__grid > div > p {
+  margin-top: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.news__data {
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--light-text);
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
