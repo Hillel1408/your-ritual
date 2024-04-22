@@ -51,6 +51,11 @@
     }
   }
 }
+.text {
+  font-size: 16px;
+  line-height: 144%;
+  color: var(--simple-text);
+}
 
 @import "./sections/header";
 @import "./sections/footer";
@@ -58,3 +63,4 @@
 @import "./sections/contacts";
 @import "./sections/socials";
 @import "./sections/services";
+@import "./sections/advantages";

@@ -1,0 +1,59 @@
+.advantages {
+  padding-bottom: 80px;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-weight: 600;
+    & > li {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      & > span {
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: var(--light-blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before {
+          font-size: 15px;
+          color: var(--blue);
+        }
+      }
+    }
+  }
+  &__block {
+    display: grid;
+    grid-template-columns: 1fr 440px;
+    gap: 64px;
+    margin-bottom: 64px;
+    & > div {
+      &:nth-child(1) {
+        & > h2 {
+          margin-bottom: 40px;
+        }
+      }
+      &:nth-child(2) {
+        padding: 40px;
+        background-image: url("../../img/bg-1.png");
+        background-size: cover;
+        & > div {
+          background: rgba(255, 255, 255, 0.8);
+          height: 100%;
+          padding: 20px 48px;
+          font-weight: 700;
+          color: var(--blue);
+          & > span {
+            font-size: 100px;
+            line-height: 140%;
+          }
+          & > p {
+            font-size: 16px;
+            line-height: 137%;
+          }
+        }
+      }
+    }
+  }
+}
