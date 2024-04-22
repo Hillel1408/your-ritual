@@ -326,7 +326,6 @@ h6 {
 }
 .header__block-2 {
   padding: 16px 0;
-  border-bottom: 1px solid var(--line);
 }
 .header__block-2 > div {
   display: -webkit-box;
@@ -476,6 +475,43 @@ h6 {
 }
 .header__socials > li::before {
   color: var(--white);
+}
+.header__block-3 {
+  -webkit-box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+  border-top: 1px solid var(--line);
+}
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  font-size: 16px;
+  line-height: 137%;
+}
+.header__nav > li > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--black);
+  padding: 16px 0;
+  gap: 7px;
+}
+.header__nav > li > a::before {
+  -webkit-transform: rotate(-90deg) translateX(-2px);
+      -ms-transform: rotate(-90deg) translateX(-2px);
+          transform: rotate(-90deg) translateX(-2px);
+  font-size: 12px;
+}
+.header__nav > li > a.active {
+  border-bottom: 3px solid var(--blue);
 }
 
 :root {

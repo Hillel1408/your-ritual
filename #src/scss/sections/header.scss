@@ -31,7 +31,6 @@
   }
   &__block-2 {
     padding: 16px 0;
-    border-bottom: 1px solid var(--line);
     & > div {
       display: flex;
       gap: 40px;
@@ -133,6 +132,33 @@
       }
       &::before {
         color: var(--white);
+      }
+    }
+  }
+  &__block-3 {
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+    border-top: 1px solid var(--line);
+  }
+  &__nav {
+    display: flex;
+    gap: 32px;
+    font-size: 16px;
+    line-height: 137%;
+    & > li {
+      & > a {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        color: var(--black);
+        padding: 16px 0;
+        gap: 7px;
+        &::before {
+          transform: rotate(-90deg) translateX(-2px);
+          font-size: 12px;
+        }
+        &.active {
+          border-bottom: 3px solid var(--blue);
+        }
       }
     }
   }
