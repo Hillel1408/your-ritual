@@ -1,2 +1,38 @@
 .footer {
+  padding: 64px 0 48px 0;
+  &__block-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    div {
+      & > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        font-size: 16px;
+        line-height: 150%;
+        & > li {
+          &:first-child {
+            font-weight: 600;
+            line-height: 137%;
+            color: var(--black);
+          }
+          & > a {
+            color: var(--grey-text);
+          }
+        }
+      }
+      &:first-child {
+        & > ul {
+          font-weight: 600;
+          line-height: 137%;
+          & > li {
+            & > a {
+              color: var(--black);
+            }
+          }
+        }
+      }
+    }
+  }
 }
