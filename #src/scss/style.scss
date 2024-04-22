@@ -51,10 +51,25 @@
     }
   }
 }
+.subtitle {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 136%;
+  color: var(--black);
+}
 .text {
   font-size: 16px;
   line-height: 144%;
   color: var(--simple-text);
+}
+.btn {
+  box-shadow: 3px 3px 0 0 var(--black);
+  background: var(--red);
+  padding: 11px 24px 15px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--white);
 }
 
 @import "./sections/header";
@@ -64,3 +79,4 @@
 @import "./sections/socials";
 @import "./sections/services";
 @import "./sections/advantages";
+@import "./sections/promo";

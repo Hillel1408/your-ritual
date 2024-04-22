@@ -348,10 +348,28 @@ h6 {
           transform: translateY(1px);
 }
 
+.subtitle {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 136%;
+  color: var(--black);
+}
+
 .text {
   font-size: 16px;
   line-height: 144%;
   color: var(--simple-text);
+}
+
+.btn {
+  -webkit-box-shadow: 3px 3px 0 0 var(--black);
+          box-shadow: 3px 3px 0 0 var(--black);
+  background: var(--red);
+  padding: 11px 24px 15px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--white);
 }
 
 .header__block-1 {
@@ -866,4 +884,26 @@ h6 {
 .advantages__block > div:nth-child(2) > div > p {
   font-size: 16px;
   line-height: 137%;
+}
+
+.promo > div {
+  background: url("../../img/bg-2.png"), -webkit-gradient(linear, right top, left top, from(#0f3f93), to(#16315f));
+  background: url("../../img/bg-2.png"), linear-gradient(270deg, #0f3f93 0%, #16315f 100%);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 61px 0 68px 64px;
+}
+.promo > div > h2 {
+  color: var(--white);
+}
+.promo > div > h3 {
+  color: var(--white);
+  margin-top: 8px;
+}
+.promo > div > p {
+  color: var(--white);
+  opacity: 0.85;
+  max-width: 780px;
+  margin-top: 24px;
+  margin-bottom: 32px;
 }
