@@ -80,6 +80,19 @@
   padding: 6px 20px 10px 20px;
   background: var(--black);
 }
+.input {
+  border: 1px solid var(--line);
+  padding: 12px 16px 12px 20px;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--light-text);
+  width: 100%;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 137%;
+    color: var(--light-text);
+  }
+}
 
 @import "./sections/header";
 @import "./sections/footer";
@@ -97,3 +110,4 @@
 @import "./sections/contract";
 @import "./sections/list";
 @import "./sections/goods";
+@import "./sections/form";

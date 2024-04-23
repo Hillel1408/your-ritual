@@ -382,6 +382,40 @@ h6 {
   background: var(--black);
 }
 
+.input {
+  border: 1px solid var(--line);
+  padding: 12px 16px 12px 20px;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--light-text);
+  width: 100%;
+}
+.input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--light-text);
+}
+.input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--light-text);
+}
+.input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--light-text);
+}
+.input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--light-text);
+}
+.input::placeholder {
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--light-text);
+}
+
 .header__block-1 {
   background: var(--blue);
   padding: 11px 0;
@@ -1469,5 +1503,90 @@ h6 {
   font-weight: 700;
   font-size: 16px;
   line-height: 137%;
+  color: var(--black);
+}
+
+.form {
+  padding-bottom: 137px;
+}
+.form__block {
+  background: var(--grey-bg);
+  padding: 64px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 472px 1fr;
+  grid-template-columns: 472px 1fr;
+  gap: 80px;
+}
+.form__block > div:nth-child(1) > h2 {
+  margin-bottom: 40px;
+}
+.form__block > div:nth-child(1) > p {
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--simple-text);
+  margin-bottom: 32px;
+}
+.form__block > form {
+  -webkit-box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+  background: var(--white);
+  padding: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.form__block > form > textarea {
+  height: 140px;
+}
+.form__block > form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form__block > form > div > p {
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--light-text);
+}
+.form__block > form > div > p > a {
+  color: var(--light-text);
+  text-decoration: underline;
+}
+.form__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form__contacts > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form__contacts > div > span {
+  font-size: 18px;
+  line-height: 144%;
+  color: var(--light-text);
+}
+.form__contacts > div > a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
   color: var(--black);
 }
