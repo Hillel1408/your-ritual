@@ -1194,3 +1194,46 @@ h6 {
   top: 36px;
   left: 17.5px;
 }
+
+.worth {
+  padding-top: 80px;
+}
+.worth > div > h2 {
+  margin-bottom: 24px;
+}
+.worth > div > p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144%;
+  color: var(--simple-text);
+  margin-bottom: 40px;
+}
+.worth__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 0.5px solid var(--line);
+}
+.worth__grid > div {
+  padding: 32px 40px 40px 40px;
+  border: 0.5px solid var(--line);
+}
+.worth__grid > div > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+  padding-bottom: 19px;
+  position: relative;
+  margin-bottom: 24px;
+}
+.worth__grid > div > h3::after {
+  content: "";
+  width: 64px;
+  height: 3px;
+  background: var(--red);
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
