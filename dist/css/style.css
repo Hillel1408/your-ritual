@@ -1266,3 +1266,96 @@ h6 {
   right: 0;
   bottom: 0;
 }
+
+.list {
+  padding-top: 80px;
+}
+.list > div > ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.list > div > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.list > div > ul > li > div {
+  margin-bottom: 8px;
+  width: 88px;
+  height: 88px;
+  background-color: var(--red);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.list > div > ul > li > div > span:before {
+  color: white;
+  font-size: 53px;
+}
+.list > div > ul > li > div::before, .list > div > ul > li > div::after, .list > div > ul > li > div > div::before, .list > div > ul > li > div > div::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+}
+.list > div > ul > li > div::before {
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+.list > div > ul > li > div::after {
+  top: 0;
+  right: 0;
+  -webkit-transform: translateX(50%) translateY(-50%);
+      -ms-transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
+}
+.list > div > ul > li > div > div::before {
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateX(-50%) translateY(50%);
+      -ms-transform: translateX(-50%) translateY(50%);
+          transform: translateX(-50%) translateY(50%);
+}
+.list > div > ul > li > div > div::after {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateX(50%) translateY(50%);
+      -ms-transform: translateX(50%) translateY(50%);
+          transform: translateX(50%) translateY(50%);
+}
+.list > div > ul > li > span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+}
+.list > div > ul > li > p {
+  font-size: 16px;
+  line-height: 144%;
+  color: var(--simple-text);
+}

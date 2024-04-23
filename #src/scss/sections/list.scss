@@ -1,0 +1,76 @@
+.list {
+  padding-top: 80px;
+  & > div {
+    & > ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      & > li {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        text-align: center;
+        & > div {
+          margin-bottom: 8px;
+          width: 88px;
+          height: 88px;
+          background-color: var(--red);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          & > span {
+            &:before {
+              color: white;
+              font-size: 53px;
+            }
+          }
+          &::before,
+          &::after,
+          & > div::before,
+          & > div::after {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+          }
+          &::before {
+            top: 0;
+            left: 0;
+            transform: translateX(-50%) translateY(-50%);
+          }
+          &::after {
+            top: 0;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+          }
+          & > div::before {
+            bottom: 0;
+            left: 0;
+            transform: translateX(-50%) translateY(50%);
+          }
+          & > div::after {
+            bottom: 0;
+            right: 0;
+            transform: translateX(50%) translateY(50%);
+          }
+        }
+        & > span {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 140%;
+          color: var(--black);
+        }
+        & > p {
+          font-size: 16px;
+          line-height: 144%;
+          color: var(--simple-text);
+        }
+      }
+    }
+  }
+}
