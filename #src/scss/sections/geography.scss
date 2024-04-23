@@ -1,0 +1,32 @@
+.geography {
+  padding-bottom: 80px;
+  &__block {
+    padding: 26px 64px 30px 40px;
+    background-color: var(--grey-bg);
+    display: grid;
+    grid-template-columns: 288px 1fr 356px;
+    align-items: center;
+    gap: 32px;
+    & > div {
+      &:nth-child(2) {
+        margin-left: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      &:nth-child(3) {
+        padding-left: 40px;
+        border-left: 1px solid var(--line);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        & > span {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 137%;
+          color: var(--black);
+        }
+      }
+    }
+  }
+}
