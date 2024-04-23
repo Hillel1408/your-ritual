@@ -71,6 +71,15 @@
   line-height: 137%;
   color: var(--white);
 }
+.blackbtn {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--white);
+  padding: 6px 20px 10px 20px;
+  background: var(--black);
+}
 
 @import "./sections/header";
 @import "./sections/footer";
@@ -87,3 +96,4 @@
 @import "./sections/worth";
 @import "./sections/contract";
 @import "./sections/list";
+@import "./sections/goods";
