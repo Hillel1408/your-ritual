@@ -1108,3 +1108,89 @@ h6 {
   mix-blend-mode: multiply;
   opacity: 0.03;
 }
+
+.stages {
+  padding-top: 80px;
+}
+.stages__block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 558px 1fr;
+  grid-template-columns: 558px 1fr;
+  gap: 64px;
+}
+.stages__block > div:nth-child(1) {
+  background-image: url("../../img/bg-3.png");
+  background-size: cover;
+  padding: 40px;
+}
+.stages__block > div:nth-child(1) > div {
+  background: rgba(255, 255, 255, 0.85);
+  height: 100%;
+  padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+.stages__block > div:nth-child(1) > div > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+}
+.stages__block > div:nth-child(1) > div > span {
+  font-weight: 700;
+}
+.stages__block > div:nth-child(2) > h2 {
+  margin-bottom: 40px;
+}
+.stages__block > div:nth-child(2) > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+.stages__block > div:nth-child(2) > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+.stages__block > div:nth-child(2) > ul > li > span {
+  min-width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  background: var(--blue);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.stages__block > div:nth-child(2) > ul > li:not(:last-child):before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  border-left: 1px dashed var(--line);
+  position: absolute;
+  top: 36px;
+  left: 17.5px;
+}
