@@ -10,3 +10,15 @@ const swiper = new Swiper(".goods__slider", {
     clickable: true,
   },
 });
+const swiperIntro = new Swiper(".intro__slider", {
+  slidesPerView: 3,
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".intro__slider__button-next",
+    prevEl: ".intro__slider__button-prev",
+  },
+  pagination: {
+    el: ".intro__slider-pagination",
+    clickable: true,
+  },
+});

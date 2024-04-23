@@ -93,9 +93,44 @@
     color: var(--light-text);
   }
 }
+.slider__button-prev,
+.slider__button-next {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+  background: var(--white);
+  position: absolute;
+  z-index: 1;
+  &::before {
+    font-size: 14px;
+    color: var(--black);
+  }
+}
+.slider__button-prev {
+  left: 0;
+}
+.slider__button-next {
+  right: 0;
+  transform: rotate(180deg);
+}
+.slider-pagination {
+  margin-top: 32px;
+  & > span {
+    width: 40px;
+    height: 2px;
+    border-radius: initial;
+    background: #d0d0d8;
+    opacity: initial;
+    &.swiper-pagination-bullet-active {
+      background: var(--black);
+    }
+  }
+}
 
 @import "./sections/header";
 @import "./sections/footer";
+@import "./sections/intro";
 @import "./sections/logo";
 @import "./sections/contacts";
 @import "./sections/socials";
@@ -111,3 +146,4 @@
 @import "./sections/list";
 @import "./sections/goods";
 @import "./sections/form";
+@import "./sections/product";
