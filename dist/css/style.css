@@ -704,7 +704,7 @@ h6 {
 
 .intro {
   padding: 40px 0 48px 0;
-  background-image: url("../../img/bg-4.png");
+  background-image: url("../img/bg-4.png");
 }
 .intro__block {
   display: -webkit-box;
@@ -717,7 +717,7 @@ h6 {
 .intro__block > div:nth-child(1) {
   padding: 40px;
   width: 32.3699421965%;
-  background-image: url("../../img/bg-5.png");
+  background-image: url("../img/bg-5.png");
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1020,7 +1020,7 @@ h6 {
 }
 .advantages__block > div:nth-child(2) {
   padding: 40px;
-  background-image: url("../../img/bg-1.png");
+  background-image: url("../img/bg-1.png");
   background-size: cover;
 }
 .advantages__block > div:nth-child(2) > div {
@@ -1040,8 +1040,8 @@ h6 {
 }
 
 .promo__block {
-  background: url("../../img/bg-2.png"), -webkit-gradient(linear, right top, left top, from(#0f3f93), to(#16315f));
-  background: url("../../img/bg-2.png"), linear-gradient(270deg, #0f3f93 0%, #16315f 100%);
+  background: url("../img/bg-2.png"), -webkit-gradient(linear, right top, left top, from(#0f3f93), to(#16315f));
+  background: url("../img/bg-2.png"), linear-gradient(270deg, #0f3f93 0%, #16315f 100%);
   background-position: right;
   background-repeat: no-repeat;
   padding: 61px 0 68px 64px;
@@ -1273,7 +1273,7 @@ h6 {
   gap: 64px;
 }
 .stages__block > div:nth-child(1) {
-  background-image: url("../../img/bg-3.png");
+  background-image: url("../img/bg-3.png");
   background-size: cover;
   padding: 40px;
 }
@@ -1414,7 +1414,7 @@ h6 {
   position: relative;
 }
 .contract > div::after {
-  content: url("../../img/img-3.png");
+  content: url("../img/img-3.png");
   position: absolute;
   right: 0;
   bottom: 0;

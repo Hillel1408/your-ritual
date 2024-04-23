@@ -1,6 +1,6 @@
 .intro {
   padding: 40px 0 48px 0;
-  background-image: url("../../img/bg-4.png");
+  background-image: url("../img/bg-4.png");
   &__block {
     display: flex;
 
@@ -9,7 +9,7 @@
       &:nth-child(1) {
         padding: 40px;
         width: calc(448 / 1384 * 100%);
-        background-image: url("../../img/bg-5.png");
+        background-image: url("../img/bg-5.png");
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
