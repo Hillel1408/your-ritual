@@ -22,3 +22,11 @@ const swiperIntro = new Swiper(".intro__slider", {
     clickable: true,
   },
 });
+const swiperAboutService = new Swiper(".about-service__slider", {
+  slidesPerView: 2,
+  spaceBetween: 24,
+  navigation: {
+    nextEl: ".about-service__slider__button-next",
+    prevEl: ".about-service__slider__button-prev",
+  },
+});
