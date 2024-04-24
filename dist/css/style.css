@@ -2011,3 +2011,10 @@ h6 {
      object-fit: cover;
   margin-top: 40px;
 }
+
+.discount > h2 {
+  margin-bottom: 40px;
+}
+.discount > p {
+  margin-bottom: 40px;
+}
