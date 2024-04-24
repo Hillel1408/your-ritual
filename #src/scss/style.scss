@@ -107,8 +107,6 @@
     color: var(--black);
   }
 }
-.slider__button-prev {
-}
 .slider__button-next {
   right: 0;
   transform: rotate(180deg);
@@ -177,3 +175,4 @@
 @import "./sections/news-list";
 @import "./sections/news-item";
 @import "./sections/pagination";
+@import "./sections/news-full";
