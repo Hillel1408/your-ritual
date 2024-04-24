@@ -1897,6 +1897,18 @@ h6 {
 .news-list__block > div > img {
   height: 204px;
 }
+.news-list > button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--light-text);
+  border: 1px solid var(--line);
+  padding: 11px 24px 15px 24px;
+  width: 100%;
+  background-color: transparent;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
 
 .news-item {
   padding-bottom: 25px;
@@ -1940,4 +1952,45 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+.pagination > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pagination > ul > li {
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--simple-text);
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.pagination > ul > li.active {
+  border-bottom: 3px solid var(--blue);
+}
+.pagination > button {
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--simple-text);
 }

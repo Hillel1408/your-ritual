@@ -17,4 +17,16 @@
       }
     }
   }
+  & > button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 137%;
+    color: var(--light-text);
+    border: 1px solid var(--line);
+    padding: 11px 24px 15px 24px;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 32px;
+    margin-bottom: 48px;
+  }
 }
