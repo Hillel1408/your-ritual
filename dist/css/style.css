@@ -433,10 +433,6 @@ h6 {
   color: var(--black);
 }
 
-.slider__button-prev {
-  left: 0;
-}
-
 .slider__button-next {
   right: 0;
   -webkit-transform: rotate(180deg);
@@ -466,6 +462,34 @@ h6 {
   gap: 92px;
   padding-top: 40px;
   padding-bottom: 120px;
+}
+
+.list-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  padding-left: 7px;
+}
+.list-dots > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 11px;
+}
+.list-dots > li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: var(--red);
+  border-radius: 100%;
 }
 
 .header__block-1 {
@@ -777,6 +801,9 @@ h6 {
 }
 .intro__slider__button-prev, .intro__slider__button-next {
   bottom: 230px;
+}
+.intro__slider__button-prev {
+  left: 0;
 }
 
 .logo {
@@ -1542,6 +1569,9 @@ h6 {
 .goods__slider__button-prev, .goods__slider__button-next {
   bottom: 194px;
 }
+.goods__slider__button-prev {
+  left: 0;
+}
 .goods__slider-pagination {
   text-align: center;
 }
@@ -1841,4 +1871,46 @@ h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 137%;
+}
+
+.about-service > h2 {
+  margin-bottom: 40px;
+}
+.about-service__block-1 {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.about-service__block-2 {
+  margin-top: 32px;
+  position: relative;
+}
+.about-service__block-3 {
+  margin-top: 32px;
+}
+.about-service__block-3 > h2 {
+  margin-bottom: 24px;
+}
+.about-service__slider {
+  margin-top: 24px;
+  max-width: 912px;
+  overflow: hidden;
+}
+.about-service__slider-slide > img {
+  height: 260px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-service__slider__button-prev, .about-service__slider__button-next {
+  top: 0;
+}
+.about-service__slider__button-prev {
+  right: 56px;
 }

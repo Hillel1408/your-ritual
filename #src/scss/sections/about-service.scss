@@ -1,0 +1,40 @@
+.about-service {
+  & > h2 {
+    margin-bottom: 40px;
+  }
+  &__block-1 {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__block-2 {
+    margin-top: 32px;
+    position: relative;
+  }
+  &__block-3 {
+    margin-top: 32px;
+    & > h2 {
+      margin-bottom: 24px;
+    }
+  }
+  &__slider {
+    margin-top: 24px;
+    max-width: 912px;
+    overflow: hidden;
+    &-slide {
+      & > img {
+        height: 260px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &__button-prev,
+    &__button-next {
+      top: 0;
+    }
+    &__button-prev {
+      right: 56px;
+    }
+  }
+}
