@@ -127,6 +127,13 @@
     }
   }
 }
+.grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 92px;
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
 
 @import "./sections/header";
 @import "./sections/footer";
@@ -148,3 +155,4 @@
 @import "./sections/form";
 @import "./sections/product";
 @import "./sections/faq";
+@import "./sections/sidebar";
