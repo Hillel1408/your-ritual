@@ -6,11 +6,7 @@
     <div class="goods__slider-wrapper">
       <div class="goods__slider">
         <div class="swiper-wrapper">
-          @@include('./product.html') @@include('./product.html')
-          @@include('./product.html') @@include('./product.html')
-          @@include('./product.html') @@include('./product.html')
-          @@include('./product.html') @@include('./product.html')
-          @@include('./product.html')
+          @@for (var i = 0; i < 9; i++) { @@include('./product.html') }
         </div>
       </div>
       <button

@@ -1109,49 +1109,6 @@ h6 {
   gap: 32px;
   margin-top: 40px;
 }
-.news__grid > div {
-  padding-bottom: 25px;
-  border-bottom: 1px solid var(--line);
-  position: relative;
-}
-.news__grid > div > a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.news__grid > div > img {
-  height: 280px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.news__grid > div > h3 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 140%;
-  color: var(--black);
-  margin-top: 16px;
-}
-.news__grid > div > p {
-  margin-top: 18px;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.news__data {
-  font-size: 16px;
-  line-height: 137%;
-  color: var(--light-text);
-  margin-top: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 
 .geography {
   padding-bottom: 80px;
@@ -1913,4 +1870,74 @@ h6 {
 }
 .about-service__slider__button-prev {
   right: 56px;
+}
+
+.news-list > h2 {
+  margin-bottom: 40px;
+}
+.news-list__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+.news-list__block > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 320px 1fr;
+  grid-template-columns: 320px 1fr;
+  gap: 32px;
+  padding-bottom: 0;
+  border: none;
+}
+.news-list__block > div > img {
+  height: 204px;
+}
+
+.news-item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+.news-item > a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.news-item > img {
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news-item > div > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+  margin-top: 16px;
+}
+.news-item > div > p {
+  margin-top: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.news-item__data {
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--light-text);
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
