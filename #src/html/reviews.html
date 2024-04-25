@@ -2,12 +2,12 @@
   <h2 class="title">Отзывы</h2>
   @@include('./tabs.html', {"list": ['Отзывы на Яндексе', 'Отзывы на сайте',
   'Благодарственные письма']})
-  <div class="reviews__header">
-    <div><b class="icon-36"></b><span>5,0</span></div>
-    <p class="text">Все оценки и отзывы реальные и проверены Яндексом.</p>
-    <button class="text icon-12">Смотреть на Яндекс Услугах</button>
-  </div>
-  <div class="reviews__block">
+  <div class="reviews__block" style="display: none">
+    <div class="reviews__header">
+      <div><b class="icon-36"></b><span>5,0</span></div>
+      <p class="text">Все оценки и отзывы реальные и проверены Яндексом.</p>
+      <button class="text icon-12">Смотреть на Яндекс Услугах</button>
+    </div>
     @@for (var i = 0; i < 5; i++) {
     <div class="reviews__item">
       <div>
@@ -32,6 +32,13 @@
       </p>
     </div>
     }
+  </div>
+  <div class="reviews__block">
+    <div class="reviews__certificates">
+      @@for (var i = 0; i < 7; i++) {
+      <div><img src="img/img-13.png" alt="" /></div>
+      }
+    </div>
   </div>
   @@include('./pagination.html')
 </div>
