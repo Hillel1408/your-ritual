@@ -1,0 +1,40 @@
+.payment {
+  & > h2 {
+    margin-bottom: 40px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__promo {
+    background: url("../img/bg-8.png"),
+      linear-gradient(270deg, #0f3f93 0%, #16315f 100%);
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    padding: 40px;
+    & > div {
+      max-width: 480px;
+      & > h2 {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 136%;
+        color: var(--white);
+        margin-bottom: 8px;
+      }
+      & > h3 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: var(--white);
+        margin-bottom: 24px;
+      }
+      & > p {
+        color: var(--white);
+        opacity: 0.85;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
