@@ -47,6 +47,26 @@
         color: var(--light-text);
       }
     }
+    &-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > span {
+          &:nth-child(1) {
+            font-weight: 700;
+          }
+          &:nth-child(2) {
+            font-size: 14px;
+            line-height: 143%;
+            color: var(--light-text);
+          }
+        }
+      }
+    }
   }
   &__header {
     display: grid;
@@ -94,5 +114,12 @@
         object-fit: cover;
       }
     }
+  }
+  &__send {
+    padding: 32px;
+    background: var(--grey-bg);
+    display: grid;
+    grid-template-columns: 1fr 204px;
+    gap: 32px;
   }
 }
