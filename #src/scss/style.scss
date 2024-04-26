@@ -149,6 +149,14 @@
     }
   }
 }
+.note {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 144%;
+  color: var(--black);
+  padding-left: 24px;
+  border-left: 4px solid var(--red);
+}
 
 @import "./sections/header";
 @import "./sections/footer";
@@ -181,3 +189,5 @@
 @import "./sections/reviews";
 @import "./sections/rubric";
 @import "./sections/payment";
+@import "./sections/information";
+@import "./sections/consultation";
