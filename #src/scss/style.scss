@@ -160,6 +160,50 @@
   padding-left: 24px;
   border-left: 4px solid var(--red);
 }
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  tbody {
+    border: 1px solid var(--line);
+  }
+  th {
+    background: var(--simple-text);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 137%;
+    color: var(--white);
+    text-align: left;
+    padding: 15px 24px;
+    &:nth-child(1) {
+      width: 72%;
+    }
+    &:nth-child(2) {
+      width: 28%;
+      text-align: right;
+    }
+  }
+  td {
+    padding: 15px 24px;
+    font-size: 16px;
+    line-height: 137%;
+    color: var(--simple-text);
+    &:nth-child(2) {
+      text-align: right;
+    }
+  }
+  tr {
+    &:nth-child(2n + 1) {
+      background: var(--grey-bg);
+    }
+    &.total {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 144%;
+      text-transform: uppercase;
+      color: var(--simple-text);
+    }
+  }
+}
 
 @import "./sections/header";
 @import "./sections/footer";
@@ -196,3 +240,4 @@
 @import "./sections/consultation";
 @import "./sections/work";
 @import "./sections/links";
+@import "./sections/cost";

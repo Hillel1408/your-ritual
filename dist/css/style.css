@@ -504,6 +504,49 @@ h6 {
   border-left: 4px solid var(--red);
 }
 
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tbody {
+  border: 1px solid var(--line);
+}
+.table th {
+  background: var(--simple-text);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--white);
+  text-align: left;
+  padding: 15px 24px;
+}
+.table th:nth-child(1) {
+  width: 72%;
+}
+.table th:nth-child(2) {
+  width: 28%;
+  text-align: right;
+}
+.table td {
+  padding: 15px 24px;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--simple-text);
+}
+.table td:nth-child(2) {
+  text-align: right;
+}
+.table tr:nth-child(2n+1) {
+  background: var(--grey-bg);
+}
+.table tr.total {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 144%;
+  text-transform: uppercase;
+  color: var(--simple-text);
+}
+
 .header__block-1 {
   background: var(--blue);
   padding: 11px 0;
@@ -2430,4 +2473,26 @@ h6 {
 .links > div > ul > li > a::before {
   color: var(--grey-icon);
   font-size: 12px;
+}
+
+.cost > h2 {
+  margin-bottom: 40px;
+}
+.cost > h3 {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+.cost > p {
+  margin-bottom: 24px;
+}
+.cost > div > span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+  display: block;
+  margin-bottom: 16px;
+}
+.cost > div:not(:last-child) {
+  margin-bottom: 24px;
 }
