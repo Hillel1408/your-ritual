@@ -1493,7 +1493,18 @@ h6 {
           align-items: center;
   text-align: center;
 }
-.list > div > ul > li > div {
+.list > div > ul > li > span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+}
+.list > div > ul > li > p {
+  font-size: 16px;
+  line-height: 144%;
+  color: var(--simple-text);
+}
+.list-icon {
   margin-bottom: 8px;
   width: 88px;
   height: 88px;
@@ -1509,11 +1520,11 @@ h6 {
           justify-content: center;
   position: relative;
 }
-.list > div > ul > li > div > span:before {
+.list-icon > span:before {
   color: white;
   font-size: 53px;
 }
-.list > div > ul > li > div::before, .list > div > ul > li > div::after, .list > div > ul > li > div > div::before, .list > div > ul > li > div > div::after {
+.list-icon::before, .list-icon::after, .list-icon > div::before, .list-icon > div::after {
   content: "";
   display: block;
   width: 16px;
@@ -1522,44 +1533,33 @@ h6 {
   background-color: white;
   position: absolute;
 }
-.list > div > ul > li > div::before {
+.list-icon::before {
   top: 0;
   left: 0;
   -webkit-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
 }
-.list > div > ul > li > div::after {
+.list-icon::after {
   top: 0;
   right: 0;
   -webkit-transform: translateX(50%) translateY(-50%);
       -ms-transform: translateX(50%) translateY(-50%);
           transform: translateX(50%) translateY(-50%);
 }
-.list > div > ul > li > div > div::before {
+.list-icon > div::before {
   bottom: 0;
   left: 0;
   -webkit-transform: translateX(-50%) translateY(50%);
       -ms-transform: translateX(-50%) translateY(50%);
           transform: translateX(-50%) translateY(50%);
 }
-.list > div > ul > li > div > div::after {
+.list-icon > div::after {
   bottom: 0;
   right: 0;
   -webkit-transform: translateX(50%) translateY(50%);
       -ms-transform: translateX(50%) translateY(50%);
           transform: translateX(50%) translateY(50%);
-}
-.list > div > ul > li > span {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 140%;
-  color: var(--black);
-}
-.list > div > ul > li > p {
-  font-size: 16px;
-  line-height: 144%;
-  color: var(--simple-text);
 }
 
 .goods {
@@ -2495,4 +2495,32 @@ h6 {
 }
 .cost > div:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.production > h2 {
+  margin-bottom: 40px;
+}
+.production > p {
+  margin-bottom: 24px;
+}
+.production > div {
+  margin-top: 40px;
+}
+.production > div > span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+}
+.production > div > p {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.icons-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
 }
