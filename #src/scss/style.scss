@@ -61,6 +61,9 @@
   font-size: 16px;
   line-height: 144%;
   color: var(--simple-text);
+  & > a {
+    color: var(--blue);
+  }
 }
 .btn {
   box-shadow: 3px 3px 0 0 var(--black);
@@ -191,3 +194,4 @@
 @import "./sections/payment";
 @import "./sections/information";
 @import "./sections/consultation";
+@import "./sections/work";
