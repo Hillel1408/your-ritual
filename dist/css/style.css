@@ -2385,3 +2385,49 @@ h6 {
           align-items: center;
   color: var(--red);
 }
+
+.links > h2 {
+  margin-bottom: 40px;
+}
+.links > div:not(:last-child) {
+  margin-bottom: 32px;
+}
+.links > div > h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 136%;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+.links > div > ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.links > div > ul > li > a {
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  padding: 26px 24px;
+  background: var(--grey-bg);
+}
+.links > div > ul > li > a::before {
+  color: var(--grey-icon);
+  font-size: 12px;
+}

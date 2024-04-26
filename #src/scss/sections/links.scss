@@ -1,0 +1,40 @@
+.links {
+  & > h2 {
+    margin-bottom: 40px;
+  }
+  & > div {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    & > h3 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 136%;
+      color: var(--black);
+      margin-bottom: 24px;
+    }
+    & > ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      & > li {
+        & > a {
+          font-size: 16px;
+          line-height: 137%;
+          color: var(--black);
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-items: center;
+          gap: 16px;
+          padding: 26px 24px;
+          background: var(--grey-bg);
+          &::before {
+            color: var(--grey-icon);
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
