@@ -1221,95 +1221,6 @@ h6 {
   grid-template-columns: auto 1fr;
   gap: 40px;
 }
-.price__tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 13px;
-}
-.price__tabs > li {
-  border-radius: 100px;
-  padding: 11px 24px 15px 24px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 137%;
-  color: var(--blue);
-  border: 2px solid var(--blue);
-}
-.price__tabs > li.active {
-  background: var(--blue);
-  color: var(--white);
-}
-.price__tab {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-  grid-template-columns: repeat(5, 1fr);
-  -webkit-box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
-  margin-top: 32px;
-}
-.price__tab-item {
-  position: relative;
-}
-.price__tab-item > div:nth-child(1) {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 144%;
-  text-align: center;
-  color: var(--black);
-  background: var(--light-blue);
-  padding: 14px 10px 18px 10px;
-}
-.price__tab-item > div:nth-child(2) {
-  padding: 16px 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 210px;
-}
-.price__tab-item > div:nth-child(2) > p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 143%;
-  color: var(--grey-text);
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-.price__tab-item > div:nth-child(2) > span {
-  margin-bottom: 24px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 137%;
-  color: var(--black);
-}
-.price__tab-item > div:nth-child(2) > button {
-  font-family: var(--second-family);
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 14px;
-  line-height: 143%;
-  color: var(--blue);
-  background: transparent;
-  border-top: 1px solid var(--line);
-}
-.price__tab-item:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  right: 0;
-  background: -webkit-gradient(linear, right top, left top, from(#000), to(#fff));
-  background: linear-gradient(270deg, #000 0%, #fff 100%);
-  mix-blend-mode: multiply;
-  opacity: 0.03;
-}
 
 .stages {
   padding-top: 80px;
@@ -2523,4 +2434,120 @@ h6 {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
+}
+
+.funeral > h2 {
+  margin-bottom: 40px;
+}
+.funeral__block {
+  margin-top: 32px;
+}
+.funeral__block > h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 136%;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+.funeral__block > p {
+  margin-bottom: 24px;
+}
+.funeral__price-tab {
+  margin-bottom: 32px;
+}
+.funeral__price-tab > div {
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.price__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 13px;
+}
+.price__tabs > li {
+  border-radius: 100px;
+  padding: 11px 24px 15px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+}
+.price__tabs > li.active {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.price__tab {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 32px;
+}
+.price__tab-item {
+  position: relative;
+  -webkit-box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+}
+.price__tab-item > div:nth-child(1) {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 144%;
+  text-align: center;
+  color: var(--black);
+  background: var(--light-blue);
+  padding: 14px 10px 18px 10px;
+}
+.price__tab-item > div:nth-child(2) {
+  padding: 16px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 210px;
+}
+.price__tab-item > div:nth-child(2) > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--grey-text);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.price__tab-item > div:nth-child(2) > span {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--black);
+}
+.price__tab-item > div:nth-child(2) > button {
+  font-family: var(--second-family);
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--blue);
+  background: transparent;
+  border-top: 1px solid var(--line);
+}
+.price__tab-item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  right: 0;
+  background: -webkit-gradient(linear, right top, left top, from(#000), to(#fff));
+  background: linear-gradient(270deg, #000 0%, #fff 100%);
+  mix-blend-mode: multiply;
+  opacity: 0.03;
 }
