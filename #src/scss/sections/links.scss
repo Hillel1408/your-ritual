@@ -17,24 +17,22 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 24px;
-      & > li {
-        & > a {
-          font-size: 16px;
-          line-height: 137%;
-          color: var(--black);
-          display: flex;
-          flex-direction: row-reverse;
-          justify-content: space-between;
-          align-items: center;
-          gap: 16px;
-          padding: 26px 24px;
-          background: var(--grey-bg);
-          &::before {
-            color: var(--grey-icon);
-            font-size: 12px;
-          }
-        }
-      }
+    }
+  }
+  &__link {
+    font-size: 16px;
+    line-height: 137%;
+    color: var(--black);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 26px 24px;
+    background: var(--grey-bg);
+    &::before {
+      color: var(--grey-icon);
+      font-size: 12px;
     }
   }
 }
