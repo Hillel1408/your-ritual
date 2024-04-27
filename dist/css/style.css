@@ -2750,3 +2750,57 @@ h6 {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
 }
+
+.parent-organization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.parent-organization > h2 {
+  margin-bottom: 16px;
+}
+.parent-organization__block-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.parent-organization__block-2 {
+  padding: 28px 32px;
+  background: var(--grey-bg);
+}
+.parent-organization__block-2 > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.parent-organization__block-2 > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.parent-organization__block-2 > ul > li > span:nth-child(1) {
+  font-weight: 600;
+}
+.parent-organization__block-3 > p {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
