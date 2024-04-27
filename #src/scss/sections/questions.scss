@@ -1,0 +1,124 @@
+.questions {
+  & > h2 {
+    margin-bottom: 40px;
+  }
+  & > p {
+    margin-top: 64px;
+  }
+  & > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    & > li {
+      padding: 28px 24px;
+      border: 1px solid var(--line);
+      & > span {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 144%;
+        color: var(--black);
+        &::before {
+          color: var(--black);
+          font-size: 16px;
+        }
+      }
+      & > div {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        & > ul {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding-left: 7px;
+          & > li {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            &::before {
+              content: "";
+              display: block;
+              width: 6px;
+              height: 6px;
+              border-radius: 100%;
+              background: var(--red);
+            }
+          }
+        }
+      }
+    }
+  }
+  &__form {
+    margin-top: 32px;
+    background: var(--grey-bg);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    & > div {
+      & > h3 {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 136%;
+        color: var(--black);
+        margin-bottom: 24px;
+      }
+      & > p {
+        font-size: 16px;
+        line-height: 144%;
+        color: var(--simple-text);
+        margin-bottom: 32px;
+      }
+    }
+    & > form {
+      box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+      background: var(--white);
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      & > div {
+        margin-top: 8px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        & > p {
+          font-size: 14px;
+          line-height: 143%;
+          color: var(--light-text);
+          & > a {
+            color: var(--light-text);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      & > span {
+        font-size: 16px;
+        line-height: 137%;
+        color: var(--light-text);
+      }
+      & > a {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        color: var(--black);
+      }
+    }
+  }
+}
