@@ -2360,7 +2360,7 @@ h6 {
   grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
-.links > div > ul > li > a {
+.links__link {
   font-size: 16px;
   line-height: 137%;
   color: var(--black);
@@ -2381,7 +2381,7 @@ h6 {
   padding: 26px 24px;
   background: var(--grey-bg);
 }
-.links > div > ul > li > a::before {
+.links__link::before {
   color: var(--grey-icon);
   font-size: 12px;
 }
@@ -2728,4 +2728,25 @@ h6 {
 }
 .ritual-goods > p {
   margin-bottom: 24px;
+}
+
+.moscow-districts > h2 {
+  margin-bottom: 40px;
+}
+.moscow-districts > div:not(:last-child) {
+  margin-bottom: 32px;
+}
+.moscow-districts > div > h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 136%;
+  color: var(--black);
+}
+.moscow-districts > div > ul {
+  margin-top: 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
 }
