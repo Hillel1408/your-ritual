@@ -467,7 +467,8 @@ h6 {
   padding-bottom: 120px;
 }
 
-.list-dots {
+.list-dots,
+.list-numbered {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,7 +479,8 @@ h6 {
   gap: 10px;
   padding-left: 7px;
 }
-.list-dots > li {
+.list-dots > li,
+.list-numbered > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,12 +489,50 @@ h6 {
           align-items: center;
   gap: 11px;
 }
+
 .list-dots > li::before {
   content: "";
   width: 6px;
   height: 6px;
   background-color: var(--red);
   border-radius: 100%;
+}
+
+.back-btn {
+  font-size: 16px;
+  line-height: 137%;
+  text-transform: uppercase;
+  color: var(--black);
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+.back-btn > span {
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.back-btn > span::before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-size: 16px;
+  color: #323232;
 }
 
 .note {
@@ -1975,6 +2015,36 @@ h6 {
   height: 540px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+.news-full > p {
+  margin-bottom: 20px;
+}
+.news-full > h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 136%;
+  color: var(--black);
+}
+.news-full > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+.news-full > h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+.news-full > ul {
+  margin-bottom: 16px;
+}
+.news-full > button {
   margin-top: 40px;
 }
 
