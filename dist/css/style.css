@@ -3017,3 +3017,108 @@ h6 {
   padding: 18px 18px 18px 0;
   border-bottom: 1px solid var(--line);
 }
+
+.funeral-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+.funeral-services__block-2 > h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 136%;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+.funeral-services__block-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.funeral-services__price-tab {
+  margin-bottom: 32px;
+}
+.funeral-services__price-tab > div {
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.funeral-services__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  border: 0.5px solid var(--line);
+  margin-top: 24px;
+}
+.funeral-services__list > li > a {
+  height: 176px;
+  padding: 20px;
+  border: 0.5px solid var(--line);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.funeral-services__list > li > a > b {
+  min-height: 60px;
+}
+.funeral-services__list > li > a > b:before {
+  color: var(--red);
+}
+.funeral-services__list > li > a > p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--black);
+  text-align: center;
+}
+.funeral-services__list > li > a > span {
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--light-text);
+}
+.funeral-services__list > li:nth-child(1) > a > b:before {
+  font-size: 52px;
+}
+.funeral-services__list > li:nth-child(2) > a > b:before {
+  font-size: 58px;
+}
+.funeral-services__list > li:nth-child(3) > a > b:before {
+  font-size: 38px;
+}
+.funeral-services__list > li:nth-child(4) > a > b:before {
+  font-size: 53px;
+}
+.funeral-services__list > li:nth-child(5) > a > b:before {
+  font-size: 54px;
+}
+.funeral-services__list > li:nth-child(6) > a > b:before {
+  font-size: 61px;
+}
+.funeral-services__list > li:nth-child(7) > a > b:before {
+  font-size: 57px;
+}
+.funeral-services__list > li:nth-child(8) > a > b:before {
+  font-size: 56px;
+}
