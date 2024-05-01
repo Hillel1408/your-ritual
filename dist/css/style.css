@@ -2955,3 +2955,65 @@ h6 {
   color: var(--black);
   font-weight: 600;
 }
+
+.contact-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+.contact-information > div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.contact-information > div:nth-child(2) > h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+.contact-information > div:nth-child(2) > p > span {
+  font-weight: 600;
+  color: var(--black);
+}
+.contact-information > div > h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 136%;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+.contact-information > div > table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.contact-information > div > table th {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--black);
+  text-align: left;
+  padding: 18px 18px 18px 0;
+  border-bottom: 2px solid var(--black);
+}
+.contact-information > div > table th:nth-child(1) {
+  width: 60%;
+}
+.contact-information > div > table th:nth-child(2), .contact-information > div > table th:nth-child(3) {
+  width: 20%;
+}
+.contact-information > div > table td {
+  padding: 18px 18px 18px 0;
+  border-bottom: 1px solid var(--line);
+}
