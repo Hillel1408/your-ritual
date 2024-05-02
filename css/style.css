@@ -3155,3 +3155,40 @@ h6 {
   color: var(--black);
   margin-bottom: 16px;
 }
+
+.vip-funeral > h2 {
+  margin-bottom: 40px;
+}
+.vip-funeral__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+.vip-funeral__block > div > h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 136%;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+.vip-funeral__block > div > h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+.vip-funeral__block > div > h4 > span {
+  color: var(--blue);
+}
+.vip-funeral__block > div > ul:not(:last-child) {
+  margin-bottom: 24px;
+}
+.vip-funeral__block > div > p:not(:last-child) {
+  margin-bottom: 14px;
+}
