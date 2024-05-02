@@ -150,7 +150,7 @@
   & > li {
     &::before {
       content: "";
-      width: 6px;
+      min-width: 6px;
       height: 6px;
       background-color: var(--red);
       border-radius: 100%;
@@ -282,3 +282,4 @@
 @import "./sections/compensation";
 @import "./sections/contact-information";
 @import "./sections/funeral-services";
+@import "./sections/economy-funeral";
