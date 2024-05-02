@@ -492,7 +492,7 @@ h6 {
 
 .list-dots > li::before {
   content: "";
-  width: 6px;
+  min-width: 6px;
   height: 6px;
   background-color: var(--red);
   border-radius: 100%;
@@ -3121,4 +3121,37 @@ h6 {
 }
 .funeral-services__list > li:nth-child(8) > a > b:before {
   font-size: 56px;
+}
+
+.economy-funeral > h2 {
+  margin-bottom: 40px;
+}
+.economy-funeral > p {
+  margin-bottom: 24px;
+}
+.economy-funeral > table {
+  margin-bottom: 24px;
+}
+.economy-funeral__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.economy-funeral__block > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+}
+.economy-funeral__block > div > p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--black);
+  margin-bottom: 16px;
 }
