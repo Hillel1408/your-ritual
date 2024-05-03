@@ -30,3 +30,11 @@ const swiperAboutService = new Swiper(".about-service__slider", {
     prevEl: ".about-service__slider__button-prev",
   },
 });
+const swiperFuneralArrangements = new Swiper(".funeral-arrangements__slider", {
+  slidesPerView: 3,
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".funeral-arrangements__slider__button-next",
+    prevEl: ".funeral-arrangements__slider__button-prev",
+  },
+});
