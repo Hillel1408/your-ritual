@@ -140,14 +140,12 @@
   flex-direction: column;
   gap: 10px;
   padding-left: 7px;
+}
+.list-dots {
   & > li {
     display: flex;
     align-items: center;
     gap: 11px;
-  }
-}
-.list-dots {
-  & > li {
     &::before {
       content: "";
       min-width: 6px;
@@ -287,3 +285,4 @@
 @import "./sections/vip-funeral";
 @import "./sections/funeral-arrangements";
 @import "./sections/service-list";
+@import "./sections/coffins-moscow";

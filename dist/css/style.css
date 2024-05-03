@@ -479,8 +479,8 @@ h6 {
   gap: 10px;
   padding-left: 7px;
 }
-.list-dots > li,
-.list-numbered > li {
+
+.list-dots > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,7 +489,6 @@ h6 {
           align-items: center;
   gap: 11px;
 }
-
 .list-dots > li::before {
   content: "";
   min-width: 6px;
@@ -3335,4 +3334,59 @@ h6 {
 .service-list__list > li > span::before {
   color: var(--grey-icon);
   font-size: 12px;
+}
+
+.coffins-moscow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+.coffins-moscow > h2 {
+  margin-bottom: 8px;
+}
+.coffins-moscow > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.coffins-moscow > div > h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 136%;
+  color: var(--black);
+}
+.coffins-moscow__block-4 > ul {
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.coffins-moscow__slider-wrapper {
+  position: relative;
+  max-width: 960px;
+  padding: 0 24px;
+  margin: 0 -24px;
+  margin-top: 10px;
+}
+.coffins-moscow__slider {
+  overflow: hidden;
+  padding: 10px;
+  margin: -10px;
+}
+.coffins-moscow__slider__button-prev, .coffins-moscow__slider__button-next {
+  bottom: 194px;
+}
+.coffins-moscow__slider__button-prev {
+  left: 0;
+}
+.coffins-moscow__slider-pagination {
+  text-align: center;
 }
