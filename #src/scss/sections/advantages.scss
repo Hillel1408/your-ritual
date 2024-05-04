@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     font-weight: 600;
+    gap: 24px;
     & > li {
       display: flex;
       flex-direction: column;
