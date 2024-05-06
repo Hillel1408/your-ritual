@@ -221,4 +221,22 @@
       </div>
     </div>
   </form>
+  <div class="product-2__block">
+    <h3 class="title">
+      Похожие товары <button class="icon-12">Каталог</button>
+    </h3>
+    <div class="product-2__slider-wrapper">
+      <div class="product-2__slider">
+        <div class="swiper-wrapper">
+          @@for (var i = 0; i < 9; i++) { @@include('./product.html') }
+        </div>
+      </div>
+      <button
+        class="product-2__slider__button-prev slider__button-prev icon-8"
+      ></button>
+      <button
+        class="product-2__slider__button-next slider__button-next icon-8"
+      ></button>
+    </div>
+  </div>
 </div>
