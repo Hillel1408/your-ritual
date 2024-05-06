@@ -690,6 +690,53 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.custom-checkbox > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox > span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.custom-checkbox > span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 2px solid #d4d4d8;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox > input:checked + span::before {
+  border-color: var(--blue);
+  background-color: var(--blue);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.custom-checkbox > input:disabled + span::before {
+  background-color: #d4d4d8;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
 .header__block-1 {
   background: var(--blue);
   padding: 11px 0;
@@ -3946,4 +3993,116 @@ input:checked + .slider:before {
 }
 .product-2__slider-pagination {
   text-align: center;
+}
+
+.calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.calculator > h2 {
+  margin-bottom: 16px;
+}
+.calculator__tab {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.calculator__tab > div:nth-child(2) {
+  margin-left: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.calculator__tab > div:nth-child(2) > div {
+  padding: 32px 32px 36px 32px;
+  background: var(--grey-bg);
+}
+.calculator__tab > div:nth-child(2) > div > span {
+  font-size: 16px;
+  line-height: 144%;
+  color: var(--black);
+  text-align: center;
+  display: block;
+}
+.calculator__tab > div:nth-child(2) > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.calculator__tab > div:nth-child(2) > div > div > h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--black);
+}
+.calculator__tab > div:nth-child(2) > div > div > span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 144%;
+  color: var(--black);
+}
+.calculator__tab > div:nth-child(2) > div > div > p {
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--grey-text);
+}
+.calculator__tab > div:nth-child(2) > div > div > ul {
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+}
+.calculator__tab > div:nth-child(2) > div > div > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.calculator__tab > div:nth-child(2) > label {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--grey-text);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 14px;
+}
+.calculator__tab > div:nth-child(2) > label > span {
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
 }
