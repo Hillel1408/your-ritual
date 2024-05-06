@@ -46,3 +46,11 @@ const swiperCoffinsMoscow = new Swiper(".coffins-moscow__slider", {
     prevEl: ".coffins-moscow__slider__button-prev",
   },
 });
+const swiperProduct = new Swiper(".product-2__slider", {
+  slidesPerView: 3,
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".product-2__slider__button-next",
+    prevEl: ".product-2__slider__button-prev",
+  },
+});

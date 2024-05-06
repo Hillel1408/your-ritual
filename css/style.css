@@ -3919,3 +3919,31 @@ input:checked + .slider:before {
   line-height: 144%;
   color: var(--black);
 }
+.product-2__block {
+  margin-top: 64px;
+}
+.product-2__block > h3 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+.product-2__slider-wrapper {
+  position: relative;
+  max-width: 960px;
+  padding: 0 24px;
+  margin: 0 -24px;
+  margin-top: 10px;
+}
+.product-2__slider {
+  overflow: hidden;
+  padding: 10px;
+  margin: -10px;
+}
+.product-2__slider__button-prev, .product-2__slider__button-next {
+  bottom: 194px;
+}
+.product-2__slider__button-prev {
+  left: 0;
+}
+.product-2__slider-pagination {
+  text-align: center;
+}
