@@ -1,44 +1,44 @@
 .consultation {
-  padding: 32px;
-  background: var(--grey-bg) url("../img/bg-7.png");
-  background-repeat: no-repeat;
-  background-position-x: 649px;
-  margin-top: 39px;
-  & > div {
-    &:nth-child(1) {
-      max-width: 576px;
-      margin-bottom: 16px;
-      & > ul {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 137%;
-        color: var(--black);
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-      }
-      & > p {
-        color: var(--black);
-        margin-top: 16px;
-      }
+    padding: 32px;
+    background: var(--grey-bg) url("../img/bg-7.png");
+    background-repeat: no-repeat;
+    background-position-x: 649px;
+    margin-top: 39px;
+    & > div {
+        &:nth-child(1) {
+            max-width: 576px;
+            margin-bottom: 16px;
+            & > ul {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 137%;
+                color: var(--black);
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+            & > p {
+                color: var(--black);
+                margin-top: 16px;
+            }
+        }
+        &:nth-child(2) {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            & > a {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 144%;
+                color: var(--black);
+            }
+            & > span {
+                font-size: 16px;
+                line-height: 137%;
+                color: var(--blue);
+                padding-left: 24px;
+                border-left: 1px solid #c7c7cc;
+            }
+        }
     }
-    &:nth-child(2) {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      & > a {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 144%;
-        color: var(--black);
-      }
-      & > span {
-        font-size: 16px;
-        line-height: 137%;
-        color: var(--blue);
-        padding-left: 24px;
-        border-left: 1px solid #c7c7cc;
-      }
-    }
-  }
 }

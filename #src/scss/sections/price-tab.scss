@@ -1,61 +1,61 @@
 .price__tab {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin-top: 32px;
-  &-item {
-    position: relative;
-    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
-    & > div {
-      &:nth-child(1) {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 144%;
-        text-align: center;
-        color: var(--black);
-        background: var(--light-blue);
-        padding: 14px 10px 18px 10px;
-      }
-      &:nth-child(2) {
-        padding: 16px 24px;
-        display: flex;
-        flex-direction: column;
-        min-height: 210px;
-        & > p {
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 143%;
-          color: var(--grey-text);
-          flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 32px;
+    &-item {
+        position: relative;
+        box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+        & > div {
+            &:nth-child(1) {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 144%;
+                text-align: center;
+                color: var(--black);
+                background: var(--light-blue);
+                padding: 14px 10px 18px 10px;
+            }
+            &:nth-child(2) {
+                padding: 16px 24px;
+                display: flex;
+                flex-direction: column;
+                min-height: 210px;
+                & > p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 143%;
+                    color: var(--grey-text);
+                    flex: 1 1 auto;
+                }
+                & > span {
+                    margin-bottom: 24px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 137%;
+                    color: var(--black);
+                }
+                & > button {
+                    font-family: var(--second-family);
+                    width: 100%;
+                    padding: 10px 20px;
+                    font-size: 14px;
+                    line-height: 143%;
+                    color: var(--blue);
+                    background: transparent;
+                    border-top: 1px solid var(--line);
+                }
+            }
         }
-        & > span {
-          margin-bottom: 24px;
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 137%;
-          color: var(--black);
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 100%;
+            right: 0;
+            background: linear-gradient(270deg, #000 0%, #fff 100%);
+            mix-blend-mode: multiply;
+            opacity: 0.03;
         }
-        & > button {
-          font-family: var(--second-family);
-          width: 100%;
-          padding: 10px 20px;
-          font-size: 14px;
-          line-height: 143%;
-          color: var(--blue);
-          background: transparent;
-          border-top: 1px solid var(--line);
-        }
-      }
     }
-    &:before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 20px;
-      height: 100%;
-      right: 0;
-      background: linear-gradient(270deg, #000 0%, #fff 100%);
-      mix-blend-mode: multiply;
-      opacity: 0.03;
-    }
-  }
 }

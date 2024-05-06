@@ -1,31 +1,31 @@
 .economy-funeral {
-  & > h2 {
-    margin-bottom: 40px;
-  }
-  & > p {
-    margin-bottom: 24px;
-  }
-  & > table {
-    margin-bottom: 24px;
-  }
-  &__block {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    & > h3 {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 140%;
-      color: var(--black);
+    & > h2 {
+        margin-bottom: 40px;
     }
-    & > div {
-      & > p {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 137%;
-        color: var(--black);
-        margin-bottom: 16px;
-      }
+    & > p {
+        margin-bottom: 24px;
     }
-  }
+    & > table {
+        margin-bottom: 24px;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        & > h3 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 140%;
+            color: var(--black);
+        }
+        & > div {
+            & > p {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 137%;
+                color: var(--black);
+                margin-bottom: 16px;
+            }
+        }
+    }
 }

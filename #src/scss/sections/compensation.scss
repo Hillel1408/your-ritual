@@ -1,59 +1,59 @@
 .compensation {
-  & > div {
-    & > h2 {
-      margin-bottom: 40px;
-    }
-  }
-  &__block-1 {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  &__block-2 {
-    margin-top: 32px;
-    & > h3 {
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 136%;
-      color: var(--black);
-      margin-bottom: 24px;
-    }
     & > div {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-      & > ul {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        & > li {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          & > span {
-            width: 36px;
-            height: 36px;
-            background: var(--light-blue);
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 12px;
-            &::before {
-              color: var(--blue);
-              font-size: 15px;
-            }
-          }
-          & > p {
-            font-size: 16px;
-            line-height: 144%;
-            color: var(--grey-text);
-            & > span {
-              color: var(--black);
-              font-weight: 600;
-            }
-          }
+        & > h2 {
+            margin-bottom: 40px;
         }
-      }
     }
-  }
+    &__block-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__block-2 {
+        margin-top: 32px;
+        & > h3 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 136%;
+            color: var(--black);
+            margin-bottom: 24px;
+        }
+        & > div {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            & > ul {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                & > li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    & > span {
+                        width: 36px;
+                        height: 36px;
+                        background: var(--light-blue);
+                        border-radius: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 12px;
+                        &::before {
+                            color: var(--blue);
+                            font-size: 15px;
+                        }
+                    }
+                    & > p {
+                        font-size: 16px;
+                        line-height: 144%;
+                        color: var(--grey-text);
+                        & > span {
+                            color: var(--black);
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

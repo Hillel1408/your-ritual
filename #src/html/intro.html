@@ -1,37 +1,24 @@
 <div class="intro">
-  <div class="container">
-    <h2 class="title">
-      В тяжелые для вас дни мы возьмем на себя все необходимые хлопоты
-    </h2>
-    <div class="intro__block">
-      <div>
-        <ul class="text">
-          <li class="icon-7">География работы — Москва и Московской области</li>
-          <li class="icon-7">
-            Работаем круглосуточно и без выходных и праздников
-          </li>
-          <li class="icon-7">
-            Полная консультация клиента о всех возможных выплатах и льготах,
-            которые можно получить
-          </li>
-          <li class="icon-7">Помогаем людям более 15 лет</li>
-        </ul>
-        <button class="btn">Сделать заявку</button>
-      </div>
-      <div class="intro__slider-wrapper">
-        <div class="intro__slider">
-          <div class="swiper-wrapper">
-            @@for (var i = 0; i < 4; i++) { @@include('./product.html') }
-          </div>
+    <div class="container">
+        <h2 class="title">В тяжелые для вас дни мы возьмем на себя все необходимые хлопоты</h2>
+        <div class="intro__block">
+            <div>
+                <ul class="text">
+                    <li class="icon-7">География работы — Москва и Московской области</li>
+                    <li class="icon-7">Работаем круглосуточно и без выходных и праздников</li>
+                    <li class="icon-7">Полная консультация клиента о всех возможных выплатах и льготах, которые можно получить</li>
+                    <li class="icon-7">Помогаем людям более 15 лет</li>
+                </ul>
+                <button class="btn">Сделать заявку</button>
+            </div>
+            <div class="intro__slider-wrapper">
+                <div class="intro__slider">
+                    <div class="swiper-wrapper">@@for (var i = 0; i < 4; i++) { @@include('./product.html') }</div>
+                </div>
+                <button class="intro__slider__button-prev slider__button-prev icon-8"></button>
+                <button class="intro__slider__button-next slider__button-next icon-8"></button>
+                <div class="intro__slider-pagination slider-pagination"></div>
+            </div>
         </div>
-        <button
-          class="intro__slider__button-prev slider__button-prev icon-8"
-        ></button>
-        <button
-          class="intro__slider__button-next slider__button-next icon-8"
-        ></button>
-        <div class="intro__slider-pagination slider-pagination"></div>
-      </div>
     </div>
-  </div>
 </div>

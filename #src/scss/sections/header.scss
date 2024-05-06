@@ -1,92 +1,92 @@
 .header {
-  &__block-1 {
-    background: var(--blue);
-    padding: 11px 0;
-    & > div {
-      display: flex;
-      justify-content: space-between;
-      & > ul {
-        display: flex;
-        gap: 35px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 143%;
-        color: var(--white);
-        & > li {
-          display: flex;
-          align-items: center;
-          gap: 14px;
-          &::before {
-            color: var(--white);
-          }
+    &__block-1 {
+        background: var(--blue);
+        padding: 11px 0;
+        & > div {
+            display: flex;
+            justify-content: space-between;
+            & > ul {
+                display: flex;
+                gap: 35px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 143%;
+                color: var(--white);
+                & > li {
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                    &::before {
+                        color: var(--white);
+                    }
+                }
+            }
+            & > a {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 143%;
+                color: var(--white);
+            }
         }
-      }
-      & > a {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 143%;
-        color: var(--white);
-      }
     }
-  }
-  &__block-2 {
-    padding: 16px 0;
-    & > div {
-      display: flex;
-      gap: 40px;
+    &__block-2 {
+        padding: 16px 0;
+        & > div {
+            display: flex;
+            gap: 40px;
+        }
     }
-  }
-  &__search {
-    flex: 1 1 auto;
-    position: relative;
-    & > input {
-      padding: 12px 42px 12px 20px;
-      width: 100%;
-      background: var(--grey-bg);
-      font-size: 16px;
-      line-height: 137%;
-      color: var(--light-text);
-      &::placeholder {
+    &__search {
+        flex: 1 1 auto;
+        position: relative;
+        & > input {
+            padding: 12px 42px 12px 20px;
+            width: 100%;
+            background: var(--grey-bg);
+            font-size: 16px;
+            line-height: 137%;
+            color: var(--light-text);
+            &::placeholder {
+                font-size: 16px;
+                line-height: 137%;
+                color: var(--light-text);
+            }
+        }
+        & > span {
+            position: absolute;
+            right: 19.5px;
+            top: 15px;
+            &::before {
+                color: var(--grey-icon);
+                font-size: 18px;
+            }
+        }
+    }
+    &__block-3 {
+        box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+        border-top: 1px solid var(--line);
+    }
+    &__nav {
+        display: flex;
+        gap: 32px;
         font-size: 16px;
         line-height: 137%;
-        color: var(--light-text);
-      }
-    }
-    & > span {
-      position: absolute;
-      right: 19.5px;
-      top: 15px;
-      &::before {
-        color: var(--grey-icon);
-        font-size: 18px;
-      }
-    }
-  }
-  &__block-3 {
-    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
-    border-top: 1px solid var(--line);
-  }
-  &__nav {
-    display: flex;
-    gap: 32px;
-    font-size: 16px;
-    line-height: 137%;
-    & > li {
-      & > a {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        color: var(--black);
-        padding: 16px 0;
-        gap: 7px;
-        &::before {
-          transform: rotate(-90deg) translateX(-2px);
-          font-size: 12px;
+        & > li {
+            & > a {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                color: var(--black);
+                padding: 16px 0;
+                gap: 7px;
+                &::before {
+                    transform: rotate(-90deg) translateX(-2px);
+                    font-size: 12px;
+                }
+                &.active {
+                    border-bottom: 3px solid var(--blue);
+                }
+            }
         }
-        &.active {
-          border-bottom: 3px solid var(--blue);
-        }
-      }
     }
-  }
 }

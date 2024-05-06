@@ -1,28 +1,28 @@
 .pagination {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  & > ul {
     display: flex;
-    & > li {
-      font-size: 14px;
-      line-height: 143%;
-      color: var(--simple-text);
-      width: 48px;
-      height: 48px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      &.active {
-        border-bottom: 3px solid var(--blue);
-      }
+    align-items: center;
+    gap: 24px;
+    & > ul {
+        display: flex;
+        & > li {
+            font-size: 14px;
+            line-height: 143%;
+            color: var(--simple-text);
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &.active {
+                border-bottom: 3px solid var(--blue);
+            }
+        }
     }
-  }
-  & > button {
-    background-color: transparent;
-    font-size: 14px;
-    line-height: 143%;
-    color: var(--simple-text);
-  }
+    & > button {
+        background-color: transparent;
+        font-size: 14px;
+        line-height: 143%;
+        color: var(--simple-text);
+    }
 }

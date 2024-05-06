@@ -1,22 +1,22 @@
 .moscow-districts {
-  & > h2 {
-    margin-bottom: 40px;
-  }
-  & > div {
-    &:not(:last-child) {
-      margin-bottom: 32px;
+    & > h2 {
+        margin-bottom: 40px;
     }
-    & > h3 {
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 136%;
-      color: var(--black);
+    & > div {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+        & > h3 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 136%;
+            color: var(--black);
+        }
+        & > ul {
+            margin-top: 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+        }
     }
-    & > ul {
-      margin-top: 24px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 24px;
-    }
-  }
 }

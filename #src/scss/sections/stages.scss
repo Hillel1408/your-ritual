@@ -1,71 +1,71 @@
 .stages {
-  padding-top: 80px;
-  &__block {
-    display: grid;
-    grid-template-columns: 558px 1fr;
-    gap: 64px;
-    & > div {
-      &:nth-child(1) {
-        background-image: url("../img/bg-3.png");
-        background-size: cover;
-        padding: 40px;
+    padding-top: 80px;
+    &__block {
+        display: grid;
+        grid-template-columns: 558px 1fr;
+        gap: 64px;
         & > div {
-          background: rgba(255, 255, 255, 0.85);
-          height: 100%;
-          padding: 32px;
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-          & > h3 {
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 140%;
-            color: var(--black);
-          }
-          & > span {
-            font-weight: 700;
-          }
-        }
-      }
-      &:nth-child(2) {
-        & > h2 {
-          margin-bottom: 40px;
-        }
-        & > ul {
-          display: flex;
-          flex-direction: column;
-          gap: 32px;
-          & > li {
-            display: flex;
-            gap: 16px;
-            position: relative;
-            & > span {
-              min-width: 36px;
-              height: 36px;
-              border-radius: 100px;
-              background: var(--blue);
-              font-weight: 600;
-              font-size: 20px;
-              line-height: 140%;
-              color: var(--white);
-              display: flex;
-              justify-content: center;
-              align-items: center;
+            &:nth-child(1) {
+                background-image: url("../img/bg-3.png");
+                background-size: cover;
+                padding: 40px;
+                & > div {
+                    background: rgba(255, 255, 255, 0.85);
+                    height: 100%;
+                    padding: 32px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    & > h3 {
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 140%;
+                        color: var(--black);
+                    }
+                    & > span {
+                        font-weight: 700;
+                    }
+                }
             }
-            &:not(:last-child) {
-              &:before {
-                content: "";
-                height: 100%;
-                width: 1px;
-                border-left: 1px dashed var(--line);
-                position: absolute;
-                top: 36px;
-                left: 17.5px;
-              }
+            &:nth-child(2) {
+                & > h2 {
+                    margin-bottom: 40px;
+                }
+                & > ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
+                    & > li {
+                        display: flex;
+                        gap: 16px;
+                        position: relative;
+                        & > span {
+                            min-width: 36px;
+                            height: 36px;
+                            border-radius: 100px;
+                            background: var(--blue);
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 140%;
+                            color: var(--white);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        &:not(:last-child) {
+                            &:before {
+                                content: "";
+                                height: 100%;
+                                width: 1px;
+                                border-left: 1px dashed var(--line);
+                                position: absolute;
+                                top: 36px;
+                                left: 17.5px;
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
 }

@@ -1,25 +1,25 @@
 .cost {
-  & > h2 {
-    margin-bottom: 40px;
-  }
-  & > h3 {
-    padding-top: 32px;
-    padding-bottom: 24px;
-  }
-  & > p {
-    margin-bottom: 24px;
-  }
-  & > div {
-    & > span {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 140%;
-      color: var(--black);
-      display: block;
-      margin-bottom: 16px;
+    & > h2 {
+        margin-bottom: 40px;
     }
-    &:not(:last-child) {
-      margin-bottom: 24px;
+    & > h3 {
+        padding-top: 32px;
+        padding-bottom: 24px;
     }
-  }
+    & > p {
+        margin-bottom: 24px;
+    }
+    & > div {
+        & > span {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 140%;
+            color: var(--black);
+            display: block;
+            margin-bottom: 16px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
 }

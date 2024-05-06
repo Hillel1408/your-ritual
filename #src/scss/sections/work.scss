@@ -1,39 +1,39 @@
 .work {
-  & > h2 {
-    margin-bottom: 40px;
-  }
-  & > p {
-    margin-bottom: 24px;
-  }
-  & > h3 {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 136%;
-    color: var(--black);
-  }
-  & > ul {
-    display: flex;
-    flex-direction: column;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 137%;
-    color: #131313;
-    margin-top: 24px;
-    gap: 16px;
-    & > li {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      & > span {
-        width: 40px;
-        height: 40px;
-        background: var(--grey-bg);
-        border-radius: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--red);
-      }
+    & > h2 {
+        margin-bottom: 40px;
     }
-  }
+    & > p {
+        margin-bottom: 24px;
+    }
+    & > h3 {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 136%;
+        color: var(--black);
+    }
+    & > ul {
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 137%;
+        color: #131313;
+        margin-top: 24px;
+        gap: 16px;
+        & > li {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            & > span {
+                width: 40px;
+                height: 40px;
+                background: var(--grey-bg);
+                border-radius: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--red);
+            }
+        }
+    }
 }

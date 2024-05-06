@@ -1,67 +1,67 @@
 .form {
-  padding-bottom: 137px;
-  &__block {
-    background: var(--grey-bg);
-    padding: 64px;
-    display: grid;
-    grid-template-columns: 472px 1fr;
-    gap: 80px;
-    & > div {
-      &:nth-child(1) {
-        & > h2 {
-          margin-bottom: 40px;
+    padding-bottom: 137px;
+    &__block {
+        background: var(--grey-bg);
+        padding: 64px;
+        display: grid;
+        grid-template-columns: 472px 1fr;
+        gap: 80px;
+        & > div {
+            &:nth-child(1) {
+                & > h2 {
+                    margin-bottom: 40px;
+                }
+                & > p {
+                    font-size: 20px;
+                    line-height: 140%;
+                    color: var(--simple-text);
+                    margin-bottom: 32px;
+                }
+            }
         }
-        & > p {
-          font-size: 20px;
-          line-height: 140%;
-          color: var(--simple-text);
-          margin-bottom: 32px;
+        & > form {
+            box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+            background: var(--white);
+            padding: 48px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            & > textarea {
+                height: 140px;
+            }
+            & > div {
+                display: flex;
+                gap: 32px;
+                align-items: center;
+                & > p {
+                    font-size: 14px;
+                    line-height: 143%;
+                    color: var(--light-text);
+                    & > a {
+                        color: var(--light-text);
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
-      }
     }
-    & > form {
-      box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
-      background: var(--white);
-      padding: 48px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      & > textarea {
-        height: 140px;
-      }
-      & > div {
+    &__contacts {
         display: flex;
-        gap: 32px;
-        align-items: center;
-        & > p {
-          font-size: 14px;
-          line-height: 143%;
-          color: var(--light-text);
-          & > a {
-            color: var(--light-text);
-            text-decoration: underline;
-          }
+        justify-content: space-between;
+        & > div {
+            display: flex;
+            flex-direction: column;
+            & > span {
+                font-size: 18px;
+                line-height: 144%;
+                color: var(--light-text);
+            }
+            & > a {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 133%;
+                color: var(--black);
+            }
         }
-      }
     }
-  }
-  &__contacts {
-    display: flex;
-    justify-content: space-between;
-    & > div {
-      display: flex;
-      flex-direction: column;
-      & > span {
-        font-size: 18px;
-        line-height: 144%;
-        color: var(--light-text);
-      }
-      & > a {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 133%;
-        color: var(--black);
-      }
-    }
-  }
 }

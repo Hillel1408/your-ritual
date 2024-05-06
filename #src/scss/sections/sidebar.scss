@@ -1,73 +1,73 @@
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  & > ul {
-    &:nth-child(1) {
-      display: flex;
-      flex-direction: column;
-      & > li {
-        &.active {
-          & > span {
-            color: var(--blue);
-            &:before {
-              transform: rotate(270deg);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    & > ul {
+        &:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            & > li {
+                &.active {
+                    & > span {
+                        color: var(--blue);
+                        &:before {
+                            transform: rotate(270deg);
+                        }
+                    }
+                }
+                & > span {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    font-size: 16px;
+                    line-height: 137%;
+                    color: var(--black);
+                    font-weight: 600;
+                    padding: 15px 26px 15px 6px;
+                    &::before {
+                        transform: rotate(180deg);
+                    }
+                }
+                & > ul {
+                    display: flex;
+                    flex-direction: column;
+                    & > li {
+                        & > a {
+                            display: block;
+                            padding: 15px 26px 15px 40px;
+                            font-size: 16px;
+                            line-height: 137%;
+                            color: var(--grey-text);
+                        }
+                    }
+                }
+                &:not(:last-child) {
+                    border-bottom: 1px solid var(--line);
+                }
             }
-          }
         }
-        & > span {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          font-size: 16px;
-          line-height: 137%;
-          color: var(--black);
-          font-weight: 600;
-          padding: 15px 26px 15px 6px;
-          &::before {
-            transform: rotate(180deg);
-          }
-        }
-        & > ul {
-          display: flex;
-          flex-direction: column;
-          & > li {
-            & > a {
-              display: block;
-              padding: 15px 26px 15px 40px;
-              font-size: 16px;
-              line-height: 137%;
-              color: var(--grey-text);
+        &:nth-child(2),
+        &:nth-child(3) {
+            border: 1px solid var(--line);
+            padding: 20px 24px 24px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            & > li {
+                & > span {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 144%;
+                    color: var(--black);
+                    margin-bottom: 16px;
+                }
+                & > a {
+                    color: var(--grey-text);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 137%;
+                }
             }
-          }
         }
-        &:not(:last-child) {
-          border-bottom: 1px solid var(--line);
-        }
-      }
     }
-    &:nth-child(2),
-    &:nth-child(3) {
-      border: 1px solid var(--line);
-      padding: 20px 24px 24px 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      & > li {
-        & > span {
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 144%;
-          color: var(--black);
-          margin-bottom: 16px;
-        }
-        & > a {
-          color: var(--grey-text);
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 137%;
-        }
-      }
-    }
-  }
 }

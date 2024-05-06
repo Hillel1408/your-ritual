@@ -1,56 +1,56 @@
 .contact-information {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  & > div {
-    &:nth-child(2) {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      & > h4 {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 140%;
-        color: var(--black);
-        margin-bottom: 8px;
-      }
-      & > p {
-        & > span {
-          font-weight: 600;
-          color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    & > div {
+        &:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            & > h4 {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 140%;
+                color: var(--black);
+                margin-bottom: 8px;
+            }
+            & > p {
+                & > span {
+                    font-weight: 600;
+                    color: var(--black);
+                }
+            }
         }
-      }
-    }
-    & > h3 {
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 136%;
-      color: var(--black);
-      margin-bottom: 24px;
-    }
-    & > table {
-      width: 100%;
-      border-collapse: collapse;
-      th {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 137%;
-        color: var(--black);
-        text-align: left;
-        padding: 18px 18px 18px 0;
-        border-bottom: 2px solid var(--black);
-        &:nth-child(1) {
-          width: 60%;
+        & > h3 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 136%;
+            color: var(--black);
+            margin-bottom: 24px;
         }
-        &:nth-child(2),
-        &:nth-child(3) {
-          width: 20%;
+        & > table {
+            width: 100%;
+            border-collapse: collapse;
+            th {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 137%;
+                color: var(--black);
+                text-align: left;
+                padding: 18px 18px 18px 0;
+                border-bottom: 2px solid var(--black);
+                &:nth-child(1) {
+                    width: 60%;
+                }
+                &:nth-child(2),
+                &:nth-child(3) {
+                    width: 20%;
+                }
+            }
+            td {
+                padding: 18px 18px 18px 0;
+                border-bottom: 1px solid var(--line);
+            }
         }
-      }
-      td {
-        padding: 18px 18px 18px 0;
-        border-bottom: 1px solid var(--line);
-      }
     }
-  }
 }

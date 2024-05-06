@@ -1,21 +1,21 @@
 .production {
-  & > h2 {
-    margin-bottom: 40px;
-  }
-  & > p {
-    margin-bottom: 24px;
-  }
-  & > div {
-    margin-top: 40px;
-    & > span {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 140%;
-      color: var(--black);
+    & > h2 {
+        margin-bottom: 40px;
     }
     & > p {
-      margin-top: 16px;
-      margin-bottom: 24px;
+        margin-bottom: 24px;
     }
-  }
+    & > div {
+        margin-top: 40px;
+        & > span {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 140%;
+            color: var(--black);
+        }
+        & > p {
+            margin-top: 16px;
+            margin-bottom: 24px;
+        }
+    }
 }

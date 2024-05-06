@@ -1,11 +1,11 @@
 .rubric {
-  & > h2 {
-    margin-bottom: 40px;
-  }
-  &__block {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 48px;
-    gap: 24px;
-  }
+    & > h2 {
+        margin-bottom: 40px;
+    }
+    &__block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 48px;
+        gap: 24px;
+    }
 }

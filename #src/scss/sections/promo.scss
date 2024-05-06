@@ -1,23 +1,22 @@
 .promo {
-  &__block {
-    background: url("../img/bg-2.png"),
-      linear-gradient(270deg, #0f3f93 0%, #16315f 100%);
-    background-position: right;
-    background-repeat: no-repeat;
-    padding: 61px 0 68px 64px;
-    & > h2 {
-      color: var(--white);
+    &__block {
+        background: url("../img/bg-2.png"), linear-gradient(270deg, #0f3f93 0%, #16315f 100%);
+        background-position: right;
+        background-repeat: no-repeat;
+        padding: 61px 0 68px 64px;
+        & > h2 {
+            color: var(--white);
+        }
+        & > h3 {
+            color: var(--white);
+            margin-top: 8px;
+        }
+        & > p {
+            color: var(--white);
+            opacity: 0.85;
+            max-width: 780px;
+            margin-top: 24px;
+            margin-bottom: 32px;
+        }
     }
-    & > h3 {
-      color: var(--white);
-      margin-top: 8px;
-    }
-    & > p {
-      color: var(--white);
-      opacity: 0.85;
-      max-width: 780px;
-      margin-top: 24px;
-      margin-bottom: 32px;
-    }
-  }
 }

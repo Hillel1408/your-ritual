@@ -1,104 +1,104 @@
 .funeral-services {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  &__block-2 {
-    & > h3 {
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 136%;
-      color: var(--black);
-      margin-bottom: 24px;
-    }
-  }
-  &__block-3 {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-  }
-  &__price-tab {
-    margin-bottom: 32px;
-    & > div {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+    gap: 40px;
+    &__block-2 {
+        & > h3 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 136%;
+            color: var(--black);
+            margin-bottom: 24px;
+        }
     }
-  }
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    border: 0.5px solid var(--line);
-    margin-top: 24px;
-    & > li {
-      & > a {
-        height: 176px;
-        padding: 20px;
-        border: 0.5px solid var(--line);
+    &__block-3 {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        & > b {
-          min-height: 60px;
-          &:before {
-            color: var(--red);
-          }
-        }
-        & > p {
-          flex: 1 1 auto;
-          margin-top: 8px;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 137%;
-          color: var(--black);
-          text-align: center;
-        }
-        & > span {
-          font-size: 14px;
-          line-height: 143%;
-          color: var(--light-text);
-        }
-      }
+        gap: 16px;
     }
-    & > li {
-      &:nth-child(1) {
-        & > a > b:before {
-          font-size: 52px;
+    &__price-tab {
+        margin-bottom: 32px;
+        & > div {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
         }
-      }
-      &:nth-child(2) {
-        & > a > b:before {
-          font-size: 58px;
-        }
-      }
-      &:nth-child(3) {
-        & > a > b:before {
-          font-size: 38px;
-        }
-      }
-      &:nth-child(4) {
-        & > a > b:before {
-          font-size: 53px;
-        }
-      }
-      &:nth-child(5) {
-        & > a > b:before {
-          font-size: 54px;
-        }
-      }
-      &:nth-child(6) {
-        & > a > b:before {
-          font-size: 61px;
-        }
-      }
-      &:nth-child(7) {
-        & > a > b:before {
-          font-size: 57px;
-        }
-      }
-      &:nth-child(8) {
-        & > a > b:before {
-          font-size: 56px;
-        }
-      }
     }
-  }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: 0.5px solid var(--line);
+        margin-top: 24px;
+        & > li {
+            & > a {
+                height: 176px;
+                padding: 20px;
+                border: 0.5px solid var(--line);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                & > b {
+                    min-height: 60px;
+                    &:before {
+                        color: var(--red);
+                    }
+                }
+                & > p {
+                    flex: 1 1 auto;
+                    margin-top: 8px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 137%;
+                    color: var(--black);
+                    text-align: center;
+                }
+                & > span {
+                    font-size: 14px;
+                    line-height: 143%;
+                    color: var(--light-text);
+                }
+            }
+        }
+        & > li {
+            &:nth-child(1) {
+                & > a > b:before {
+                    font-size: 52px;
+                }
+            }
+            &:nth-child(2) {
+                & > a > b:before {
+                    font-size: 58px;
+                }
+            }
+            &:nth-child(3) {
+                & > a > b:before {
+                    font-size: 38px;
+                }
+            }
+            &:nth-child(4) {
+                & > a > b:before {
+                    font-size: 53px;
+                }
+            }
+            &:nth-child(5) {
+                & > a > b:before {
+                    font-size: 54px;
+                }
+            }
+            &:nth-child(6) {
+                & > a > b:before {
+                    font-size: 61px;
+                }
+            }
+            &:nth-child(7) {
+                & > a > b:before {
+                    font-size: 57px;
+                }
+            }
+            &:nth-child(8) {
+                & > a > b:before {
+                    font-size: 56px;
+                }
+            }
+        }
+    }
 }

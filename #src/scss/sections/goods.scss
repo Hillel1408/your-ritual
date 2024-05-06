@@ -1,28 +1,28 @@
 .goods {
-  padding-top: 80px;
-  & > div {
-    & > h2 {
-      margin-bottom: 40px;
+    padding-top: 80px;
+    & > div {
+        & > h2 {
+            margin-bottom: 40px;
+        }
     }
-  }
-  &__slider-wrapper {
-    position: relative;
-    padding: 24px;
-    margin: -24px;
-  }
-  &__slider {
-    padding: 10px;
-    margin: -10px;
-    overflow: hidden;
-    &__button-prev,
-    &__button-next {
-      bottom: 194px;
+    &__slider-wrapper {
+        position: relative;
+        padding: 24px;
+        margin: -24px;
     }
-    &__button-prev {
-      left: 0;
+    &__slider {
+        padding: 10px;
+        margin: -10px;
+        overflow: hidden;
+        &__button-prev,
+        &__button-next {
+            bottom: 194px;
+        }
+        &__button-prev {
+            left: 0;
+        }
+        &-pagination {
+            text-align: center;
+        }
     }
-    &-pagination {
-      text-align: center;
-    }
-  }
 }

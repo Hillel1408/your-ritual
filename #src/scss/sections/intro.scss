@@ -1,55 +1,55 @@
 .intro {
-  padding: 40px 0 48px 0;
-  background-image: url("../img/bg-4.png");
-  &__block {
-    display: flex;
-
-    & > div {
-      margin-top: 24px;
-      &:nth-child(1) {
-        padding: 40px;
-        width: calc(448 / 1384 * 100%);
-        background-image: url("../img/bg-5.png");
-        background-repeat: no-repeat;
+    padding: 40px 0 48px 0;
+    background-image: url("../img/bg-4.png");
+    &__block {
         display: flex;
-        flex-direction: column;
-        height: 396px;
-        justify-content: space-between;
-        & > ul {
-          display: flex;
-          flex-direction: column;
-          gap: 18px;
-          color: var(--white);
-          & > li {
-            display: flex;
-            gap: 14px;
-            &::before {
-              font-size: 15px;
-              color: var(--yelow);
+
+        & > div {
+            margin-top: 24px;
+            &:nth-child(1) {
+                padding: 40px;
+                width: calc(448 / 1384 * 100%);
+                background-image: url("../img/bg-5.png");
+                background-repeat: no-repeat;
+                display: flex;
+                flex-direction: column;
+                height: 396px;
+                justify-content: space-between;
+                & > ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                    color: var(--white);
+                    & > li {
+                        display: flex;
+                        gap: 14px;
+                        &::before {
+                            font-size: 15px;
+                            color: var(--yelow);
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
-  &__slider {
-    overflow: hidden;
-    padding: 10px;
-    margin: -10px;
-    &-wrapper {
-      margin-left: 8px;
-      position: relative;
-      padding-left: 24px;
-      padding-right: 24px;
-      margin-right: -24px;
-      width: calc(936 / 1384 * 100%);
+    &__slider {
+        overflow: hidden;
+        padding: 10px;
+        margin: -10px;
+        &-wrapper {
+            margin-left: 8px;
+            position: relative;
+            padding-left: 24px;
+            padding-right: 24px;
+            margin-right: -24px;
+            width: calc(936 / 1384 * 100%);
+        }
+        &__button-prev,
+        &__button-next {
+            bottom: 230px;
+        }
+        &__button-prev {
+            left: 0;
+        }
     }
-    &__button-prev,
-    &__button-next {
-      bottom: 230px;
-    }
-    &__button-prev {
-      left: 0;
-    }
-  }
 }
