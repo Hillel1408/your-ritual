@@ -49,6 +49,32 @@
             @media (max-width: 768px) {
                 justify-content: space-between;
             }
+            @media (max-width: 600px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                row-gap: 10px;
+                & > div {
+                    &:nth-child(1) {
+                        grid-column: span 4;
+                        border-bottom: 1px solid var(--line);
+                        padding-bottom: 10px;
+                    }
+                }
+                & > ul.contacts {
+                    grid-column: span 3;
+                    padding-left: 0;
+                    border: none;
+                }
+                & > ul.socials {
+                    display: flex;
+                }
+            }
+            @media (max-width: 500px) {
+                column-gap: 10px;
+            }
+        }
+        @media (max-width: 600px) {
+            padding: 8px 0;
         }
     }
     &__search {
