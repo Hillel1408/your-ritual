@@ -83,6 +83,22 @@
     padding: 6px 20px 10px 20px;
     background: var(--black);
 }
+.secondary-btn {
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--blue);
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 13px;
+    justify-content: center;
+    background: var(--light-blue);
+    height: 48px;
+    align-items: center;
+    &::before {
+        font-size: 14px;
+        color: var(--blue);
+    }
+}
 .input {
     border: 1px solid var(--line);
     padding: 12px 16px 12px 20px;
