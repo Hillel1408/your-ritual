@@ -763,6 +763,9 @@ input:checked + .slider:before {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
+.header {
+  position: relative;
+}
 .header__block-1 {
   background: var(--blue);
   padding: 11px 0;
@@ -785,7 +788,7 @@ input:checked + .slider:before {
   -webkit-column-gap: 35px;
      -moz-column-gap: 35px;
           column-gap: 35px;
-  row-gap: 10px;
+  row-gap: 12px;
   font-weight: 500;
   font-size: 14px;
   line-height: 143%;
@@ -803,6 +806,15 @@ input:checked + .slider:before {
 .header__block-1 > div > ul > li::before {
   color: var(--white);
 }
+.header__block-1 > div > ul > li:nth-child(1)::before {
+  font-size: 18px;
+}
+.header__block-1 > div > ul > li:nth-child(2)::before {
+  font-size: 18px;
+}
+.header__block-1 > div > ul > li:nth-child(3)::before {
+  font-size: 22px;
+}
 .header__block-1 > div > a {
   font-weight: 400;
   font-size: 14px;
@@ -814,9 +826,17 @@ input:checked + .slider:before {
     display: none;
   }
 }
-@media (max-width: 675px) {
-  .header__block-1 {
+@media (max-width: 600px) {
+  .header__block-1-desktop {
     display: none;
+  }
+}
+.header__block-1-mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  .header__block-1-mobile {
+    display: block;
   }
 }
 .header__block-2 {
@@ -936,6 +956,24 @@ input:checked + .slider:before {
           box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
   border-top: 1px solid var(--line);
 }
+@media (max-width: 600px) {
+  .header__block-3 {
+    position: absolute;
+    top: 68px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    min-width: 360px;
+    height: 100vh;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 1;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -947,6 +985,17 @@ input:checked + .slider:before {
   line-height: 137%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .header__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 .header__nav > li > a {
   display: -webkit-box;
@@ -969,8 +1018,70 @@ input:checked + .slider:before {
           transform: rotate(-90deg) translateX(-2px);
   font-size: 12px;
 }
+@media (max-width: 600px) {
+  .header__nav > li > a::before {
+    -webkit-transform: rotate(180deg) translateX(-2px);
+        -ms-transform: rotate(180deg) translateX(-2px);
+            transform: rotate(180deg) translateX(-2px);
+  }
+}
 .header__nav > li > a.active {
   border-bottom: 3px solid var(--blue);
+}
+@media (max-width: 600px) {
+  .header__nav > li > a.active {
+    border: none;
+  }
+}
+@media (max-width: 1200px) {
+  .header__nav > li > a {
+    padding: 7px 0;
+  }
+}
+@media (max-width: 600px) {
+  .header__nav > li > a {
+    padding: 15px 0px 15px 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media (max-width: 600px) {
+  .header__nav > li {
+    width: 100%;
+  }
+  .header__nav > li:not(:last-child) {
+    border-bottom: 1px solid var(--line);
+  }
+}
+.header__btn {
+  display: none;
+}
+@media (max-width: 600px) {
+  .header__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+  .header__btn > button {
+    background-color: transparent;
+  }
+  .header__btn > button:nth-child(1)::before {
+    font-size: 18px;
+    color: var(--grey-icon);
+  }
+  .header__btn > button:nth-child(2)::before {
+    font-size: 19px;
+    color: var(--black);
+  }
 }
 
 .footer {

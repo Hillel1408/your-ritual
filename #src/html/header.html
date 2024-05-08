@@ -1,14 +1,5 @@
 <header class="header">
-    <div class="header__block-1">
-        <div class="container">
-            <ul>
-                <li class="icon-1">Рассрочка 0% на 12 месяцев</li>
-                <li class="icon-2">Бесплатный вызов ритуального агента</li>
-                <li class="icon-3">Скидки пенсионерам</li>
-            </ul>
-            <a href="mailto:info@vash-ritual.ru">E-mail: info@vash-ritual.ru</a>
-        </div>
-    </div>
+    <div class="header__block-1-desktop">@@include('./header-block-1.html')</div>
     <div class="header__block-2">
         <div class="container">
             @@include('./logo.html') @@include('./contacts.html')
@@ -19,7 +10,8 @@
             @@include('./socials.html')
         </div>
     </div>
-    <!--<div class="header__block-3">
+    <div class="header__block-3">
+        <div class="header__block-1-mobile">@@include('./header-block-1.html')</div>
         <div class="container">
             <ul class="header__nav">
                 <li><a href="#" class="active">Главная</a></li>
@@ -32,5 +24,9 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
         </div>
-    </div>-->
+    </div>
+    <div class="header__btn">
+        <button class="icon-34"></button>
+        <button class="icon-35"></button>
+    </div>
 </header>
