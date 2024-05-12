@@ -1,9 +1,24 @@
 .promo {
+    & > div {
+        & > img {
+            display: none;
+            @media (max-width: 500px) {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
     &__block {
         background: url("../img/bg-2.png"), linear-gradient(270deg, #0f3f93 0%, #16315f 100%);
         background-position: right;
         background-repeat: no-repeat;
-        padding: 61px 0 68px 64px;
+        padding: 61px 64px 68px 64px;
+        @media (max-width: 1300px) {
+            background: linear-gradient(270deg, #0f3f93 0%, #16315f 100%);
+        }
+        @media (max-width: 500px) {
+            padding: 20px;
+        }
         & > h2 {
             color: var(--white);
         }
@@ -17,6 +32,10 @@
             max-width: 780px;
             margin-top: 24px;
             margin-bottom: 32px;
+            @media (max-width: 500px) {
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
         }
     }
 }
