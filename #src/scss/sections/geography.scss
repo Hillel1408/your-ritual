@@ -1,5 +1,8 @@
 .geography {
     padding-bottom: 80px;
+    @media (max-width: 500px) {
+        padding-bottom: 24px;
+    }
     &__block {
         padding: 26px 64px 30px 40px;
         background-color: var(--grey-bg);
@@ -7,12 +10,35 @@
         grid-template-columns: 288px 1fr 356px;
         align-items: center;
         gap: 32px;
+        @media (max-width: 1180px) {
+            padding: 26px 40px 30px 40px;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
+        @media (max-width: 500px) {
+            padding: 20px;
+        }
+        & > img {
+            @media (max-width: 500px) {
+                width: 220px;
+            }
+        }
         & > div {
             &:nth-child(2) {
                 margin-left: 12px;
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
+                @media (max-width: 900px) {
+                    margin-left: 0;
+                }
+                @media (max-width: 500px) {
+                    order: -1;
+                    gap: 12px;
+                }
             }
             &:nth-child(3) {
                 padding-left: 40px;
@@ -25,6 +51,10 @@
                     font-size: 16px;
                     line-height: 137%;
                     color: var(--black);
+                }
+                @media (max-width: 900px) {
+                    padding-left: 0;
+                    border-left: 0;
                 }
             }
         }
