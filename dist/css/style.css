@@ -351,6 +351,14 @@ h6 {
   .title {
     font-size: 20px;
     line-height: 144%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 6px;
   }
 }
 
@@ -2589,8 +2597,23 @@ input:checked + .slider:before {
 .goods {
   padding-top: 80px;
 }
+@media (max-width: 500px) {
+  .goods {
+    padding-top: 24px;
+  }
+}
 .goods > div > h2 {
   margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .goods > div > h2 {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 1500px) {
+  .goods > div > div {
+    padding: 0 18px;
+  }
 }
 .goods__slider-wrapper {
   position: relative;

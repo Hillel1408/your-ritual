@@ -1,5 +1,5 @@
 const swiper = new Swiper(".goods__slider", {
-    slidesPerView: 5,
+    slidesPerView: 2,
     spaceBetween: 16,
     navigation: {
         nextEl: ".goods__slider__button-next",
@@ -8,6 +8,17 @@ const swiper = new Swiper(".goods__slider", {
     pagination: {
         el: ".goods__slider-pagination",
         clickable: true,
+    },
+    breakpoints: {
+        1240: {
+            slidesPerView: 5,
+        },
+        1000: {
+            slidesPerView: 4,
+        },
+        750: {
+            slidesPerView: 3,
+        },
     },
 });
 const swiperIntro = new Swiper(".intro__slider", {
@@ -25,7 +36,6 @@ const swiperIntro = new Swiper(".intro__slider", {
         1200: {
             slidesPerView: 3,
         },
-        1100: {},
     },
 });
 const swiperAboutService = new Swiper(".about-service__slider", {

@@ -1,14 +1,27 @@
 .goods {
     padding-top: 80px;
+    @media (max-width: 500px) {
+        padding-top: 24px;
+    }
     & > div {
         & > h2 {
             margin-bottom: 40px;
+            @media (max-width: 500px) {
+                margin-bottom: 16px;
+            }
+        }
+        & > div {
+            @media (max-width: 1500px) {
+                padding: 0 18px;
+            }
         }
     }
     &__slider-wrapper {
         position: relative;
         padding: 24px;
         margin: -24px;
+        @media (max-width: 1500px) {
+        }
     }
     &__slider {
         padding: 10px;
