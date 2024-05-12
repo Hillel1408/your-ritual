@@ -1,11 +1,21 @@
 .intro {
     padding: 40px 0 48px 0;
     background-image: url("../img/bg-4.png");
+    @media (max-width: 500px) {
+        padding: 12px 0 24px 0;
+    }
     &__block {
         display: flex;
-
+        margin-top: 24px;
+        @media (max-width: 1100px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+        @media (max-width: 500px) {
+            margin-top: 12px;
+            gap: 0;
+        }
         & > div {
-            margin-top: 24px;
             &:nth-child(1) {
                 padding: 40px;
                 width: calc(448 / 1384 * 100%);
@@ -26,8 +36,21 @@
                         &::before {
                             font-size: 15px;
                             color: var(--yelow);
+                            transform: translateY(7px);
                         }
                     }
+                }
+                @media (max-width: 1250px) {
+                    height: auto;
+                    background-size: cover;
+                }
+                @media (max-width: 1100px) {
+                    width: 100%;
+                    gap: 16px;
+                    align-items: flex-start;
+                }
+                @media (max-width: 500px) {
+                    padding: 24px 18px;
                 }
             }
         }
@@ -43,13 +66,73 @@
             padding-right: 24px;
             margin-right: -24px;
             width: calc(936 / 1384 * 100%);
+            @media (max-width: 1100px) {
+                width: 100%;
+                margin-left: 0;
+            }
+            @media (max-width: 500px) {
+                padding-top: 16px;
+            }
         }
         &__button-prev,
         &__button-next {
             bottom: 230px;
+            @media (max-width: 500px) {
+                bottom: 160px;
+            }
         }
         &__button-prev {
             left: 0;
+        }
+    }
+    &__rating {
+        display: none;
+        @media (max-width: 500px) {
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            margin: 0 -18px;
+            & > p {
+                font-size: 12px;
+                line-height: 133%;
+                color: var(--black);
+            }
+            & > ul {
+                display: flex;
+                gap: 5px;
+                & > li {
+                    &::before {
+                        font-size: 17px;
+                        color: var(--yelow);
+                    }
+                }
+            }
+            & > div {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                gap: 8px;
+                & > span {
+                    width: 32px;
+                    height: 32px;
+                    background-color: #fc3f1d;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &::before {
+                        color: var(--white);
+                        font-size: 16px;
+                    }
+                }
+                & > b {
+                    font-size: 14px;
+                    line-height: 143%;
+                    color: var(--black);
+                }
+            }
         }
     }
 }

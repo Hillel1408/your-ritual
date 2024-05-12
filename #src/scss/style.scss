@@ -50,6 +50,10 @@
             transform: translateY(1px);
         }
     }
+    @media (max-width: 500px) {
+        font-size: 16px;
+        line-height: 144%;
+    }
 }
 .subtitle {
     font-weight: 600;
@@ -125,6 +129,13 @@
         font-size: 14px;
         color: var(--black);
     }
+    @media (max-width: 500px) {
+        width: 36px;
+        height: 36px;
+        &::before {
+            font-size: 12px;
+        }
+    }
 }
 .slider__button-next {
     right: 0;
@@ -140,6 +151,12 @@
         opacity: initial;
         &.swiper-pagination-bullet-active {
             background: var(--black);
+        }
+    }
+    @media (max-width: 500px) {
+        margin-top: 20px;
+        & > span {
+            width: 24px;
         }
     }
 }

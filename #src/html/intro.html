@@ -11,6 +11,15 @@
                 </ul>
                 <button class="btn">Сделать заявку</button>
             </div>
+            <div class="intro__rating">
+                <div><span class="icon-6"></span><b>5,0</b></div>
+                <ul>
+                    @@for (var i = 0; i < 5; i++) {
+                    <li class="icon-36"></li>
+                    }
+                </ul>
+                <p>Рейтинг в Яндексе</p>
+            </div>
             <div class="intro__slider-wrapper">
                 <div class="intro__slider">
                     <div class="swiper-wrapper">@@for (var i = 0; i < 4; i++) { @@include('./product.html') }</div>
