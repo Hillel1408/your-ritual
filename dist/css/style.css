@@ -2068,6 +2068,11 @@ input:checked + .slider:before {
 .price {
   padding-bottom: 80px;
 }
+@media (max-width: 500px) {
+  .price {
+    padding-bottom: 24px;
+  }
+}
 .price__block {
   margin-bottom: 24px;
   display: -ms-grid;
@@ -2075,6 +2080,18 @@ input:checked + .slider:before {
   -ms-grid-columns: auto 1fr;
   grid-template-columns: auto 1fr;
   gap: 40px;
+}
+@media (max-width: 1000px) {
+  .price__block {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .price__block {
+    margin-bottom: 16px;
+    gap: 16px;
+  }
 }
 
 .stages {
@@ -3405,6 +3422,25 @@ input:checked + .slider:before {
   grid-template-columns: repeat(5, 1fr);
   margin-top: 32px;
 }
+@media (max-width: 940px) {
+  .price__tab {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .price__tab {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .price__tab {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 24px;
+  }
+}
 .price__tab-item {
   position: relative;
   -webkit-box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
@@ -3429,6 +3465,15 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 210px;
+  height: calc(100% - 57.91px);
+  position: relative;
+}
+@media (max-width: 500px) {
+  .price__tab-item > div:nth-child(2) {
+    padding: 16px 20px;
+    height: auto;
+    min-height: auto;
+  }
 }
 .price__tab-item > div:nth-child(2) > p {
   font-weight: 400;
@@ -3439,12 +3484,23 @@ input:checked + .slider:before {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+@media (max-width: 500px) {
+  .price__tab-item > div:nth-child(2) > p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
 .price__tab-item > div:nth-child(2) > span {
   margin-bottom: 24px;
   font-weight: 600;
   font-size: 16px;
   line-height: 137%;
   color: var(--black);
+}
+@media (max-width: 500px) {
+  .price__tab-item > div:nth-child(2) > span {
+    margin-bottom: 10px;
+  }
 }
 .price__tab-item > div:nth-child(2) > button {
   font-family: var(--second-family);
@@ -3455,6 +3511,17 @@ input:checked + .slider:before {
   color: var(--blue);
   background: transparent;
   border-top: 1px solid var(--line);
+}
+@media (max-width: 500px) {
+  .price__tab-item > div:nth-child(2) > button {
+    position: absolute;
+    width: 128px;
+    bottom: 16px;
+    right: 20px;
+    border-top: 0;
+    border-left: 1px solid var(--line);
+    padding: 10px 24px;
+  }
 }
 .price__tab-item:before {
   content: "";
