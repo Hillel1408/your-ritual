@@ -2806,6 +2806,12 @@ input:checked + .slider:before {
   padding: 80px 0;
   margin-top: 80px;
 }
+@media (max-width: 500px) {
+  .faq {
+    padding: 24px 0;
+    margin-top: 24px;
+  }
+}
 .faq__block {
   display: -ms-grid;
   display: grid;
@@ -2815,8 +2821,18 @@ input:checked + .slider:before {
   background-image: url("../img/bg-6.png");
   background-repeat: no-repeat;
   background-position: 0 130px;
-  padding: 0 60px;
-  margin: 0 -60px;
+}
+@media (max-width: 1100px) {
+  .faq__block {
+    background-image: none;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .faq__block {
+    gap: 16px;
+  }
 }
 .faq__block > div > h2 {
   color: var(--white);
@@ -2834,6 +2850,11 @@ input:checked + .slider:before {
   line-height: 140%;
   color: var(--white);
 }
+@media (max-width: 500px) {
+  .faq__block > ul {
+    font-size: 16px;
+  }
+}
 .faq__block > ul > li {
   padding: 22px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -2841,6 +2862,11 @@ input:checked + .slider:before {
 }
 .faq__block > ul > li:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 500px) {
+  .faq__block > ul > li {
+    padding: 16px 0;
+  }
 }
 .faq__block > ul > li > p {
   display: -webkit-box;
@@ -2852,9 +2878,10 @@ input:checked + .slider:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px;
 }
 .faq__block > ul > li > p > span {
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   border: 1px solid var(--white);
   border-radius: 100px;
@@ -2871,6 +2898,22 @@ input:checked + .slider:before {
 .faq__block > ul > li > p > span::before {
   font-size: 14px;
   color: white;
+}
+@media (max-width: 500px) {
+  .faq__block > ul > li > p > span::before {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .faq__block > ul > li > p > span {
+    min-width: 32px;
+    height: 32px;
+  }
+}
+@media (max-width: 500px) {
+  .faq__block > ul > li > p {
+    gap: 10px;
+  }
 }
 
 .sidebar {
