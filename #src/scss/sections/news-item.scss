@@ -2,6 +2,9 @@
     padding-bottom: 25px;
     border-bottom: 1px solid var(--line);
     position: relative;
+    @media (max-width: 500px) {
+        padding-bottom: 16px;
+    }
     & > a {
         position: absolute;
         top: 0;
@@ -12,6 +15,10 @@
     & > img {
         height: 280px;
         object-fit: cover;
+        width: 100%;
+        @media (max-width: 500px) {
+            height: 204px;
+        }
     }
     & > div {
         & > h3 {
@@ -20,6 +27,9 @@
             line-height: 140%;
             color: var(--black);
             margin-top: 16px;
+            @media (max-width: 500px) {
+                margin-top: 12px;
+            }
         }
         & > p {
             margin-top: 18px;
@@ -27,6 +37,9 @@
             -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
             overflow: hidden;
+            @media (max-width: 500px) {
+                margin-top: 4px;
+            }
         }
     }
     &__data {
@@ -36,5 +49,15 @@
         margin-top: 24px;
         display: flex;
         justify-content: space-between;
+        & > span {
+            color: var(--light-text);
+            &::before {
+                color: var(--grey-icon);
+                font-size: 15px;
+            }
+        }
+        @media (max-width: 500px) {
+            margin-top: 16px;
+        }
     }
 }
