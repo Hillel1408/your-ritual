@@ -1,21 +1,44 @@
 .form {
     padding-bottom: 137px;
+    @media (max-width: 500px) {
+        padding-bottom: 32px;
+    }
     &__block {
         background: var(--grey-bg);
         padding: 64px;
         display: grid;
         grid-template-columns: 472px 1fr;
         gap: 80px;
+        @media (max-width: 1200px) {
+            grid-template-columns: 400px 1fr;
+            gap: 40px;
+            padding: 50px;
+        }
+        @media (max-width: 1000px) {
+            grid-template-columns: 1fr;
+            padding: 40px;
+        }
+        @media (max-width: 500px) {
+            padding: 20px;
+            gap: 24px;
+        }
         & > div {
             &:nth-child(1) {
                 & > h2 {
                     margin-bottom: 40px;
+                    @media (max-width: 500px) {
+                        margin-bottom: 12px;
+                    }
                 }
                 & > p {
                     font-size: 20px;
                     line-height: 140%;
                     color: var(--simple-text);
                     margin-bottom: 32px;
+                    @media (max-width: 500px) {
+                        font-size: 16px;
+                        margin-bottom: 16px;
+                    }
                 }
             }
         }
@@ -26,6 +49,10 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
+            @media (max-width: 500px) {
+                padding: 16px;
+                gap: 12px;
+            }
             & > textarea {
                 height: 140px;
             }
@@ -33,10 +60,18 @@
                 display: flex;
                 gap: 32px;
                 align-items: center;
+                @media (max-width: 500px) {
+                    flex-direction: column;
+                    gap: 12px;
+                    align-items: normal;
+                }
                 & > p {
                     font-size: 14px;
                     line-height: 143%;
                     color: var(--light-text);
+                    @media (max-width: 500px) {
+                        font-size: 12px;
+                    }
                     & > a {
                         color: var(--light-text);
                         text-decoration: underline;
@@ -48,6 +83,10 @@
     &__contacts {
         display: flex;
         justify-content: space-between;
+        @media (max-width: 600px) {
+            flex-direction: column;
+            gap: 12px;
+        }
         & > div {
             display: flex;
             flex-direction: column;
@@ -55,12 +94,18 @@
                 font-size: 18px;
                 line-height: 144%;
                 color: var(--light-text);
+                @media (max-width: 500px) {
+                    font-size: 14px;
+                }
             }
             & > a {
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 133%;
                 color: var(--black);
+                @media (max-width: 500px) {
+                    font-size: 18px;
+                }
             }
         }
     }
