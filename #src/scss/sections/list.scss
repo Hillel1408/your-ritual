@@ -51,6 +51,7 @@
     &-icon {
         margin-bottom: 8px;
         min-width: 88px;
+        width: 88px;
         height: 88px;
         background-color: var(--red);
         display: flex;
@@ -60,6 +61,7 @@
         @media (max-width: 500px) {
             margin-bottom: 0;
             min-width: 64px;
+            width: 64px;
             height: 64px;
             transform: translateY(8px);
         }

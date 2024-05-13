@@ -1,21 +1,40 @@
 .production {
     & > h2 {
         margin-bottom: 40px;
+        @media (max-width: 500px) {
+            margin-bottom: 24px;
+        }
     }
     & > p {
         margin-bottom: 24px;
+        @media (max-width: 500px) {
+            margin-bottom: 16px;
+        }
     }
     & > div {
         margin-top: 40px;
+        @media (max-width: 500px) {
+            margin-top: 16px;
+        }
         & > span {
             font-weight: 700;
             font-size: 20px;
             line-height: 140%;
             color: var(--black);
+            @media (max-width: 500px) {
+                font-size: 18px;
+            }
         }
         & > p {
             margin-top: 16px;
             margin-bottom: 24px;
+            @media (max-width: 500px) {
+                margin-top: 12px;
+                margin-bottom: 16px;
+            }
+        }
+        & > img {
+            width: 100%;
         }
     }
 }
