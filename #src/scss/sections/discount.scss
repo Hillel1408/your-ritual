@@ -1,8 +1,28 @@
 .discount {
     & > h2 {
         margin-bottom: 40px;
+        @media (max-width: 500px) {
+            margin-bottom: 24px;
+        }
     }
     & > p {
         margin-bottom: 40px;
+        @media (max-width: 500px) {
+            margin-bottom: 16px;
+        }
+    }
+    & > img {
+        width: 100%;
+        &.desktop {
+            @media (max-width: 500px) {
+                display: none;
+            }
+        }
+        &.mobile {
+            display: none;
+            @media (max-width: 500px) {
+                display: block;
+            }
+        }
     }
 }

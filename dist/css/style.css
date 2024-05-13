@@ -3630,8 +3630,34 @@ input:checked + .slider:before {
 .discount > h2 {
   margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .discount > h2 {
+    margin-bottom: 24px;
+  }
+}
 .discount > p {
   margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .discount > p {
+    margin-bottom: 16px;
+  }
+}
+.discount > img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .discount > img.desktop {
+    display: none;
+  }
+}
+.discount > img.mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .discount > img.mobile {
+    display: block;
+  }
 }
 
 .error-404 > h2 {
