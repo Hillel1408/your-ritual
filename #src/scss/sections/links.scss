@@ -1,10 +1,16 @@
 .links {
     & > h2 {
         margin-bottom: 40px;
+        @media (max-width: 500px) {
+            margin-bottom: 24px;
+        }
     }
     & > div {
         &:not(:last-child) {
             margin-bottom: 32px;
+            @media (max-width: 500px) {
+                margin-bottom: 24px;
+            }
         }
         & > h3 {
             font-weight: 700;
@@ -12,11 +18,19 @@
             line-height: 136%;
             color: var(--black);
             margin-bottom: 24px;
+            @media (max-width: 500px) {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
         }
         & > ul {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 24px;
+            @media (max-width: 500px) {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
         }
     }
     &__link {
@@ -30,6 +44,9 @@
         gap: 16px;
         padding: 26px 24px;
         background: var(--grey-bg);
+        @media (max-width: 500px) {
+            padding: 14px 20px;
+        }
         &::before {
             color: var(--grey-icon);
             font-size: 12px;
