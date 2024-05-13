@@ -370,7 +370,7 @@ h6 {
 }
 @media (max-width: 500px) {
   .subtitle {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -682,8 +682,28 @@ h6 {
   line-height: 137%;
   color: var(--simple-text);
 }
+@media (max-width: 500px) {
+  .table td:nth-child(1) {
+    font-weight: 600;
+  }
+}
 .table td:nth-child(2) {
   text-align: right;
+}
+@media (max-width: 500px) {
+  .table td:nth-child(2) {
+    text-align: left;
+  }
+}
+@media (max-width: 500px) {
+  .table td {
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  .table tr:first-child {
+    display: none;
+  }
 }
 .table tr:nth-child(2n+1) {
   background: var(--grey-bg);
@@ -694,6 +714,16 @@ h6 {
   line-height: 144%;
   text-transform: uppercase;
   color: var(--simple-text);
+}
+@media (max-width: 500px) {
+  .table tr {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 12px 16px;
+    gap: 8px;
+  }
 }
 
 .custom-radio {
@@ -3874,6 +3904,7 @@ input:checked + .slider:before {
 @media (max-width: 500px) {
   .consultation {
     padding: 20px;
+    margin-top: 24px;
   }
 }
 .consultation > div:nth-child(1) {
@@ -4049,9 +4080,20 @@ input:checked + .slider:before {
 .cost > h2 {
   margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .cost > h2 {
+    margin-bottom: 24px;
+  }
+}
 .cost > h3 {
   padding-top: 32px;
   padding-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .cost > h3 {
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
 }
 .cost > p {
   margin-bottom: 24px;
@@ -4064,8 +4106,18 @@ input:checked + .slider:before {
   display: block;
   margin-bottom: 16px;
 }
+@media (max-width: 500px) {
+  .cost > div > span {
+    font-size: 18px;
+  }
+}
 .cost > div:not(:last-child) {
   margin-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .cost > div:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 .production > h2 {
