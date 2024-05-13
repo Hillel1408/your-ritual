@@ -584,6 +584,12 @@ h6 {
   gap: 10px;
   padding-left: 7px;
 }
+@media (max-width: 500px) {
+  .list-dots,
+  .list-numbered {
+    gap: 8px;
+  }
+}
 
 .list-dots > li {
   display: -webkit-box;
@@ -5030,8 +5036,18 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 24px;
 }
+@media (max-width: 500px) {
+  .parent-organization {
+    gap: 16px;
+  }
+}
 .parent-organization > h2 {
   margin-bottom: 16px;
+}
+@media (max-width: 500px) {
+  .parent-organization > h2 {
+    margin-bottom: 8px;
+  }
 }
 .parent-organization__block-1 {
   display: -webkit-box;
@@ -5047,6 +5063,11 @@ input:checked + .slider:before {
   padding: 28px 32px;
   background: var(--grey-bg);
 }
+@media (max-width: 500px) {
+  .parent-organization__block-2 {
+    padding: 16px 20px;
+  }
+}
 .parent-organization__block-2 > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5056,6 +5077,11 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+}
+@media (max-width: 500px) {
+  .parent-organization__block-2 > ul {
+    gap: 16px;
+  }
 }
 .parent-organization__block-2 > ul > li {
   display: -webkit-box;
@@ -5073,9 +5099,19 @@ input:checked + .slider:before {
   font-weight: 700;
   margin-bottom: 16px;
 }
+@media (max-width: 500px) {
+  .parent-organization__block-3 > p {
+    margin-bottom: 12px;
+  }
+}
 
-.compensation > div > h2 {
+.compensation > h2 {
   margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .compensation > h2 {
+    margin-bottom: 24px;
+  }
 }
 .compensation__block-1 {
   display: -webkit-box;
@@ -5087,8 +5123,18 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 16px;
 }
+@media (max-width: 500px) {
+  .compensation__block-1 {
+    gap: 14px;
+  }
+}
 .compensation__block-2 {
   margin-top: 32px;
+}
+@media (max-width: 500px) {
+  .compensation__block-2 {
+    margin-top: 24px;
+  }
 }
 .compensation__block-2 > h3 {
   font-weight: 700;
@@ -5096,6 +5142,12 @@ input:checked + .slider:before {
   line-height: 136%;
   color: var(--black);
   margin-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .compensation__block-2 > h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
 }
 .compensation__block-2 > div {
   display: -webkit-box;
@@ -5107,11 +5159,29 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 32px;
 }
+@media (max-width: 500px) {
+  .compensation__block-2 > div {
+    gap: 16px;
+  }
+}
 .compensation__block-2 > div > ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 650px) {
+  .compensation__block-2 > div > ul {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .compensation__block-2 > div > ul {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 .compensation__block-2 > div > ul > li {
   display: -webkit-box;
@@ -5125,7 +5195,17 @@ input:checked + .slider:before {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media (max-width: 500px) {
+  .compensation__block-2 > div > ul > li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12px;
+  }
+}
 .compensation__block-2 > div > ul > li > span {
+  min-width: 36px;
   width: 36px;
   height: 36px;
   background: var(--light-blue);
@@ -5165,6 +5245,14 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 32px;
 }
+@media (max-width: 500px) {
+  .contact-information {
+    gap: 24px;
+  }
+}
+.contact-information > div:last-child {
+  margin-top: 0;
+}
 .contact-information > div:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5175,29 +5263,46 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 24px;
 }
-.contact-information > div:nth-child(2) > h4 {
+.contact-information > div:nth-child(2) > h3 {
   font-weight: 600;
   font-size: 20px;
   line-height: 140%;
   color: var(--black);
-  margin-bottom: 8px;
+}
+@media (max-width: 500px) {
+  .contact-information > div:nth-child(2) > h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
 }
 .contact-information > div:nth-child(2) > p > span {
   font-weight: 600;
   color: var(--black);
+}
+.contact-information > div > img {
+  width: 100%;
+  margin-top: 24px;
 }
 .contact-information > div > h3 {
   font-weight: 700;
   font-size: 28px;
   line-height: 136%;
   color: var(--black);
-  margin-bottom: 24px;
 }
-.contact-information > div > table {
+@media (max-width: 500px) {
+  .contact-information > div > h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+.contact-information__table-wrapper {
+  overflow: auto;
+}
+.contact-information__table-wrapper > table {
   width: 100%;
   border-collapse: collapse;
 }
-.contact-information > div > table th {
+.contact-information__table-wrapper > table th {
   font-weight: 700;
   font-size: 16px;
   line-height: 137%;
@@ -5206,15 +5311,45 @@ input:checked + .slider:before {
   padding: 18px 18px 18px 0;
   border-bottom: 2px solid var(--black);
 }
-.contact-information > div > table th:nth-child(1) {
+@media (max-width: 500px) {
+  .contact-information__table-wrapper > table th {
+    padding: 8px 8px 8px 0;
+  }
+}
+.contact-information__table-wrapper > table th:nth-child(1) {
   width: 60%;
 }
-.contact-information > div > table th:nth-child(2), .contact-information > div > table th:nth-child(3) {
+@media (max-width: 1260px) {
+  .contact-information__table-wrapper > table th:nth-child(1) {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .contact-information__table-wrapper > table th:nth-child(1) {
+    min-width: 220px;
+  }
+}
+.contact-information__table-wrapper > table th:nth-child(2), .contact-information__table-wrapper > table th:nth-child(3) {
   width: 20%;
 }
-.contact-information > div > table td {
+@media (max-width: 1260px) {
+  .contact-information__table-wrapper > table th:nth-child(2), .contact-information__table-wrapper > table th:nth-child(3) {
+    width: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .contact-information__table-wrapper > table th:nth-child(2), .contact-information__table-wrapper > table th:nth-child(3) {
+    min-width: 170px;
+  }
+}
+.contact-information__table-wrapper > table td {
   padding: 18px 18px 18px 0;
   border-bottom: 1px solid var(--line);
+}
+@media (max-width: 500px) {
+  .contact-information__table-wrapper > table td {
+    padding: 8px 8px 8px 0;
+  }
 }
 
 .funeral-services {
