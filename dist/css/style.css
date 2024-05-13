@@ -5105,8 +5105,13 @@ input:checked + .slider:before {
   }
 }
 
-.compensation > div > h2 {
+.compensation > h2 {
   margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .compensation > h2 {
+    margin-bottom: 24px;
+  }
 }
 .compensation__block-1 {
   display: -webkit-box;
@@ -5118,8 +5123,18 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 16px;
 }
+@media (max-width: 500px) {
+  .compensation__block-1 {
+    gap: 14px;
+  }
+}
 .compensation__block-2 {
   margin-top: 32px;
+}
+@media (max-width: 500px) {
+  .compensation__block-2 {
+    margin-top: 24px;
+  }
 }
 .compensation__block-2 > h3 {
   font-weight: 700;
@@ -5127,6 +5142,12 @@ input:checked + .slider:before {
   line-height: 136%;
   color: var(--black);
   margin-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .compensation__block-2 > h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
 }
 .compensation__block-2 > div {
   display: -webkit-box;
@@ -5138,11 +5159,29 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 32px;
 }
+@media (max-width: 500px) {
+  .compensation__block-2 > div {
+    gap: 16px;
+  }
+}
 .compensation__block-2 > div > ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 650px) {
+  .compensation__block-2 > div > ul {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .compensation__block-2 > div > ul {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 .compensation__block-2 > div > ul > li {
   display: -webkit-box;
@@ -5156,7 +5195,17 @@ input:checked + .slider:before {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media (max-width: 500px) {
+  .compensation__block-2 > div > ul > li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12px;
+  }
+}
 .compensation__block-2 > div > ul > li > span {
+  min-width: 36px;
   width: 36px;
   height: 36px;
   background: var(--light-blue);
