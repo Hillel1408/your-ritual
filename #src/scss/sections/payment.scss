@@ -1,11 +1,25 @@
 .payment {
     & > h2 {
         margin-bottom: 40px;
+        @media (max-width: 500px) {
+            margin-bottom: 24px;
+        }
     }
     &__text {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        @media (max-width: 500px) {
+            margin-bottom: 16px;
+        }
+    }
+    & > img {
+        display: none;
+        @media (max-width: 500px) {
+            display: block;
+            width: 100%;
+            margin-top: 24px;
+        }
     }
     &__promo {
         background: url("../img/bg-8.png"), linear-gradient(270deg, #0f3f93 0%, #16315f 100%);
@@ -13,14 +27,27 @@
         background-repeat: no-repeat;
         margin-top: 40px;
         padding: 40px;
+        @media (max-width: 1230px) {
+            background: linear-gradient(270deg, #0f3f93 0%, #16315f 100%);
+        }
+        @media (max-width: 500px) {
+            margin-top: 0;
+            padding: 20px;
+        }
         & > div {
             max-width: 480px;
+            @media (max-width: 1230px) {
+                max-width: none;
+            }
             & > h2 {
                 font-weight: 700;
                 font-size: 28px;
                 line-height: 136%;
                 color: var(--white);
                 margin-bottom: 8px;
+                @media (max-width: 500px) {
+                    font-size: 20px;
+                }
             }
             & > h3 {
                 font-weight: 600;
@@ -28,11 +55,18 @@
                 line-height: 140%;
                 color: var(--white);
                 margin-bottom: 24px;
+                @media (max-width: 500px) {
+                    font-size: 16px;
+                    margin-bottom: 16px;
+                }
             }
             & > p {
                 color: var(--white);
                 opacity: 0.85;
                 margin-bottom: 32px;
+                @media (max-width: 500px) {
+                    margin-bottom: 16px;
+                }
             }
         }
     }
