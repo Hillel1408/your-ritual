@@ -249,6 +249,10 @@
     color: var(--black);
     padding-left: 24px;
     border-left: 4px solid var(--red);
+    @media (max-width: 500px) {
+        padding-left: 20px;
+        border-left: 3px solid var(--red);
+    }
 }
 .table {
     width: 100%;

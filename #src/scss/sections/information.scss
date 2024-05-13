@@ -1,9 +1,15 @@
 .information {
     & > h2 {
         margin-bottom: 40px;
+        @media (max-width: 500px) {
+            margin-bottom: 24px;
+        }
     }
     & > p {
         margin-bottom: 24px;
+        @media (max-width: 500px) {
+            margin-bottom: 16px;
+        }
     }
     & > h3 {
         font-weight: 700;
@@ -11,5 +17,9 @@
         line-height: 140%;
         color: var(--black);
         margin-bottom: 16px;
+        @media (max-width: 500px) {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
     }
 }

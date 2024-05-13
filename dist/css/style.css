@@ -652,6 +652,12 @@ h6 {
   padding-left: 24px;
   border-left: 4px solid var(--red);
 }
+@media (max-width: 500px) {
+  .note {
+    padding-left: 20px;
+    border-left: 3px solid var(--red);
+  }
+}
 
 .table {
   width: 100%;
@@ -3909,8 +3915,18 @@ input:checked + .slider:before {
 .information > h2 {
   margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .information > h2 {
+    margin-bottom: 24px;
+  }
+}
 .information > p {
   margin-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .information > p {
+    margin-bottom: 16px;
+  }
 }
 .information > h3 {
   font-weight: 700;
@@ -3918,6 +3934,12 @@ input:checked + .slider:before {
   line-height: 140%;
   color: var(--black);
   margin-bottom: 16px;
+}
+@media (max-width: 500px) {
+  .information > h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
 }
 
 .consultation {
