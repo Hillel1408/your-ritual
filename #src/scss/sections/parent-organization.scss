@@ -2,8 +2,14 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    @media (max-width: 500px) {
+        gap: 16px;
+    }
     & > h2 {
         margin-bottom: 16px;
+        @media (max-width: 500px) {
+            margin-bottom: 8px;
+        }
     }
     &__block {
         &-1 {
@@ -14,10 +20,16 @@
         &-2 {
             padding: 28px 32px;
             background: var(--grey-bg);
+            @media (max-width: 500px) {
+                padding: 16px 20px;
+            }
             & > ul {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
+                @media (max-width: 500px) {
+                    gap: 16px;
+                }
                 & > li {
                     display: flex;
                     flex-direction: column;
@@ -33,6 +45,9 @@
             & > p {
                 font-weight: 700;
                 margin-bottom: 16px;
+                @media (max-width: 500px) {
+                    margin-bottom: 12px;
+                }
             }
         }
     }

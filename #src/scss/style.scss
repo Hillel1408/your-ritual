@@ -200,6 +200,9 @@
     flex-direction: column;
     gap: 10px;
     padding-left: 7px;
+    @media (max-width: 500px) {
+        gap: 8px;
+    }
 }
 .list-dots {
     & > li {
