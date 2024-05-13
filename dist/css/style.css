@@ -4626,8 +4626,18 @@ input:checked + .slider:before {
 .questions > h2 {
   margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .questions > h2 {
+    margin-bottom: 24px;
+  }
+}
 .questions > p {
   margin-top: 64px;
+}
+@media (max-width: 500px) {
+  .questions > p {
+    margin-top: 24px;
+  }
 }
 .questions > ul {
   display: -webkit-box;
@@ -4639,9 +4649,19 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 24px;
 }
+@media (max-width: 500px) {
+  .questions > ul {
+    gap: 12px;
+  }
+}
 .questions > ul > li {
   padding: 28px 24px;
   border: 1px solid var(--line);
+}
+@media (max-width: 500px) {
+  .questions > ul > li {
+    padding: 18px 20px;
+  }
 }
 .questions > ul > li > span {
   display: -webkit-box;
@@ -4667,6 +4687,11 @@ input:checked + .slider:before {
   color: var(--black);
   font-size: 16px;
 }
+@media (max-width: 500px) {
+  .questions > ul > li > span {
+    gap: 16px;
+  }
+}
 .questions > ul > li > div {
   margin-top: 24px;
   display: -webkit-box;
@@ -4678,6 +4703,12 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 14px;
 }
+@media (max-width: 500px) {
+  .questions > ul > li > div {
+    margin-top: 12px;
+    gap: 12px;
+  }
+}
 .questions > ul > li > div > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4688,6 +4719,11 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 10px;
   padding-left: 7px;
+}
+@media (max-width: 500px) {
+  .questions > ul > li > div > ul {
+    gap: 8px;
+  }
 }
 .questions > ul > li > div > ul > li {
   display: -webkit-box;
@@ -4716,6 +4752,33 @@ input:checked + .slider:before {
   grid-template-columns: 300px 1fr;
   gap: 40px;
 }
+@media (max-width: 1200px) {
+  .questions__form {
+    -ms-grid-columns: 200px 1fr;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    padding: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .questions__form {
+    -ms-grid-columns: 250px 1fr;
+    grid-template-columns: 250px 1fr;
+  }
+}
+@media (max-width: 750px) {
+  .questions__form {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .questions__form {
+    margin-top: 24px;
+    padding: 20px;
+    gap: 24px;
+  }
+}
 .questions__form > div > h3 {
   font-weight: 700;
   font-size: 28px;
@@ -4723,11 +4786,22 @@ input:checked + .slider:before {
   color: var(--black);
   margin-bottom: 24px;
 }
+@media (max-width: 500px) {
+  .questions__form > div > h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+}
 .questions__form > div > p {
   font-size: 16px;
   line-height: 144%;
   color: var(--simple-text);
   margin-bottom: 32px;
+}
+@media (max-width: 500px) {
+  .questions__form > div > p {
+    margin-bottom: 16px;
+  }
 }
 .questions__form > form {
   -webkit-box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
@@ -4743,6 +4817,12 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 16px;
 }
+@media (max-width: 500px) {
+  .questions__form > form {
+    padding: 16px;
+    gap: 12px;
+  }
+}
 .questions__form > form > div {
   margin-top: 8px;
   display: -webkit-box;
@@ -4753,10 +4833,28 @@ input:checked + .slider:before {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 500px) {
+  .questions__form > form > div {
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 12px;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+}
 .questions__form > form > div > p {
   font-size: 14px;
   line-height: 143%;
   color: var(--light-text);
+}
+@media (max-width: 500px) {
+  .questions__form > form > div > p {
+    font-size: 12px;
+  }
 }
 .questions__form > form > div > p > a {
   color: var(--light-text);
@@ -4771,6 +4869,11 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+}
+@media (max-width: 500px) {
+  .questions__contacts {
+    gap: 12px;
+  }
 }
 .questions__contacts > div {
   display: -webkit-box;
@@ -4787,11 +4890,21 @@ input:checked + .slider:before {
   line-height: 137%;
   color: var(--light-text);
 }
+@media (max-width: 500px) {
+  .questions__contacts > div > span {
+    font-size: 14px;
+  }
+}
 .questions__contacts > div > a {
   font-weight: 700;
   font-size: 20px;
   line-height: 140%;
   color: var(--black);
+}
+@media (max-width: 500px) {
+  .questions__contacts > div > a {
+    font-size: 18px;
+  }
 }
 
 .ritual-goods > h2 {
