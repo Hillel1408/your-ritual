@@ -1,32 +1,61 @@
 .about-service {
     & > h2 {
         margin-bottom: 40px;
+        @media (max-width: 500px) {
+            margin-bottom: 24px;
+        }
     }
     &__block-1 {
         margin-top: 24px;
         display: flex;
         flex-direction: column;
         gap: 24px;
+        @media (max-width: 500px) {
+            margin-top: 16px;
+            gap: 14px;
+        }
+        & > img {
+            width: 100%;
+            object-fit: cover;
+            @media (max-width: 500px) {
+                height: 200px;
+            }
+        }
     }
     &__block-2 {
         margin-top: 32px;
         position: relative;
+        @media (max-width: 500px) {
+            margin-top: 24px;
+        }
     }
     &__block-3 {
         margin-top: 32px;
+        @media (max-width: 500px) {
+            margin-top: 24px;
+        }
         & > h2 {
             margin-bottom: 24px;
+            @media (max-width: 500px) {
+                margin-bottom: 16px;
+            }
         }
     }
     &__slider {
         margin-top: 24px;
-        max-width: 912px;
+        width: 100%;
         overflow: hidden;
+        @media (max-width: 500px) {
+            margin-top: 16px;
+        }
         &-slide {
             & > img {
                 height: 260px;
                 width: 100%;
                 object-fit: cover;
+                @media (max-width: 500px) {
+                    height: 180px;
+                }
             }
         }
         &__button-prev,
@@ -35,6 +64,9 @@
         }
         &__button-prev {
             right: 56px;
+            @media (max-width: 500px) {
+                right: 46px;
+            }
         }
     }
 }
