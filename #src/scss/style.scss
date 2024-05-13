@@ -51,7 +51,7 @@
         }
     }
     @media (max-width: 500px) {
-        font-size: 20px;
+        font-size: 28px;
         line-height: 144%;
         flex-direction: column;
         align-items: flex-start;
@@ -179,6 +179,19 @@
     gap: 92px;
     padding-top: 40px;
     padding-bottom: 120px;
+    @media (max-width: 1400px) {
+        gap: 30px;
+    }
+    @media (max-width: 1200px) {
+        grid-template-columns: 300px 1fr;
+    }
+    @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+    }
+    @media (max-width: 500px) {
+        padding-top: 16px;
+        padding-bottom: 32px;
+    }
 }
 .list-dots,
 .list-numbered {

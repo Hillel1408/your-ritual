@@ -349,7 +349,7 @@ h6 {
 }
 @media (max-width: 500px) {
   .title {
-    font-size: 20px;
+    font-size: 28px;
     line-height: 144%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -552,6 +552,29 @@ h6 {
   gap: 92px;
   padding-top: 40px;
   padding-bottom: 120px;
+}
+@media (max-width: 1400px) {
+  .grid {
+    gap: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .grid {
+    -ms-grid-columns: 300px 1fr;
+    grid-template-columns: 300px 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .grid {
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
 }
 
 .list-dots,
@@ -3191,6 +3214,11 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 32px;
 }
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+}
 .sidebar > ul:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3527,8 +3555,18 @@ input:checked + .slider:before {
 .error-404 > h2 {
   margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .error-404 > h2 {
+    margin-bottom: 24px;
+  }
+}
 .error-404 > p {
   margin-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .error-404 > p {
+    margin-bottom: 16px;
+  }
 }
 
 .reviews > h2 {
@@ -3781,6 +3819,11 @@ input:checked + .slider:before {
   background-position-x: 649px;
   margin-top: 39px;
 }
+@media (max-width: 500px) {
+  .consultation {
+    padding: 20px;
+  }
+}
 .consultation > div:nth-child(1) {
   max-width: 576px;
   margin-bottom: 16px;
@@ -3799,9 +3842,19 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 12px;
 }
+@media (max-width: 500px) {
+  .consultation > div:nth-child(1) > ul {
+    gap: 8px;
+  }
+}
 .consultation > div:nth-child(1) > p {
   color: var(--black);
   margin-top: 16px;
+}
+@media (max-width: 500px) {
+  .consultation > div:nth-child(1) > p {
+    margin-top: 12px;
+  }
 }
 .consultation > div:nth-child(2) {
   display: -webkit-box;
@@ -3812,11 +3865,21 @@ input:checked + .slider:before {
           align-items: center;
   gap: 24px;
 }
+@media (max-width: 500px) {
+  .consultation > div:nth-child(2) {
+    gap: 12px;
+  }
+}
 .consultation > div:nth-child(2) > a {
   font-weight: 700;
   font-size: 18px;
   line-height: 144%;
   color: var(--black);
+}
+@media (max-width: 500px) {
+  .consultation > div:nth-child(2) > a {
+    font-size: 16px;
+  }
 }
 .consultation > div:nth-child(2) > span {
   font-size: 16px;
@@ -3824,6 +3887,12 @@ input:checked + .slider:before {
   color: var(--blue);
   padding-left: 24px;
   border-left: 1px solid #c7c7cc;
+}
+@media (max-width: 500px) {
+  .consultation > div:nth-child(2) > span {
+    font-size: 15px;
+    padding-left: 12px;
+  }
 }
 
 .work > h2 {

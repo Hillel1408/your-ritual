@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    @media (max-width: 900px) {
+        display: none;
+    }
     & > ul {
         &:nth-child(1) {
             display: flex;
