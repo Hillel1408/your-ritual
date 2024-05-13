@@ -2763,6 +2763,7 @@ input:checked + .slider:before {
 .list-icon {
   margin-bottom: 8px;
   min-width: 88px;
+  width: 88px;
   height: 88px;
   background-color: var(--red);
   display: -webkit-box;
@@ -3966,6 +3967,11 @@ input:checked + .slider:before {
 .payment > h2 {
   margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .payment > h2 {
+    margin-bottom: 24px;
+  }
+}
 .payment__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3976,6 +3982,21 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 20px;
 }
+@media (max-width: 500px) {
+  .payment__text {
+    margin-bottom: 16px;
+  }
+}
+.payment > img {
+  display: none;
+}
+@media (max-width: 500px) {
+  .payment > img {
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+  }
+}
 .payment__promo {
   background: url("../img/bg-8.png"), -webkit-gradient(linear, right top, left top, from(#0f3f93), to(#16315f));
   background: url("../img/bg-8.png"), linear-gradient(270deg, #0f3f93 0%, #16315f 100%);
@@ -3984,8 +4005,25 @@ input:checked + .slider:before {
   margin-top: 40px;
   padding: 40px;
 }
+@media (max-width: 1230px) {
+  .payment__promo {
+    background: -webkit-gradient(linear, right top, left top, from(#0f3f93), to(#16315f));
+    background: linear-gradient(270deg, #0f3f93 0%, #16315f 100%);
+  }
+}
+@media (max-width: 500px) {
+  .payment__promo {
+    margin-top: 0;
+    padding: 20px;
+  }
+}
 .payment__promo > div {
   max-width: 480px;
+}
+@media (max-width: 1230px) {
+  .payment__promo > div {
+    max-width: none;
+  }
 }
 .payment__promo > div > h2 {
   font-weight: 700;
@@ -3994,6 +4032,11 @@ input:checked + .slider:before {
   color: var(--white);
   margin-bottom: 8px;
 }
+@media (max-width: 500px) {
+  .payment__promo > div > h2 {
+    font-size: 20px;
+  }
+}
 .payment__promo > div > h3 {
   font-weight: 600;
   font-size: 20px;
@@ -4001,10 +4044,21 @@ input:checked + .slider:before {
   color: var(--white);
   margin-bottom: 24px;
 }
+@media (max-width: 500px) {
+  .payment__promo > div > h3 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
 .payment__promo > div > p {
   color: var(--white);
   opacity: 0.85;
   margin-bottom: 32px;
+}
+@media (max-width: 500px) {
+  .payment__promo > div > p {
+    margin-bottom: 16px;
+  }
 }
 
 .information > h2 {
