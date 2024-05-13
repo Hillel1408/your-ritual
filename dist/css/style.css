@@ -4956,8 +4956,18 @@ input:checked + .slider:before {
 .ritual-goods > h2 {
   margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .ritual-goods > h2 {
+    margin-bottom: 24px;
+  }
+}
 .ritual-goods > p {
   margin-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .ritual-goods > p {
+    margin-bottom: 16px;
+  }
 }
 
 .moscow-districts > h2 {
