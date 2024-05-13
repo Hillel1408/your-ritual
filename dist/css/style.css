@@ -4204,14 +4204,29 @@ input:checked + .slider:before {
 .work > h2 {
   margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .work > h2 {
+    margin-bottom: 24px;
+  }
+}
 .work > p {
   margin-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .work > p {
+    margin-bottom: 16px;
+  }
 }
 .work > h3 {
   font-weight: 700;
   font-size: 28px;
   line-height: 136%;
   color: var(--black);
+}
+@media (max-width: 500px) {
+  .work > h3 {
+    font-size: 20px;
+  }
 }
 .work > ul {
   display: -webkit-box;
@@ -4228,6 +4243,11 @@ input:checked + .slider:before {
   margin-top: 24px;
   gap: 16px;
 }
+@media (max-width: 500px) {
+  .work > ul {
+    margin-top: 16px;
+  }
+}
 .work > ul > li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4238,6 +4258,7 @@ input:checked + .slider:before {
           align-items: center;
 }
 .work > ul > li > span {
+  min-width: 40px;
   width: 40px;
   height: 40px;
   background: var(--grey-bg);
