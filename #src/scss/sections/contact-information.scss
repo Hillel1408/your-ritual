@@ -2,17 +2,26 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    @media (max-width: 500px) {
+        gap: 24px;
+    }
     & > div {
+        &:last-child {
+            margin-top: 0;
+        }
         &:nth-child(2) {
             display: flex;
             flex-direction: column;
             gap: 24px;
-            & > h4 {
+            & > h3 {
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 140%;
                 color: var(--black);
-                margin-bottom: 8px;
+                @media (max-width: 500px) {
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
             }
             & > p {
                 & > span {
@@ -21,13 +30,23 @@
                 }
             }
         }
+        & > img {
+            width: 100%;
+            margin-top: 24px;
+        }
         & > h3 {
             font-weight: 700;
             font-size: 28px;
             line-height: 136%;
             color: var(--black);
-            margin-bottom: 24px;
+            @media (max-width: 500px) {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
         }
+    }
+    &__table-wrapper {
+        overflow: auto;
         & > table {
             width: 100%;
             border-collapse: collapse;
@@ -39,17 +58,35 @@
                 text-align: left;
                 padding: 18px 18px 18px 0;
                 border-bottom: 2px solid var(--black);
+                @media (max-width: 500px) {
+                    padding: 8px 8px 8px 0;
+                }
                 &:nth-child(1) {
                     width: 60%;
+                    @media (max-width: 1260px) {
+                        width: 50%;
+                    }
+                    @media (max-width: 500px) {
+                        min-width: 220px;
+                    }
                 }
                 &:nth-child(2),
                 &:nth-child(3) {
                     width: 20%;
+                    @media (max-width: 1260px) {
+                        width: 25%;
+                    }
+                    @media (max-width: 500px) {
+                        min-width: 170px;
+                    }
                 }
             }
             td {
                 padding: 18px 18px 18px 0;
                 border-bottom: 1px solid var(--line);
+                @media (max-width: 500px) {
+                    padding: 8px 8px 8px 0;
+                }
             }
         }
     }
