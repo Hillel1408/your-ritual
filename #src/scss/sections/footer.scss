@@ -1,30 +1,54 @@
 .footer {
     padding: 64px 0 48px 0;
     border-top: 1px solid var(--line);
+    @media (max-width: 500px) {
+        padding: 24px 0 24px 0;
+    }
     & > div {
         display: flex;
         flex-direction: column;
         gap: 48px;
+        @media (max-width: 500px) {
+            gap: 24px;
+        }
     }
     &__block-1 {
         display: flex;
         justify-content: space-between;
         gap: 48px;
-        div {
+        @media (max-width: 880px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 500px) {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+        & > div {
             & > ul {
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
                 font-size: 16px;
                 line-height: 150%;
+                @media (max-width: 500px) {
+                    font-size: 14px;
+                    gap: 16px;
+                }
                 & > li {
                     &:first-child {
                         font-weight: 600;
                         line-height: 137%;
                         color: var(--black);
+                        @media (max-width: 500px) {
+                            color: var(--grey-text);
+                        }
                     }
                     & > a {
                         color: var(--grey-text);
+                        @media (max-width: 500px) {
+                            color: var(--grey-text) !important;
+                        }
                     }
                 }
             }
@@ -39,15 +63,50 @@
                     }
                 }
             }
+            &:not(:first-child) {
+                & > ul {
+                    & > li {
+                        &:not(:first-child) {
+                            @media (max-width: 500px) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     &__block-2 {
         display: flex;
         align-items: center;
-        gap: 40px;
+        column-gap: 40px;
+        row-gap: 16px;
         padding: 24px 0;
         border-top: 1px solid var(--line);
         border-bottom: 1px solid var(--line);
+        & > div {
+            &:first-child {
+                @media (max-width: 1020px) {
+                    grid-column: span 2;
+                }
+                @media (max-width: 750px) {
+                    grid-column: span 1;
+                }
+            }
+        }
+        & > ul {
+            @media (max-width: 1020px) {
+                border-left: none;
+                padding-left: 0;
+            }
+        }
+        @media (max-width: 1020px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 750px) {
+            grid-template-columns: 1fr;
+        }
     }
     &__socials-wrapper {
         flex: 1 1 auto;
@@ -55,10 +114,26 @@
         justify-content: flex-end;
         align-items: center;
         gap: 24px;
+        @media (max-width: 750px) {
+            justify-content: flex-start;
+        }
+        @media (max-width: 500px) {
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            gap: 16px;
+        }
         & > a {
             font-size: 16px;
             line-height: 137%;
             color: var(--simple-text);
+            @media (max-width: 500px) {
+                font-size: 14px;
+            }
+        }
+        & > ul {
+            @media (max-width: 768px) {
+                display: flex;
+            }
         }
     }
     &__block-3 {
@@ -68,11 +143,26 @@
         font-size: 14px;
         line-height: 143%;
         color: var(--light-text);
+        @media (max-width: 1300px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 900px) {
+            gap: 16px;
+        }
+        @media (max-width: 650px) {
+            grid-template-columns: 1fr;
+        }
+        @media (max-width: 500px) {
+            font-size: 12px;
+        }
         & > div {
             &:first-child {
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
+                @media (max-width: 650px) {
+                    order: 1;
+                }
             }
             & > a {
                 color: var(--light-text);
