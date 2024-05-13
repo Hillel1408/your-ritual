@@ -3589,22 +3589,42 @@ input:checked + .slider:before {
 .news-full > h2 {
   margin-bottom: 12px;
 }
+@media (max-width: 500px) {
+  .news-full > h2 {
+    margin-bottom: 8px;
+  }
+}
 .news-full > span {
   font-size: 16px;
   line-height: 137%;
   color: var(--light-text);
 }
+@media (max-width: 500px) {
+  .news-full > span {
+    font-size: 14px;
+  }
+}
 .news-full > img {
   display: block;
   width: 100%;
-  height: 540px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: 40px;
   margin-bottom: 24px;
 }
+@media (max-width: 500px) {
+  .news-full > img {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+}
 .news-full > p {
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .news-full > p {
+    margin-bottom: 16px;
+  }
 }
 .news-full > h2 {
   font-weight: 700;
@@ -3612,12 +3632,22 @@ input:checked + .slider:before {
   line-height: 136%;
   color: var(--black);
 }
+@media (max-width: 500px) {
+  .news-full > h2 {
+    font-size: 20px;
+  }
+}
 .news-full > h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 140%;
   color: var(--black);
   margin-bottom: 16px;
+}
+@media (max-width: 500px) {
+  .news-full > h3 {
+    font-size: 18px;
+  }
 }
 .news-full > h4 {
   font-weight: 700;
@@ -3629,8 +3659,18 @@ input:checked + .slider:before {
 .news-full > ul {
   margin-bottom: 16px;
 }
+@media (max-width: 500px) {
+  .news-full > ul {
+    margin-bottom: 12px;
+  }
+}
 .news-full > button {
   margin-top: 40px;
+}
+@media (max-width: 500px) {
+  .news-full > button {
+    margin-top: 24px;
+  }
 }
 
 .discount > h2 {
