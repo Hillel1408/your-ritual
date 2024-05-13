@@ -4973,14 +4973,29 @@ input:checked + .slider:before {
 .moscow-districts > h2 {
   margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .moscow-districts > h2 {
+    margin-bottom: 24px;
+  }
+}
 .moscow-districts > div:not(:last-child) {
   margin-bottom: 32px;
+}
+@media (max-width: 500px) {
+  .moscow-districts > div:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
 .moscow-districts > div > h3 {
   font-weight: 700;
   font-size: 28px;
   line-height: 136%;
   color: var(--black);
+}
+@media (max-width: 500px) {
+  .moscow-districts > div > h3 {
+    font-size: 20px;
+  }
 }
 .moscow-districts > div > ul {
   margin-top: 24px;
@@ -4989,6 +5004,20 @@ input:checked + .slider:before {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
+}
+@media (max-width: 600px) {
+  .moscow-districts > div > ul {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .moscow-districts > div > ul {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    gap: 12px;
+  }
 }
 
 .parent-organization {
