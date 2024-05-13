@@ -17,6 +17,16 @@
             &.active {
                 border-bottom: 3px solid var(--blue);
             }
+            &:nth-child(n + 5) {
+                @media (max-width: 600px) {
+                    display: none;
+                }
+            }
+            &:last-child {
+                @media (max-width: 600px) {
+                    display: flex;
+                }
+            }
         }
     }
     & > button {
@@ -24,5 +34,10 @@
         font-size: 14px;
         line-height: 143%;
         color: var(--simple-text);
+        &:first-child {
+            @media (max-width: 600px) {
+                display: none;
+            }
+        }
     }
 }
