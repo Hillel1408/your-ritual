@@ -12,6 +12,7 @@
     & > img {
         height: 212px;
         object-fit: cover;
+        width: 100%;
         @media (max-width: 500px) {
             height: 140px;
         }
@@ -25,6 +26,7 @@
         line-height: 143%;
         color: var(--black);
         flex: 1 1 auto;
+        margin-bottom: 20px;
         @media (max-width: 500px) {
             padding-top: 12px;
             margin-top: 12px;
@@ -34,6 +36,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 10px;
         & > span {
             font-weight: 700;
             font-size: 16px;
