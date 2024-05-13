@@ -5362,12 +5362,23 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 40px;
 }
+@media (max-width: 500px) {
+  .funeral-services {
+    gap: 24px;
+  }
+}
 .funeral-services__block-2 > h3 {
   font-weight: 700;
   font-size: 28px;
   line-height: 136%;
   color: var(--black);
   margin-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .funeral-services__block-2 > h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
 }
 .funeral-services__block-3 {
   display: -webkit-box;
@@ -5379,13 +5390,36 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 16px;
 }
+@media (max-width: 500px) {
+  .funeral-services__block-3 {
+    gap: 14px;
+  }
+}
 .funeral-services__price-tab {
   margin-bottom: 32px;
+}
+@media (max-width: 500px) {
+  .funeral-services__price-tab {
+    margin-bottom: 0;
+  }
 }
 .funeral-services__price-tab > div {
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+}
+@media (max-width: 720px) {
+  .funeral-services__price-tab > div {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .funeral-services__price-tab > div {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
 }
 .funeral-services__list {
   display: -ms-grid;
@@ -5394,6 +5428,19 @@ input:checked + .slider:before {
   grid-template-columns: repeat(4, 1fr);
   border: 0.5px solid var(--line);
   margin-top: 24px;
+}
+@media (max-width: 720px) {
+  .funeral-services__list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .funeral-services__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 16px;
+  }
 }
 .funeral-services__list > li > a {
   height: 176px;
@@ -5409,6 +5456,12 @@ input:checked + .slider:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 500px) {
+  .funeral-services__list > li > a {
+    height: 160px;
+    padding: 16px;
+  }
 }
 .funeral-services__list > li > a > b {
   min-height: 60px;
@@ -5427,10 +5480,21 @@ input:checked + .slider:before {
   color: var(--black);
   text-align: center;
 }
+@media (max-width: 500px) {
+  .funeral-services__list > li > a > p {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+}
 .funeral-services__list > li > a > span {
   font-size: 14px;
   line-height: 143%;
   color: var(--light-text);
+}
+@media (max-width: 500px) {
+  .funeral-services__list > li > a > span {
+    font-size: 12px;
+  }
 }
 .funeral-services__list > li:nth-child(1) > a > b:before {
   font-size: 52px;
