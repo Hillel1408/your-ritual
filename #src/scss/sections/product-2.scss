@@ -6,11 +6,25 @@
         margin-top: 40px;
         padding-bottom: 64px;
         border-bottom: 1px solid var(--line);
+        @media (max-width: 800px) {
+            gap: 30px;
+        }
+        @media (max-width: 620px) {
+            grid-template-columns: 1fr;
+        }
+        @media (max-width: 500px) {
+            margin-top: 24px;
+            gap: 24px;
+            padding-bottom: 24px;
+        }
         & > img {
             width: 100%;
             height: 420px;
             object-fit: cover;
             border: 1px solid var(--line);
+            @media (max-width: 500px) {
+                height: 300px;
+            }
         }
         & > div {
             display: flex;
@@ -37,6 +51,9 @@
                 display: flex;
                 gap: 14px;
                 align-items: flex-end;
+                @media (max-width: 500px) {
+                    gap: 12px;
+                }
                 & > span {
                     &:nth-child(1),
                     &:nth-child(3) {
@@ -66,6 +83,9 @@
                 gap: 14px;
                 font-weight: 500;
                 color: var(--black);
+                @media (max-width: 500px) {
+                    gap: 12px;
+                }
             }
         }
     }
@@ -112,9 +132,16 @@
     &__block {
         margin-top: 64px;
         max-width: 956px;
+        @media (max-width: 500px) {
+            margin-top: 24px;
+        }
         & > h3 {
             font-size: 28px;
             margin-bottom: 24px;
+            @media (max-width: 500px) {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
         }
     }
     &__slider-wrapper {
@@ -130,9 +157,15 @@
         &__button-prev,
         &__button-next {
             bottom: 194px;
+            @media (max-width: 500px) {
+                bottom: 150px;
+            }
         }
         &__button-prev {
-            left: 0;
+            left: 5px;
+        }
+        &__button-next {
+            right: 5px;
         }
         &-pagination {
             text-align: center;
