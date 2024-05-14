@@ -1093,7 +1093,7 @@ input:checked + .slider:before {
     left: 0;
     right: 0;
     background-color: white;
-    min-width: 360px;
+    min-width: 390px;
     height: 100vh;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -7010,4 +7010,128 @@ input:checked + .slider:before {
   font-size: 16px;
   line-height: 137%;
   color: var(--black);
+}
+
+.ask-question-modal {
+  min-width: 390px;
+  width: 620px;
+  height: 100vh;
+  padding: 64px 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  overflow: auto;
+}
+@media (max-width: 620px) {
+  .ask-question-modal {
+    width: 100%;
+    left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .ask-question-modal {
+    padding: 32px 18px;
+  }
+}
+.ask-question-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+.ask-question-modal > h2 {
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .ask-question-modal > h2 {
+    margin-bottom: 16px;
+  }
+}
+.ask-question-modal > p {
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--simple-text);
+  margin-bottom: 32px;
+}
+@media (max-width: 500px) {
+  .ask-question-modal > p {
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+}
+.ask-question-modal > button {
+  position: absolute;
+  top: 38px;
+  right: 38px;
+  background-color: transparent;
+}
+.ask-question-modal > button::before {
+  font-size: 24px;
+}
+@media (max-width: 500px) {
+  .ask-question-modal > button {
+    top: 20px;
+    right: 20px;
+  }
+}
+.ask-question-modal > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 32px;
+}
+@media (max-width: 500px) {
+  .ask-question-modal > form {
+    padding-bottom: 32px;
+  }
+}
+.ask-question-modal > form > textarea {
+  height: 260px;
+}
+@media (max-width: 500px) {
+  .ask-question-modal > form > textarea {
+    height: 96px;
+  }
+}
+.ask-question-modal > form > div {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+@media (max-width: 500px) {
+  .ask-question-modal > form > div {
+    margin-top: 8px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+}
+.ask-question-modal > form > div > p {
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--light-text);
+}
+.ask-question-modal > form > div > p > a {
+  color: var(--light-text);
+  text-decoration: underline;
+}
+.ask-question-modal > ul {
+  padding-left: 0;
+  border-left: 0;
 }

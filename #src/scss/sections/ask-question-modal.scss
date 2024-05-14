@@ -1,0 +1,96 @@
+.ask-question-modal {
+    min-width: 390px;
+    width: 620px;
+    height: 100vh;
+    padding: 64px 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    overflow: auto;
+    @media (max-width: 620px) {
+        width: 100%;
+        left: 0;
+    }
+    @media (max-width: 500px) {
+        padding: 32px 18px;
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    & > h2 {
+        margin-bottom: 40px;
+        @media (max-width: 500px) {
+            margin-bottom: 16px;
+        }
+    }
+    & > p {
+        font-size: 20px;
+        line-height: 140%;
+        color: var(--simple-text);
+        margin-bottom: 32px;
+        @media (max-width: 500px) {
+            margin-bottom: 24px;
+            font-size: 16px;
+        }
+    }
+    & > button {
+        position: absolute;
+        top: 38px;
+        right: 38px;
+        background-color: transparent;
+        &::before {
+            font-size: 24px;
+        }
+        @media (max-width: 500px) {
+            top: 20px;
+            right: 20px;
+        }
+    }
+    & > form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-bottom: 48px;
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 32px;
+        @media (max-width: 500px) {
+            padding-bottom: 32px;
+        }
+        & > textarea {
+            height: 260px;
+            @media (max-width: 500px) {
+                height: 96px;
+            }
+        }
+        & > div {
+            margin-top: 16px;
+            display: flex;
+            gap: 32px;
+            @media (max-width: 500px) {
+                margin-top: 8px;
+                flex-direction: column;
+                gap: 16px;
+            }
+            & > p {
+                font-size: 14px;
+                line-height: 143%;
+                color: var(--light-text);
+                & > a {
+                    color: var(--light-text);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    & > ul {
+        padding-left: 0;
+        border-left: 0;
+    }
+}
