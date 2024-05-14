@@ -108,6 +108,11 @@
         font-size: 14px;
         color: var(--blue);
     }
+    &.icon-31 {
+        &::before {
+            font-size: 2px;
+        }
+    }
 }
 .input {
     border: 1px solid var(--line);

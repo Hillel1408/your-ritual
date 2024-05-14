@@ -4,16 +4,25 @@
     gap: 24px;
     & > h2 {
         margin-bottom: 16px;
+        @media (max-width: 500px) {
+            margin-bottom: 0;
+        }
     }
     &__tab {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 24px;
+        @media (max-width: 1150px) {
+            grid-template-columns: 1fr;
+        }
         & > div {
             &:nth-child(1) {
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
+                @media (max-width: 500px) {
+                    gap: 16px;
+                }
                 & > div {
                     box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
                     background: var(--white);
@@ -21,12 +30,17 @@
                     display: flex;
                     flex-direction: column;
                     gap: 16px;
+                    position: relative;
+                    @media (max-width: 500px) {
+                        padding: 20px;
+                    }
                     &.row {
                         flex-direction: row;
                         align-items: center;
                         justify-content: space-between;
                         & > span {
                             margin-bottom: 0;
+                            padding-right: 60px;
                         }
                     }
                     & > span {
@@ -35,6 +49,14 @@
                         line-height: 144%;
                         color: var(--black);
                         margin-bottom: 8px;
+                        @media (max-width: 500px) {
+                            margin-bottom: 5px;
+                        }
+                    }
+                    & > label {
+                        position: absolute;
+                        top: 32px;
+                        right: 32px;
                     }
                 }
             }
@@ -43,9 +65,18 @@
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
+                @media (max-width: 1350px) {
+                    margin-left: 0;
+                }
+                @media (max-width: 500px) {
+                    gap: 16px;
+                }
                 & > div {
                     padding: 32px 32px 36px 32px;
                     background: var(--grey-bg);
+                    @media (max-width: 500px) {
+                        padding: 20px 20px 24px 20px;
+                    }
                     & > span {
                         font-size: 16px;
                         line-height: 144%;
@@ -57,6 +88,9 @@
                         display: flex;
                         flex-direction: column;
                         gap: 24px;
+                        @media (max-width: 500px) {
+                            gap: 16px;
+                        }
                         & > h3 {
                             font-weight: 700;
                             font-size: 24px;
@@ -84,6 +118,9 @@
                             padding: 24px 0;
                             border-bottom: 1px solid var(--line);
                             border-top: 1px solid var(--line);
+                            @media (max-width: 500px) {
+                                padding: 16px 0;
+                            }
                             & > li {
                                 display: flex;
                                 justify-content: space-between;
@@ -95,7 +132,7 @@
                     cursor: pointer;
                     font-size: 14px;
                     line-height: 143%;
-                    color: var(--grey-text);
+                    color: var(--light-text);
                     display: flex;
                     align-items: flex-start;
                     gap: 14px;
@@ -105,6 +142,11 @@
                 }
             }
         }
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
     }
     &__custom-select {
         display: flex;
