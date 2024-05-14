@@ -5675,6 +5675,7 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 14px;
+  max-width: 956px;
 }
 .funeral-arrangements > div > h3 {
   font-weight: 700;
