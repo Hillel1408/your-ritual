@@ -5525,11 +5525,26 @@ input:checked + .slider:before {
 .economy-funeral > h2 {
   margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .economy-funeral > h2 {
+    margin-bottom: 24px;
+  }
+}
 .economy-funeral > p {
   margin-bottom: 24px;
 }
+@media (max-width: 500px) {
+  .economy-funeral > p {
+    margin-bottom: 16px;
+  }
+}
 .economy-funeral > table {
   margin-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .economy-funeral > table {
+    margin-bottom: 16px;
+  }
 }
 .economy-funeral__block {
   display: -webkit-box;
@@ -5541,11 +5556,21 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 20px;
 }
+@media (max-width: 500px) {
+  .economy-funeral__block {
+    gap: 12px;
+  }
+}
 .economy-funeral__block > h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 140%;
   color: var(--black);
+}
+@media (max-width: 500px) {
+  .economy-funeral__block > h3 {
+    font-size: 16px;
+  }
 }
 .economy-funeral__block > div > p {
   font-weight: 700;
