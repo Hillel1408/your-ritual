@@ -1,0 +1,35 @@
+.menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--black);
+    z-index: 1;
+    & > li {
+        box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+        background: var(--white);
+        padding: 16px 16px 16px 12px;
+        display: flex;
+        gap: 15px;
+        transition: 0.4s;
+        cursor: pointer;
+        &::before {
+            color: var(--blue);
+            font-size: 18px;
+            transform: translateY(5px);
+        }
+        &:hover {
+            color: white;
+            background: var(--blue);
+            &::before {
+                color: white;
+            }
+        }
+    }
+}
