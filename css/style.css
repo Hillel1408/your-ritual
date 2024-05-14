@@ -224,7 +224,7 @@ section {
 html,
 body {
   height: 100%;
-  min-width: 360px;
+  min-width: 390px;
   cursor: default;
   line-height: normal;
 }
@@ -428,6 +428,9 @@ h6 {
 .secondary-btn::before {
   font-size: 14px;
   color: var(--blue);
+}
+.secondary-btn.icon-31::before {
+  font-size: 2px;
 }
 
 .input {
@@ -6431,12 +6434,35 @@ input:checked + .slider:before {
   padding-bottom: 64px;
   border-bottom: 1px solid var(--line);
 }
+@media (max-width: 800px) {
+  .product-2__grid {
+    gap: 30px;
+  }
+}
+@media (max-width: 620px) {
+  .product-2__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .product-2__grid {
+    margin-top: 24px;
+    gap: 24px;
+    padding-bottom: 24px;
+  }
+}
 .product-2__grid > img {
   width: 100%;
   height: 420px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid var(--line);
+}
+@media (max-width: 500px) {
+  .product-2__grid > img {
+    height: 300px;
+  }
 }
 .product-2__grid > div {
   display: -webkit-box;
@@ -6477,6 +6503,11 @@ input:checked + .slider:before {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media (max-width: 500px) {
+  .product-2__proportions > div > label {
+    gap: 12px;
+  }
+}
 .product-2__proportions > div > label > span:nth-child(1), .product-2__proportions > div > label > span:nth-child(3) {
   font-weight: 500;
   color: var(--black);
@@ -6511,6 +6542,11 @@ input:checked + .slider:before {
   gap: 14px;
   font-weight: 500;
   color: var(--black);
+}
+@media (max-width: 500px) {
+  .product-2__ribbons > div > label {
+    gap: 12px;
+  }
 }
 .product-2__price > span {
   font-weight: 600;
@@ -6571,9 +6607,20 @@ input:checked + .slider:before {
   margin-top: 64px;
   max-width: 956px;
 }
+@media (max-width: 500px) {
+  .product-2__block {
+    margin-top: 24px;
+  }
+}
 .product-2__block > h3 {
   font-size: 28px;
   margin-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .product-2__block > h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
 }
 .product-2__slider-wrapper {
   position: relative;
@@ -6589,8 +6636,16 @@ input:checked + .slider:before {
 .product-2__slider__button-prev, .product-2__slider__button-next {
   bottom: 194px;
 }
+@media (max-width: 500px) {
+  .product-2__slider__button-prev, .product-2__slider__button-next {
+    bottom: 150px;
+  }
+}
 .product-2__slider__button-prev {
-  left: 0;
+  left: 5px;
+}
+.product-2__slider__button-next {
+  right: 5px;
 }
 .product-2__slider-pagination {
   text-align: center;
@@ -6609,12 +6664,23 @@ input:checked + .slider:before {
 .calculator > h2 {
   margin-bottom: 16px;
 }
+@media (max-width: 500px) {
+  .calculator > h2 {
+    margin-bottom: 0;
+  }
+}
 .calculator__tab {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+}
+@media (max-width: 1150px) {
+  .calculator__tab {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 .calculator__tab > div:nth-child(1) {
   display: -webkit-box;
@@ -6625,6 +6691,11 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 24px;
+}
+@media (max-width: 500px) {
+  .calculator__tab > div:nth-child(1) {
+    gap: 16px;
+  }
 }
 .calculator__tab > div:nth-child(1) > div {
   -webkit-box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
@@ -6639,6 +6710,12 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 16px;
+  position: relative;
+}
+@media (max-width: 500px) {
+  .calculator__tab > div:nth-child(1) > div {
+    padding: 20px;
+  }
 }
 .calculator__tab > div:nth-child(1) > div.row {
   -webkit-box-orient: horizontal;
@@ -6654,6 +6731,7 @@ input:checked + .slider:before {
 }
 .calculator__tab > div:nth-child(1) > div.row > span {
   margin-bottom: 0;
+  padding-right: 60px;
 }
 .calculator__tab > div:nth-child(1) > div > span {
   font-weight: 700;
@@ -6661,6 +6739,16 @@ input:checked + .slider:before {
   line-height: 144%;
   color: var(--black);
   margin-bottom: 8px;
+}
+@media (max-width: 500px) {
+  .calculator__tab > div:nth-child(1) > div > span {
+    margin-bottom: 5px;
+  }
+}
+.calculator__tab > div:nth-child(1) > div > label {
+  position: absolute;
+  top: 32px;
+  right: 32px;
 }
 .calculator__tab > div:nth-child(2) {
   margin-left: 44px;
@@ -6673,9 +6761,24 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 24px;
 }
+@media (max-width: 1350px) {
+  .calculator__tab > div:nth-child(2) {
+    margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .calculator__tab > div:nth-child(2) {
+    gap: 16px;
+  }
+}
 .calculator__tab > div:nth-child(2) > div {
   padding: 32px 32px 36px 32px;
   background: var(--grey-bg);
+}
+@media (max-width: 500px) {
+  .calculator__tab > div:nth-child(2) > div {
+    padding: 20px 20px 24px 20px;
+  }
 }
 .calculator__tab > div:nth-child(2) > div > span {
   font-size: 16px;
@@ -6693,6 +6796,11 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 24px;
+}
+@media (max-width: 500px) {
+  .calculator__tab > div:nth-child(2) > div > div {
+    gap: 16px;
+  }
 }
 .calculator__tab > div:nth-child(2) > div > div > h3 {
   font-weight: 700;
@@ -6727,6 +6835,11 @@ input:checked + .slider:before {
   border-bottom: 1px solid var(--line);
   border-top: 1px solid var(--line);
 }
+@media (max-width: 500px) {
+  .calculator__tab > div:nth-child(2) > div > div > ul {
+    padding: 16px 0;
+  }
+}
 .calculator__tab > div:nth-child(2) > div > div > ul > li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6739,7 +6852,7 @@ input:checked + .slider:before {
   cursor: pointer;
   font-size: 14px;
   line-height: 143%;
-  color: var(--grey-text);
+  color: var(--light-text);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6752,6 +6865,13 @@ input:checked + .slider:before {
   -webkit-transform: translateY(4px);
       -ms-transform: translateY(4px);
           transform: translateY(4px);
+}
+.calculator__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 .calculator__custom-select {
   display: -webkit-box;
