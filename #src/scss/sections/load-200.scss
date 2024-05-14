@@ -2,8 +2,14 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    @media (max-width: 500px) {
+        gap: 24px;
+    }
     & > h2 {
         margin-bottom: 8px;
+        @media (max-width: 500px) {
+            margin-bottom: 0;
+        }
     }
     & > div {
         & > h3 {
@@ -12,6 +18,10 @@
             line-height: 136%;
             color: var(--black);
             margin-bottom: 24px;
+            @media (max-width: 500px) {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
         }
         & > p {
             &:not(:last-child) {
@@ -27,15 +37,28 @@
             line-height: 144%;
             text-transform: uppercase;
             color: var(--light-text);
+            @media (max-width: 500px) {
+                font-size: 12px;
+            }
         }
         &-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 32px;
+            @media (max-width: 750px) {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
             & > img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+                @media (max-width: 750px) {
+                    order: -1;
+                }
+                @media (max-width: 500px) {
+                    height: 210px;
+                }
             }
         }
         & > ul {
@@ -43,31 +66,40 @@
         }
     }
     &__block-3 {
-        & > table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 24px;
-            th {
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 137%;
-                color: var(--black);
-                text-align: left;
-                padding: 15px 24px 15px 0;
-                border-bottom: 2px solid var(--black);
-                &:nth-child(1) {
-                    width: 50%;
+        & > div {
+            overflow: auto;
+            & > table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 24px;
+                th {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 137%;
+                    color: var(--black);
+                    text-align: left;
+                    padding: 15px 24px 15px 0;
+                    border-bottom: 2px solid var(--black);
+                    &:nth-child(1) {
+                        width: 50%;
+                        @media (max-width: 500px) {
+                            min-width: 240px;
+                        }
+                    }
+                    &:nth-child(2) {
+                        width: 50%;
+                        @media (max-width: 500px) {
+                            min-width: 240px;
+                        }
+                    }
                 }
-                &:nth-child(2) {
-                    width: 50%;
+                td {
+                    padding: 15px 24px 15px 0;
+                    font-size: 16px;
+                    line-height: 137%;
+                    color: var(--simple-text);
+                    border-bottom: 1px solid var(--line);
                 }
-            }
-            td {
-                padding: 15px 24px 15px 0;
-                font-size: 16px;
-                line-height: 137%;
-                color: var(--simple-text);
-                border-bottom: 1px solid var(--line);
             }
         }
     }
@@ -78,6 +110,10 @@
             line-height: 140%;
             color: var(--black);
             margin-bottom: 16px;
+            @media (max-width: 500px) {
+                margin-bottom: 12px;
+                font-size: 18px;
+            }
         }
         &-list {
             margin-bottom: 32px;
@@ -85,10 +121,22 @@
             grid-template-columns: repeat(4, 1fr);
             gap: 24px;
             padding-top: 8px;
+            @media (max-width: 750px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width: 500px) {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 16px;
+                margin-bottom: 16px;
+            }
             & > li {
                 display: flex;
                 flex-direction: column;
                 gap: 13px;
+                @media (max-width: 500px) {
+                    flex-direction: row;
+                    gap: 16px;
+                }
                 & > span {
                     min-height: 54px;
                     &::before {
