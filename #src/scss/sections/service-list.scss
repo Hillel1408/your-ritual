@@ -2,8 +2,14 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    @media (max-width: 500px) {
+        gap: 24px;
+    }
     & > h2 {
         margin-bottom: 8px;
+        @media (max-width: 500px) {
+            margin-bottom: 0;
+        }
     }
     & > div {
         display: flex;
@@ -15,19 +21,30 @@
             line-height: 136%;
             color: var(--black);
             margin-bottom: 10px;
+            @media (max-width: 500px) {
+                margin-bottom: 0;
+                font-size: 20px;
+            }
         }
         &:last-child {
             margin-top: 8px;
+            @media (max-width: 500px) {
+                margin-top: 0;
+            }
         }
     }
     &__list {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 24px;
+        @media (max-width: 650px) {
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
         & > li {
             background: var(--grey-bg);
             padding: 16px 16px 12px 20px;
-            height: 164px;
+            min-height: 164px;
             font-size: 16px;
             line-height: 137%;
             color: var(--black);
