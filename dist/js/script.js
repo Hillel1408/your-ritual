@@ -52,11 +52,16 @@ const swiperAboutService = new Swiper(".about-service__slider", {
     },
 });
 const swiperFuneralArrangements = new Swiper(".funeral-arrangements__slider", {
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 16,
     navigation: {
         nextEl: ".funeral-arrangements__slider__button-next",
         prevEl: ".funeral-arrangements__slider__button-prev",
+    },
+    breakpoints: {
+        666: {
+            slidesPerView: 3,
+        },
     },
 });
 const swiperCoffinsMoscow = new Swiper(".coffins-moscow__slider", {
