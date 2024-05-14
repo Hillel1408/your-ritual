@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    @media (max-width: 500px) {
+        gap: 24px;
+    }
     & > div {
         display: flex;
         flex-direction: column;
@@ -12,29 +15,54 @@
             line-height: 136%;
             color: var(--black);
             margin-bottom: 8px;
+            @media (max-width: 500px) {
+                font-size: 20px;
+                margin-bottom: 0;
+            }
         }
     }
     &__grid {
         grid-template-columns: 1fr 1fr 1fr;
+        @media (max-width: 500px) {
+            grid-template-columns: 1fr;
+        }
     }
     &__list {
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 30px;
+        @media (max-width: 700px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 500px) {
+            grid-template-columns: 1fr;
+            margin-top: 8px;
+        }
     }
     &__block {
         display: flex;
         flex-direction: column;
         gap: 24px;
+        @media (max-width: 500px) {
+            gap: 16px;
+        }
         & > div {
             border: 1px solid var(--line);
             padding: 24px;
             display: grid;
             grid-template-columns: 210px 1fr;
+            @media (max-width: 570px) {
+                grid-template-columns: 1fr;
+                padding: 20px;
+                gap: 12px;
+            }
             gap: 24px;
             & > img {
                 width: 100%;
                 height: 140px;
                 object-fit: cover;
+                @media (max-width: 570px) {
+                    height: 188px;
+                }
             }
             & > div {
                 & > span {
@@ -44,6 +72,9 @@
                     line-height: 144%;
                     color: var(--black);
                     margin-bottom: 16px;
+                    @media (max-width: 570px) {
+                        margin-bottom: 12px;
+                    }
                 }
             }
         }
@@ -52,14 +83,23 @@
         display: flex;
         flex-direction: column;
         gap: 24px;
+        @media (max-width: 500px) {
+            gap: 16px;
+        }
         & > div {
             border: 1px solid var(--line);
             padding: 28px 32px;
+            @media (max-width: 500px) {
+                padding: 16px 20px;
+            }
             & > span {
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 137%;
                 color: var(--black);
+                @media (max-width: 500px) {
+                    font-size: 18px;
+                }
             }
             & > div {
                 margin-top: 24px;
@@ -67,14 +107,49 @@
                 grid-template-columns: 202px 1fr;
                 gap: 34px;
                 align-items: flex-start;
+                @media (max-width: 640px) {
+                    grid-template-columns: 1fr;
+                }
+                @media (max-width: 500px) {
+                    margin-top: 12px;
+                    gap: 12px;
+                }
                 & > img {
                     width: 100%;
                     height: 124px;
                     object-fit: cover;
+                    @media (max-width: 640px) {
+                        height: 254px;
+                    }
+                    @media (max-width: 500px) {
+                        height: 174px;
+                    }
                 }
                 & > table {
                     width: 100%;
                     border-collapse: collapse;
+                    tr {
+                        &:first-child {
+                            display: none;
+                        }
+                        &:not(:last-child) {
+                            @media (max-width: 500px) {
+                                border-bottom: 1px solid var(--line);
+                            }
+                        }
+                        @media (max-width: 500px) {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 8px;
+                            padding: 12px 0;
+                        }
+                        & > td {
+                            &:first-child {
+                                font-weight: 600;
+                            }
+                        }
+                    }
                     th {
                         font-weight: 700;
                         font-size: 16px;
@@ -100,6 +175,10 @@
                         &:nth-child(2) {
                             text-align: right;
                         }
+                        @media (max-width: 500px) {
+                            padding: 0;
+                            border-bottom: none;
+                        }
                     }
                     tr {
                         &:last-child {
@@ -119,5 +198,8 @@
         color: var(--black);
         padding: 16px 24px 20px 24px;
         background: var(--grey-bg);
+        @media (max-width: 500px) {
+            padding: 12px 20px 16px 20px;
+        }
     }
 }
