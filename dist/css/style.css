@@ -5675,6 +5675,7 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 14px;
+  max-width: 956px;
 }
 .funeral-arrangements > div > h3 {
   font-weight: 700;
@@ -6568,6 +6569,7 @@ input:checked + .slider:before {
 }
 .product-2__block {
   margin-top: 64px;
+  max-width: 956px;
 }
 .product-2__block > h3 {
   font-size: 28px;
@@ -6575,9 +6577,8 @@ input:checked + .slider:before {
 }
 .product-2__slider-wrapper {
   position: relative;
-  max-width: 960px;
-  padding: 0 24px;
-  margin: 0 -24px;
+  padding: 0 18px;
+  margin: 0 -18px;
   margin-top: 10px;
 }
 .product-2__slider {
