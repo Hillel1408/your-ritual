@@ -1892,6 +1892,7 @@ input:checked + .slider:before {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
+  position: relative;
 }
 .logo > div {
   display: -webkit-box;
@@ -1914,6 +1915,13 @@ input:checked + .slider:before {
   font-size: 12px;
   line-height: 133%;
   color: var(--black);
+}
+.logo > a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .contacts {
