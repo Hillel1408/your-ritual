@@ -1,6 +1,15 @@
 .reviews {
     & > h2 {
         margin-bottom: 40px;
+        @media (max-width: 500px) {
+            margin-bottom: 24px;
+        }
+    }
+    & > ul {
+        @media (max-width: 500px) {
+            flex-direction: column;
+            text-align: center;
+        }
     }
     &__block {
         margin-top: 40px;
@@ -8,11 +17,19 @@
         flex-direction: column;
         gap: 40px;
         margin-bottom: 48px;
+        @media (max-width: 500px) {
+            margin-top: 24px;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
     }
     &__item {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        @media (max-width: 500px) {
+            gap: 12px;
+        }
         &-rating {
             display: flex;
             flex-direction: column;
@@ -36,6 +53,9 @@
             grid-template-columns: 64px 1fr auto;
             align-items: center;
             gap: 24px;
+            @media (max-width: 500px) {
+                gap: 16px;
+            }
             & > img {
                 height: 64px;
                 object-fit: cover;
@@ -73,6 +93,12 @@
         grid-template-columns: 62px 1fr auto;
         align-items: center;
         gap: 24px;
+        @media (max-width: 600px) {
+            grid-template-columns: 60px 1fr;
+        }
+        @media (max-width: 500px) {
+            gap: 15px;
+        }
         & > button {
             color: var(--blue);
             background-color: transparent;
@@ -83,6 +109,10 @@
             &:before {
                 color: var(--blue);
                 font-size: 10px;
+            }
+            @media (max-width: 600px) {
+                grid-column: span 2;
+                justify-content: flex-end;
             }
         }
         & > div {
@@ -104,9 +134,11 @@
     &__certificates {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        border: 0.5px solid var(--line);
+        @media (max-width: 630px) {
+            grid-template-columns: 1fr 1fr;
+        }
         & > div {
-            border: 0.5px solid var(--line);
+            border: 1px solid var(--line);
             padding: 32px 42px;
             & > img {
                 width: 100%;
@@ -121,5 +153,13 @@
         display: grid;
         grid-template-columns: 1fr 204px;
         gap: 32px;
+        align-items: center;
+        @media (max-width: 580px) {
+            grid-template-columns: 1fr;
+        }
+        @media (max-width: 500px) {
+            padding: 20px;
+            gap: 16px;
+        }
     }
 }

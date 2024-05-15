@@ -1,6 +1,7 @@
 .price__tabs {
     display: flex;
     gap: 13px;
+    flex-wrap: wrap;
     & > li {
         border-radius: 100px;
         padding: 11px 24px 15px 24px;
