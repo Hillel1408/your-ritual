@@ -141,10 +141,14 @@
             right: 0;
             background-color: white;
             min-width: 390px;
-            height: 100vh;
+            height: calc(100vh - 68px);
             transition: 0.3s;
-            z-index: 1;
+            z-index: 2;
             transform: translateX(-100%);
+            overflow: auto;
+            &.active {
+                transform: none;
+            }
         }
     }
     &__nav {
@@ -160,6 +164,15 @@
         }
         & > li {
             border-bottom: 3px solid transparent;
+            @media (max-width: 600px) {
+                &.active {
+                    & > a {
+                        &::before {
+                            transform: rotate(270deg) !important;
+                        }
+                    }
+                }
+            }
             & > a {
                 display: flex;
                 flex-direction: row-reverse;
@@ -187,6 +200,7 @@
                 @media (max-width: 600px) {
                     padding: 15px 0px 15px 0px;
                     flex-direction: row;
+                    font-weight: 600;
                 }
             }
             &:hover {
@@ -199,6 +213,9 @@
                 & > a {
                     &::before {
                         transform: rotate(90deg);
+                        @media (max-width: 600px) {
+                            transform: rotate(180deg) translateX(-2px);
+                        }
                     }
                 }
             }
@@ -208,9 +225,17 @@
                         &:nth-child(4) {
                             & > ul {
                                 font-weight: 600;
+                                @media (max-width: 600px) {
+                                    padding-left: 0;
+
+                                    font-weight: 400;
+                                }
                                 & > li {
                                     & > a {
                                         color: var(--black);
+                                        @media (max-width: 600px) {
+                                            color: var(--grey-text);
+                                        }
                                     }
                                 }
                             }
@@ -228,6 +253,10 @@
                     left: 0;
                     @media (max-width: 860px) {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    @media (max-width: 600px) {
+                        grid-template-columns: 1fr;
+                        display: none;
                     }
                     & > li {
                         & > a {
@@ -264,12 +293,46 @@
                     gap: 14px;
                     padding: 20px;
                 }
+                @media (max-width: 600px) {
+                    opacity: 1;
+                    visibility: visible;
+                    position: initial;
+                    transform: none;
+                    box-shadow: none;
+                    padding: 0 0 15px 24px;
+                    display: none;
+                    &.active {
+                        display: flex;
+                    }
+                }
                 & > li {
                     display: flex;
                     flex-direction: column;
                     gap: 24px;
+                    @media (max-width: 600px) {
+                        gap: 16px;
+                    }
                     & > a {
                         color: var(--grey-text);
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                        &::before {
+                            display: none;
+                            @media (max-width: 600px) {
+                                display: block;
+                                font-size: 12px;
+                                transition: 0.2s;
+                                transform: rotate(180deg) translateX(-2px);
+                            }
+                        }
+                        @media (max-width: 600px) {
+                            &.active {
+                                &::before {
+                                    transform: rotate(270deg) !important;
+                                }
+                            }
+                        }
                     }
                     & > ul {
                         font-size: 16px;
@@ -277,6 +340,14 @@
                         display: flex;
                         flex-direction: column;
                         gap: 24px;
+                        @media (max-width: 600px) {
+                            gap: 16px;
+                            padding-left: 24px;
+                            display: none;
+                            &.active {
+                                display: flex;
+                            }
+                        }
                     }
                 }
             }

@@ -125,7 +125,7 @@ const headerNav = document.querySelector(".header__block-3");
 const header = document.querySelector(".header");
 
 headerNavItems.forEach((item) => {
-    item.addEventListener("mouseover", () => {
+    item.addEventListener("mouseover", (e) => {
         if (window.innerWidth > 600) {
             const ul = item.querySelector("ul");
             ul.style.top = headerNav.clientHeight + 0.2 + "px";
@@ -136,5 +136,33 @@ headerNavItems.forEach((item) => {
     });
     item.addEventListener("mouseout", () => {
         window.innerWidth > 600 && overlay.classList.remove("active");
+    });
+    item.querySelector("a").addEventListener("click", (e) => {
+        if (window.innerWidth <= 600) {
+            e.preventDefault();
+            item.classList.toggle("active");
+            const ul = item.querySelector("ul");
+            ul.classList.toggle("active");
+        }
+    });
+});
+
+const openMenuBtn = document.querySelector(".open-menu-btn");
+
+openMenuBtn.addEventListener("click", () => {
+    headerNav.classList.add("active");
+    document.body.classList.toggle("lock");
+});
+
+const openSubmenuBtn = document.querySelectorAll(".open-submenu-btn");
+
+openSubmenuBtn.forEach((item) => {
+    item.addEventListener("click", (e) => {
+        if (window.innerWidth <= 600) {
+            e.preventDefault();
+            const ul = item.parentElement.querySelector("ul");
+            ul.classList.toggle("active");
+            item.classList.toggle("active");
+        }
     });
 });
