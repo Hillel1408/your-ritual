@@ -1,43 +1,3 @@
-const swiper = new Swiper(".goods__slider", {
-    slidesPerView: 2,
-    spaceBetween: 16,
-    navigation: {
-        nextEl: ".goods__slider__button-next",
-        prevEl: ".goods__slider__button-prev",
-    },
-    pagination: {
-        el: ".goods__slider-pagination",
-        clickable: true,
-    },
-    breakpoints: {
-        1240: {
-            slidesPerView: 5,
-        },
-        1000: {
-            slidesPerView: 4,
-        },
-        750: {
-            slidesPerView: 3,
-        },
-    },
-});
-const swiperIntro = new Swiper(".intro__slider", {
-    slidesPerView: 2,
-    spaceBetween: 16,
-    navigation: {
-        nextEl: ".intro__slider__button-next",
-        prevEl: ".intro__slider__button-prev",
-    },
-    pagination: {
-        el: ".intro__slider-pagination",
-        clickable: true,
-    },
-    breakpoints: {
-        1200: {
-            slidesPerView: 3,
-        },
-    },
-});
 const swiperAboutService = new Swiper(".about-service__slider", {
     slidesPerView: 1,
     spaceBetween: 24,
@@ -97,6 +57,7 @@ const overlay = document.querySelector(".overlay");
 const askQuestionCloseBtn = document.querySelector(".ask-question-close-btn");
 
 const toggle = (block) => {
+    overlay.style.top = "0";
     block.classList.toggle("active");
     document.body.classList.toggle("lock");
     overlay.classList.toggle("active");
@@ -135,7 +96,9 @@ headerNavItems.forEach((item) => {
         }
     });
     item.addEventListener("mouseout", () => {
-        window.innerWidth > 600 && overlay.classList.remove("active");
+        if (window.innerWidth > 600) {
+            overlay.classList.remove("active");
+        }
     });
     item.querySelector("a").addEventListener("click", (e) => {
         if (window.innerWidth <= 600) {
@@ -148,10 +111,20 @@ headerNavItems.forEach((item) => {
 });
 
 const openMenuBtn = document.querySelector(".open-menu-btn");
+const closeMenuBtn = document.querySelector(".close-menu-btn");
 
 openMenuBtn.addEventListener("click", () => {
     headerNav.classList.add("active");
     document.body.classList.toggle("lock");
+    openMenuBtn.style.display = "none";
+    closeMenuBtn.style.display = "block";
+});
+
+closeMenuBtn.addEventListener("click", () => {
+    headerNav.classList.remove("active");
+    document.body.classList.toggle("lock");
+    closeMenuBtn.style.display = "none";
+    openMenuBtn.style.display = "block";
 });
 
 const openSubmenuBtn = document.querySelectorAll(".open-submenu-btn");

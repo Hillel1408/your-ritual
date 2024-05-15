@@ -21,5 +21,64 @@
         @@include('./html/overlay.html')
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script>
+            const swiperIntro = new Swiper(".intro__slider", {
+                slidesPerView: 2,
+                spaceBetween: 16,
+                navigation: {
+                    nextEl: ".intro__slider__button-next",
+                    prevEl: ".intro__slider__button-prev",
+                },
+                pagination: {
+                    el: ".intro__slider-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    1200: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+            const swiper = new Swiper(".goods__slider", {
+                slidesPerView: 2,
+                spaceBetween: 16,
+                navigation: {
+                    nextEl: ".goods__slider__button-next",
+                    prevEl: ".goods__slider__button-prev",
+                },
+                pagination: {
+                    el: ".goods__slider-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    1240: {
+                        slidesPerView: 5,
+                    },
+                    1000: {
+                        slidesPerView: 4,
+                    },
+                    750: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+            const tabsItems = document.querySelectorAll(".price__tabs li");
+            const tabsBlock = document.querySelectorAll(".price__tab");
+            tabsItems[0].classList.add("active");
+            for (let elem of tabsItems) {
+                elem.addEventListener("click", function () {
+                    for (let elem of tabsItems) {
+                        elem.classList.remove("active");
+                    }
+                    this.classList.add("active");
+                    for (let elem of tabsBlock) {
+                        elem.classList.remove("active");
+                        if (this.dataset.id == elem.dataset.id) {
+                            elem.classList.add("active");
+                        }
+                    }
+                });
+            }
+        </script>
     </body>
 </html>

@@ -188,6 +188,7 @@
     <div class="header__btn">
         <button class="icon-34"></button>
         <button class="icon-35 open-menu-btn"></button>
+        <button class="icon-33 close-menu-btn"></button>
     </div>
 </header>
 
@@ -426,12 +427,12 @@
         </div>
         <ul class="price__tabs">
     
-    <li>Похороны</li>
+    <li data-id="0">Похороны</li>
     
-    <li>Кремация</li>
+    <li data-id="1">Кремация</li>
     
 </ul>
- <div class="price__tab">
+ <div class="price__tab active" data-id="0">
     <div class="price__tab-item">
         <div>Эконом</div>
         <div>
@@ -937,28 +938,80 @@
 
     <button class="icon-33 calling-agent-close-btn"></button>
 </div>
- <ul class="menu">
-    <li class="icon-9 ask-question-btn">
-        Задать <br />
-        вопрос
-    </li>
-    <li class="icon-10 calling-agent-btn">
-        Вызвать <br />
-        ритуального <br />
-        агента
-    </li>
-    <li class="icon-11">
-        <a href="calculator.html"
-            >Расчет <br />
-            стоимости <br />
-            похорон</a
-        >
-    </li>
-</ul>
+ <div class="menu">
+    <ul>
+        <li class="icon-9 ask-question-btn">Задать вопрос</li>
+        <li class="icon-10 calling-agent-btn">
+            <span>Вызвать <span>ритуального</span> агента</span>
+        </li>
+        <li class="icon-11">
+            <a href="calculator.html">Расчет стоимости <span>похорон</span></a>
+        </li>
+    </ul>
+</div>
 
         <div class="overlay"></div>
 
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script>
+            const swiperIntro = new Swiper(".intro__slider", {
+                slidesPerView: 2,
+                spaceBetween: 16,
+                navigation: {
+                    nextEl: ".intro__slider__button-next",
+                    prevEl: ".intro__slider__button-prev",
+                },
+                pagination: {
+                    el: ".intro__slider-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    1200: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+            const swiper = new Swiper(".goods__slider", {
+                slidesPerView: 2,
+                spaceBetween: 16,
+                navigation: {
+                    nextEl: ".goods__slider__button-next",
+                    prevEl: ".goods__slider__button-prev",
+                },
+                pagination: {
+                    el: ".goods__slider-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    1240: {
+                        slidesPerView: 5,
+                    },
+                    1000: {
+                        slidesPerView: 4,
+                    },
+                    750: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+            const tabsItems = document.querySelectorAll(".price__tabs li");
+            const tabsBlock = document.querySelectorAll(".price__tab");
+            tabsItems[0].classList.add("active");
+            for (let elem of tabsItems) {
+                elem.addEventListener("click", function () {
+                    for (let elem of tabsItems) {
+                        elem.classList.remove("active");
+                    }
+                    this.classList.add("active");
+                    for (let elem of tabsBlock) {
+                        elem.classList.remove("active");
+                        if (this.dataset.id == elem.dataset.id) {
+                            elem.classList.add("active");
+                        }
+                    }
+                });
+            }
+        </script>
     </body>
 </html>

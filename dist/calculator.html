@@ -189,6 +189,7 @@
     <div class="header__btn">
         <button class="icon-34"></button>
         <button class="icon-35 open-menu-btn"></button>
+        <button class="icon-33 close-menu-btn"></button>
     </div>
 </header>
 
@@ -242,9 +243,9 @@
     </p>
     <ul class="price__tabs">
     
-    <li>Похороны</li>
+    <li data-id="0">Похороны</li>
     
-    <li>Кремация</li>
+    <li data-id="1">Кремация</li>
     
 </ul>
 
@@ -562,6 +563,63 @@
         </div>
     </div>
 </footer>
+ <div class="ask-question-modal">
+    <h2 class="title">Задать вопрос</h2>
+    <p>Оставьте свои контакты и наш агент свяжется с вами в ближайшее время. Либо позвоните по телефонам ниже.</p>
+    <form action="">
+        <input type="text" class="input" placeholder="Ваше имя" />
+        <input type="tel" class="input" placeholder="Телефон" />
+        <textarea class="input" placeholder="Ваш вопрос"></textarea>
+        <div>
+            <button class="btn">Отправить</button>
+            <p>Отправляя заявку, вы соглашаетесь на <a href="">обработку персональных данных</a></p>
+        </div>
+    </form>
+    <ul class="contacts">
+    <li><span>Бесплатно по России:</span><a href="tel:8(800)200-27-08">8 (800) 200-27-08</a></li>
+    <li>
+        <span>Телефон в Москве:</span>
+        <a href="tel:8(495)182-11-00">8 (495) 182-11-00</a>
+    </li>
+</ul>
+
+    <button class="icon-33 ask-question-close-btn"></button>
+</div>
+ <div class="ask-question-modal calling-agent-modal">
+    <h2 class="title">Вызов ритуального агента</h2>
+    <p>Оставьте свои контакты и наш агент свяжется с вами в ближайшее время. Либо позвоните по телефонам ниже.</p>
+    <form action="">
+        <input type="text" class="input" placeholder="Ваше имя" />
+        <input type="tel" class="input" placeholder="Телефон" />
+        <textarea class="input" placeholder="Комментарий (не обязательно)"></textarea>
+        <div>
+            <button class="btn">Отправить</button>
+            <p>Отправляя заявку, вы соглашаетесь на <a href="">обработку персональных данных</a></p>
+        </div>
+    </form>
+    <ul class="contacts">
+    <li><span>Бесплатно по России:</span><a href="tel:8(800)200-27-08">8 (800) 200-27-08</a></li>
+    <li>
+        <span>Телефон в Москве:</span>
+        <a href="tel:8(495)182-11-00">8 (495) 182-11-00</a>
+    </li>
+</ul>
+
+    <button class="icon-33 calling-agent-close-btn"></button>
+</div>
+ <div class="menu">
+    <ul>
+        <li class="icon-9 ask-question-btn">Задать вопрос</li>
+        <li class="icon-10 calling-agent-btn">
+            <span>Вызвать <span>ритуального</span> агента</span>
+        </li>
+        <li class="icon-11">
+            <a href="calculator.html">Расчет стоимости <span>похорон</span></a>
+        </li>
+    </ul>
+</div>
+
+        <div class="overlay"></div>
 
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/fancyselect.js"></script>

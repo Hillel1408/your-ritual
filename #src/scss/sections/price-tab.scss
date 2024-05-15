@@ -1,7 +1,10 @@
 .price__tab {
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-top: 32px;
+    display: none;
+    &.active {
+        display: grid;
+    }
     @media (max-width: 940px) {
         grid-template-columns: repeat(3, 1fr);
     }

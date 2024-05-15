@@ -378,7 +378,16 @@
                 }
                 &:nth-child(2) {
                     &::before {
-                        font-size: 19px;
+                        font-size: 22px;
+                        color: var(--black);
+                    }
+                }
+                &:nth-child(3) {
+                    display: none;
+                    margin-left: 8px;
+                    margin-right: 7px;
+                    &::before {
+                        font-size: 22px;
                         color: var(--black);
                     }
                 }
