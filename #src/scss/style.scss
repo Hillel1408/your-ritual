@@ -24,6 +24,10 @@
     --third-family: "Inter", sans-serif;
 }
 
+body.lock {
+    overflow: hidden;
+    position: relative;
+}
 .container {
     max-width: 1420px;
     padding: 0 18px;
@@ -496,3 +500,4 @@ input:checked + .slider:before {
 @import "./sections/calculator";
 @import "./sections/ask-question-modal";
 @import "./sections/menu";
+@import "./sections/overlay";

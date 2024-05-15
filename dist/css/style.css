@@ -306,6 +306,11 @@ h6 {
   --third-family: "Inter", sans-serif;
 }
 
+body.lock {
+  overflow: hidden;
+  position: relative;
+}
+
 .container {
   max-width: 1420px;
   padding: 0 18px;
@@ -1213,6 +1218,12 @@ input:checked + .slider:before {
           transform: none;
   left: 0;
 }
+@media (max-width: 860px) {
+  .header__nav > li:nth-child(3) > ul, .header__nav > li:nth-child(4) > ul {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .header__nav > li:nth-child(3) > ul > li > a, .header__nav > li:nth-child(4) > ul > li > a {
   font-weight: 600;
   color: var(--black);
@@ -1248,6 +1259,12 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 24px;
+}
+@media (max-width: 1100px) {
+  .header__nav > li > ul {
+    gap: 14px;
+    padding: 20px;
+  }
 }
 .header__nav > li > ul > li {
   display: -webkit-box;
@@ -5915,7 +5932,6 @@ input:checked + .slider:before {
   display: grid;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
-  border: 0.5px solid var(--line);
   font-weight: 500;
   font-size: 16px;
   line-height: 137%;
@@ -5939,7 +5955,7 @@ input:checked + .slider:before {
   }
 }
 .funeral-arrangements__grid > li {
-  border: 0.5px solid var(--line);
+  border: 1px solid var(--line);
   height: 120px;
   padding: 16px 12px 12px 20px;
   position: relative;
@@ -6063,8 +6079,18 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 32px;
 }
+@media (max-width: 500px) {
+  .coffins-moscow {
+    gap: 24px;
+  }
+}
 .coffins-moscow > h2 {
   margin-bottom: 8px;
+}
+@media (max-width: 500px) {
+  .coffins-moscow > h2 {
+    margin-bottom: 0;
+  }
 }
 .coffins-moscow > div {
   display: -webkit-box;
@@ -6082,15 +6108,25 @@ input:checked + .slider:before {
   line-height: 136%;
   color: var(--black);
 }
+@media (max-width: 500px) {
+  .coffins-moscow > div > h3 {
+    font-size: 20px;
+  }
+}
 .coffins-moscow__block-4 > ul {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
+@media (max-width: 500px) {
+  .coffins-moscow__block-4 > ul {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .coffins-moscow__slider-wrapper {
   position: relative;
-  max-width: 960px;
-  padding: 0 24px;
-  margin: 0 -24px;
+  padding: 0 18px;
+  margin: 0 -18px;
   margin-top: 10px;
 }
 .coffins-moscow__slider {
@@ -6102,7 +6138,10 @@ input:checked + .slider:before {
   bottom: 194px;
 }
 .coffins-moscow__slider__button-prev {
-  left: 0;
+  left: 5px;
+}
+.coffins-moscow__slider__button-next {
+  right: 5px;
 }
 .coffins-moscow__slider-pagination {
   text-align: center;
@@ -7243,6 +7282,9 @@ input:checked + .slider:before {
   transition: 0.4s;
   cursor: pointer;
 }
+.menu > li > a {
+  color: var(--black);
+}
 .menu > li::before {
   color: var(--blue);
   font-size: 18px;
@@ -7256,4 +7298,17 @@ input:checked + .slider:before {
 }
 .menu > li:hover::before {
   color: white;
+}
+.menu > li:hover > a {
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }

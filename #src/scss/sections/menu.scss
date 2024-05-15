@@ -19,6 +19,9 @@
         gap: 15px;
         transition: 0.4s;
         cursor: pointer;
+        & > a {
+            color: var(--black);
+        }
         &::before {
             color: var(--blue);
             font-size: 18px;
@@ -28,6 +31,9 @@
             color: white;
             background: var(--blue);
             &::before {
+                color: white;
+            }
+            & > a {
                 color: white;
             }
         }
