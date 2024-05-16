@@ -16,5 +16,20 @@
         @@include('./html/overlay.html')
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script>
+            const swiperCoffinsMoscow = new Swiper(".coffins-moscow__slider", {
+                slidesPerView: 2,
+                spaceBetween: 16,
+                navigation: {
+                    nextEl: ".coffins-moscow__slider__button-next",
+                    prevEl: ".coffins-moscow__slider__button-prev",
+                },
+                breakpoints: {
+                    666: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        </script>
     </body>
 </html>
