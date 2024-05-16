@@ -1,17 +1,3 @@
-const swiperProduct = new Swiper(".product-2__slider", {
-    slidesPerView: 2,
-    spaceBetween: 16,
-    navigation: {
-        nextEl: ".product-2__slider__button-next",
-        prevEl: ".product-2__slider__button-prev",
-    },
-    breakpoints: {
-        666: {
-            slidesPerView: 3,
-        },
-    },
-});
-
 const askQuestionBtn = document.querySelector(".ask-question-btn");
 const askQuestionModal = document.querySelector(".ask-question-modal");
 const overlay = document.querySelector(".overlay");

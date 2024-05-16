@@ -6,26 +6,29 @@
     </p>
     <p class="text">При заказе наших услуг называется фиксированная сумма, не предусматривающая каких-либо доплат в процессе организации.</p>
     @@include('./tabs.html', {"list": ['Похороны', 'Кремация']})
-    <h3 class="subtitle">Захоронение гробом</h3>
-    @@for (var i = 0; i < 3; i++) {
-    <div>
-        <span>Эконом</span>
-        <table class="table">
-            <tr>
-                <th>Наименование позиции</th>
-                <th>Стоимость, руб.</th>
-            </tr>
-            @@for (var i = 0; i < 10; i++) {
-            <tr>
-                <td>Гроб деревянный обитый тканью «Шёлк-Гладь»</td>
-                <td>4100 ₽</td>
-            </tr>
-            }
-            <tr class="total">
-                <td>Итого:</td>
-                <td>25 900</td>
-            </tr>
-        </table>
+    <div class="cost__tab active" data-id="0">
+        <h3 class="subtitle">Захоронение гробом</h3>
+        @@for (var i = 0; i < 3; i++) {
+        <div>
+            <span>Эконом</span>
+            <table class="table">
+                <tr>
+                    <th>Наименование позиции</th>
+                    <th>Стоимость, руб.</th>
+                </tr>
+                @@for (var i = 0; i < 10; i++) {
+                <tr>
+                    <td>Гроб деревянный обитый тканью «Шёлк-Гладь»</td>
+                    <td>4100 ₽</td>
+                </tr>
+                }
+                <tr class="total">
+                    <td>Итого:</td>
+                    <td>25 900</td>
+                </tr>
+            </table>
+        </div>
+        }
     </div>
-    } @@include('./consultation.html')
+    @@include('./consultation.html')
 </div>
