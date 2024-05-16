@@ -1,16 +1,3 @@
-const swiperAboutService = new Swiper(".about-service__slider", {
-    slidesPerView: 1,
-    spaceBetween: 24,
-    navigation: {
-        nextEl: ".about-service__slider__button-next",
-        prevEl: ".about-service__slider__button-prev",
-    },
-    breakpoints: {
-        580: {
-            slidesPerView: 2,
-        },
-    },
-});
 const swiperFuneralArrangements = new Swiper(".funeral-arrangements__slider", {
     slidesPerView: 2,
     spaceBetween: 16,

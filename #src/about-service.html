@@ -16,5 +16,20 @@
         @@include('./html/overlay.html')
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script>
+            const swiperAboutService = new Swiper(".about-service__slider", {
+                slidesPerView: 1,
+                spaceBetween: 24,
+                navigation: {
+                    nextEl: ".about-service__slider__button-next",
+                    prevEl: ".about-service__slider__button-prev",
+                },
+                breakpoints: {
+                    580: {
+                        slidesPerView: 2,
+                    },
+                },
+            });
+        </script>
     </body>
 </html>

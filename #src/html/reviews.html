@@ -1,7 +1,7 @@
 <div class="reviews">
     <h2 class="title">Отзывы</h2>
     @@include('./tabs.html', {"list": ['Отзывы на Яндексе', 'Отзывы на сайте', 'Благодарственные письма']})
-    <div class="reviews__block" style="display: none">
+    <div class="reviews__block active" data-id="0">
         <div class="reviews__header">
             <div><b class="icon-36"></b><span>5,0</span></div>
             <p class="text">Все оценки и отзывы реальные и проверены Яндексом.</p>
@@ -26,7 +26,7 @@
         </div>
         }
     </div>
-    <div class="reviews__block" style="display: none">
+    <div class="reviews__block" data-id="1">
         <div class="reviews__send">
             <p class="text">Здесь публикуются отзывы наших клиентов о деятельности компании. Вы можете оставить свой отзыв, заполнив форму.</p>
             <button class="btn">Написать отзыв</button>
@@ -42,7 +42,7 @@
         </div>
         }
     </div>
-    <div class="reviews__block">
+    <div class="reviews__block" data-id="2">
         <div class="reviews__certificates">
             @@for (var i = 0; i < 9; i++) {
             <div><img src="img/img-13.png" alt="" /></div>
