@@ -28,6 +28,10 @@
     }
     &__price-tab {
         margin-bottom: 32px;
+        display: none;
+        &.active {
+            display: block;
+        }
         @media (max-width: 500px) {
             margin-bottom: 0;
         }

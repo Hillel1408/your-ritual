@@ -5785,6 +5785,10 @@ input:checked + .slider:before {
 }
 .funeral-services__price-tab {
   margin-bottom: 32px;
+  display: none;
+}
+.funeral-services__price-tab.active {
+  display: block;
 }
 @media (max-width: 500px) {
   .funeral-services__price-tab {
