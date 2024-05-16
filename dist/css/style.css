@@ -7363,7 +7363,7 @@ input:checked + .slider:before {
   right: 0;
   bottom: 0;
   background-color: white;
-  z-index: 2;
+  z-index: 3;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.4s;
@@ -7583,7 +7583,7 @@ input:checked + .slider:before {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
+  z-index: 2;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.4s, visibility 0.4s;
