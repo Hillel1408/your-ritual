@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
         <meta name="format-detection" content="telephone=no" />
         <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/fancyselect.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="shortcut icon" href="favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,6 +21,7 @@
         @@include('./html/footer.html') @@include('./html/ask-question-modal.html') @@include('./html/calling-agent-modal.html') @@include('./html/menu.html')
         @@include('./html/overlay.html')
         <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/fancyselect.js"></script>
         <script src="js/script.js"></script>
         <script>
             const swiperIntro = new Swiper(".intro__slider", {
@@ -79,6 +81,15 @@
                     }
                 });
             }
+            const faqItems = document.querySelectorAll(".faq__block ul li");
+            faqItems.forEach((item) => {
+                item.addEventListener("click", function () {
+                    faqItems.forEach((elem) => {
+                        elem.classList.remove("active");
+                    });
+                    item.classList.toggle("active");
+                });
+            });
         </script>
     </body>
 </html>

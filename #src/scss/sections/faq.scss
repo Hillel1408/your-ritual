@@ -45,6 +45,27 @@
                 @media (max-width: 500px) {
                     padding: 16px 0;
                 }
+                & > div {
+                    color: var(--white);
+                    padding-top: 16px;
+                    display: none;
+                }
+                &.active {
+                    & > div {
+                        display: block;
+                    }
+                    & > p {
+                        & > span {
+                            &::before {
+                                display: none;
+                            }
+                            &::after {
+                                content: url("../img/icon-1.svg");
+                                transform: translateY(-6.5px);
+                            }
+                        }
+                    }
+                }
                 & > p {
                     display: flex;
                     justify-content: space-between;
