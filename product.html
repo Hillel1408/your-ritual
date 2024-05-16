@@ -550,5 +550,20 @@
 
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script>
+            const swiperProduct = new Swiper(".product-2__slider", {
+                slidesPerView: 2,
+                spaceBetween: 16,
+                navigation: {
+                    nextEl: ".product-2__slider__button-next",
+                    prevEl: ".product-2__slider__button-prev",
+                },
+                breakpoints: {
+                    666: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        </script>
     </body>
 </html>

@@ -309,7 +309,7 @@
     
 </ul>
 
-        <div class="funeral-services__price-tab"><div class="price__tab active" data-id="0">
+        <div class="funeral-services__price-tab" data-id="0"><div class="price__tab active" data-id="0">
     <div class="price__tab-item">
         <div>Эконом</div>
         <div>
@@ -535,5 +535,24 @@
 
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script>
+            const tabsItems = document.querySelectorAll(".price__tabs li");
+            const tabsBlock = document.querySelectorAll(".funeral-services__price-tab");
+            tabsItems[0].classList.add("active");
+            for (let elem of tabsItems) {
+                elem.addEventListener("click", function () {
+                    for (let elem of tabsItems) {
+                        elem.classList.remove("active");
+                    }
+                    this.classList.add("active");
+                    for (let elem of tabsBlock) {
+                        elem.classList.remove("active");
+                        if (this.dataset.id == elem.dataset.id) {
+                            elem.classList.add("active");
+                        }
+                    }
+                });
+            }
+        </script>
     </body>
 </html>

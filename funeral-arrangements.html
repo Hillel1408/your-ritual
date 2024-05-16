@@ -639,5 +639,20 @@
 
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script>
+            const swiperFuneralArrangements = new Swiper(".funeral-arrangements__slider", {
+                slidesPerView: 2,
+                spaceBetween: 16,
+                navigation: {
+                    nextEl: ".funeral-arrangements__slider__button-next",
+                    prevEl: ".funeral-arrangements__slider__button-prev",
+                },
+                breakpoints: {
+                    666: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        </script>
     </body>
 </html>

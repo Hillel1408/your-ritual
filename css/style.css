@@ -2954,7 +2954,7 @@ input:checked + .slider:before {
     padding-top: 24px;
   }
 }
-.list > div > ul {
+.list__items {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -2962,19 +2962,19 @@ input:checked + .slider:before {
   gap: 32px;
 }
 @media (max-width: 960px) {
-  .list > div > ul {
+  .list__items {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 500px) {
-  .list > div > ul {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+  .list__items {
+    -ms-grid-columns: 1fr !important;
+    grid-template-columns: 1fr !important;
     gap: 12px;
   }
 }
-.list > div > ul > li {
+.list__items > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2989,28 +2989,28 @@ input:checked + .slider:before {
   text-align: center;
 }
 @media (max-width: 500px) {
-  .list > div > ul > li > div {
+  .list__items > li > div {
     text-align: left;
   }
 }
-.list > div > ul > li > div > span {
+.list__items > li > div > span {
   font-weight: 700;
   font-size: 20px;
   line-height: 140%;
   color: var(--black);
 }
 @media (max-width: 500px) {
-  .list > div > ul > li > div > span {
+  .list__items > li > div > span {
     font-size: 18px;
   }
 }
-.list > div > ul > li > div > p {
+.list__items > li > div > p {
   font-size: 16px;
   line-height: 144%;
   color: var(--simple-text);
 }
 @media (max-width: 500px) {
-  .list > div > ul > li {
+  .list__items > li {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -3663,6 +3663,7 @@ input:checked + .slider:before {
 .about-service__block-2 {
   margin-top: 32px;
   position: relative;
+  max-width: 956px;
 }
 @media (max-width: 500px) {
   .about-service__block-2 {
@@ -3671,6 +3672,37 @@ input:checked + .slider:before {
 }
 .about-service__block-3 {
   margin-top: 32px;
+}
+.about-service__block-3 > ul {
+  margin-top: 32px;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 24px;
+}
+@media (max-width: 700px) {
+  .about-service__block-3 > ul {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.about-service__block-3 > ul > li {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+.about-service__block-3 > ul > li > div {
+  text-align: left;
+}
+.about-service__block-3 > ul > li > div > p {
+  margin-top: 6px;
 }
 @media (max-width: 500px) {
   .about-service__block-3 {
@@ -4094,6 +4126,12 @@ input:checked + .slider:before {
           flex-direction: column;
   gap: 40px;
   margin-bottom: 48px;
+  display: none;
+}
+.reviews__block.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media (max-width: 500px) {
   .reviews__block {
@@ -4706,20 +4744,29 @@ input:checked + .slider:before {
     margin-bottom: 24px;
   }
 }
-.cost > h3 {
+.cost > p {
+  margin-bottom: 24px;
+}
+.cost__tab {
+  display: none;
+}
+.cost__tab.active {
+  display: block;
+}
+.cost__tab > h3 {
   padding-top: 32px;
   padding-bottom: 24px;
 }
 @media (max-width: 500px) {
-  .cost > h3 {
+  .cost__tab > h3 {
     padding-top: 24px;
     padding-bottom: 16px;
   }
 }
-.cost > p {
+.cost__tab > p {
   margin-bottom: 24px;
 }
-.cost > div > span {
+.cost__tab > div > span {
   font-weight: 700;
   font-size: 20px;
   line-height: 140%;
@@ -4728,15 +4775,15 @@ input:checked + .slider:before {
   margin-bottom: 16px;
 }
 @media (max-width: 500px) {
-  .cost > div > span {
+  .cost__tab > div > span {
     font-size: 18px;
   }
 }
-.cost > div:not(:last-child) {
+.cost__tab > div:not(:last-child) {
   margin-bottom: 24px;
 }
 @media (max-width: 500px) {
-  .cost > div:not(:last-child) {
+  .cost__tab > div:not(:last-child) {
     margin-bottom: 16px;
   }
 }
@@ -4851,7 +4898,11 @@ input:checked + .slider:before {
   margin-bottom: 24px;
 }
 .funeral__price-tab {
+  display: none;
   margin-bottom: 32px;
+}
+.funeral__price-tab.active {
+  display: block;
 }
 .funeral__price-tab > div {
   -ms-grid-columns: (1fr)[3];
@@ -5058,6 +5109,15 @@ input:checked + .slider:before {
 .questions > ul > li {
   padding: 28px 24px;
   border: 1px solid var(--line);
+  cursor: pointer;
+}
+.questions > ul > li.active > div {
+  display: block;
+}
+.questions > ul > li.active > span::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 @media (max-width: 500px) {
   .questions > ul > li {
@@ -5103,6 +5163,7 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 14px;
+  display: none;
 }
 @media (max-width: 500px) {
   .questions > ul > li > div {
@@ -5747,6 +5808,10 @@ input:checked + .slider:before {
 }
 .funeral-services__price-tab {
   margin-bottom: 32px;
+  display: none;
+}
+.funeral-services__price-tab.active {
+  display: block;
 }
 @media (max-width: 500px) {
   .funeral-services__price-tab {
@@ -6259,6 +6324,7 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 16px;
+  max-width: 956px;
 }
 .coffins-moscow > div > h3 {
   font-weight: 700;
@@ -7043,6 +7109,11 @@ input:checked + .slider:before {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+  display: none;
+}
+.calculator__tab.active {
+  display: -ms-grid;
+  display: grid;
 }
 @media (max-width: 1150px) {
   .calculator__tab {
