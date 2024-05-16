@@ -6,6 +6,7 @@ const askQuestionCloseBtn = document.querySelector(".ask-question-close-btn");
 const toggle = (block) => {
     overlay.style.top = "0";
     block.classList.toggle("active");
+    overlay.classList.toggle("fixed");
     document.body.classList.toggle("lock");
     overlay.classList.toggle("active");
 };

@@ -7578,7 +7578,7 @@ input:checked + .slider:before {
 }
 
 .overlay {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -7592,4 +7592,7 @@ input:checked + .slider:before {
 .overlay.active {
   opacity: 1;
   visibility: visible;
+}
+.overlay.fixed {
+  position: fixed !important;
 }
