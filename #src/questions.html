@@ -16,5 +16,16 @@
         @@include('./html/overlay.html')
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script>
+            const faqItems = document.querySelectorAll(".questions ul li");
+            faqItems.forEach((item) => {
+                item.addEventListener("click", function () {
+                    faqItems.forEach((elem) => {
+                        elem.classList.remove("active");
+                    });
+                    item.classList.toggle("active");
+                });
+            });
+        </script>
     </body>
 </html>

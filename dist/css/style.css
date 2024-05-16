@@ -5109,6 +5109,15 @@ input:checked + .slider:before {
 .questions > ul > li {
   padding: 28px 24px;
   border: 1px solid var(--line);
+  cursor: pointer;
+}
+.questions > ul > li.active > div {
+  display: block;
+}
+.questions > ul > li.active > span::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 @media (max-width: 500px) {
   .questions > ul > li {
@@ -5154,6 +5163,7 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 14px;
+  display: none;
 }
 @media (max-width: 500px) {
   .questions > ul > li > div {
@@ -7099,6 +7109,11 @@ input:checked + .slider:before {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+  display: none;
+}
+.calculator__tab.active {
+  display: -ms-grid;
+  display: grid;
 }
 @media (max-width: 1150px) {
   .calculator__tab {
