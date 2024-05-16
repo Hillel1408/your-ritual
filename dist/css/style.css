@@ -4898,7 +4898,11 @@ input:checked + .slider:before {
   margin-bottom: 24px;
 }
 .funeral__price-tab {
+  display: none;
   margin-bottom: 32px;
+}
+.funeral__price-tab.active {
+  display: block;
 }
 .funeral__price-tab > div {
   -ms-grid-columns: (1fr)[3];

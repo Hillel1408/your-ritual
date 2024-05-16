@@ -26,6 +26,10 @@
         }
     }
     &__price-tab {
+        display: none;
+        &.active {
+            display: block;
+        }
         & > div {
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
